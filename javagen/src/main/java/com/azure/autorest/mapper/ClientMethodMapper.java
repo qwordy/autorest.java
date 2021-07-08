@@ -99,16 +99,14 @@ public class ClientMethodMapper implements IMapper<Operation, List<ClientMethod>
                 }
             }
             IType restAPIMethodReturnBodyClientType = responseBodyType.getClientType();
-            if (operation.getResponses().stream().anyMatch(r -> Boolean.TRUE.equals(r.getBinary()))
-                    && !settings.isLowLevelClient() /* TODO: #1059 */) {
+            if (operation.getResponses().stream().anyMatch(r -> Boolean.TRUE.equals(r.getBinary()))) {
                 asyncReturnType = createAsyncBinaryReturnType();
             } else if (restAPIMethodReturnBodyClientType != PrimitiveType.Void) {
                 asyncReturnType = createAsyncBodyReturnType(restAPIMethodReturnBodyClientType);
             } else {
                 asyncReturnType = createAsyncVoidReturnType();
             }
-            if (operation.getResponses().stream().anyMatch(r -> Boolean.TRUE.equals(r.getBinary()))
-                    && !settings.isLowLevelClient() /* TODO: #1059 */) {
+            if (operation.getResponses().stream().anyMatch(r -> Boolean.TRUE.equals(r.getBinary()))) {
                 syncReturnType = ClassType.InputStream;
             } else {
                 syncReturnType = responseBodyType.getClientType();
