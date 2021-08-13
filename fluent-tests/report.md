@@ -1,8 +1,8 @@
 # Java Codegen Report
-Generated at 2021-08-12T19:16:35.479622
+Generated at 2021-08-13T19:30:46.778554
 ## Success
 <details>
-<summary>RP count: 175</summary>
+<summary>RP count: 176</summary>
 
 - EnterpriseKnowledgeGraph
 - addons
@@ -57,6 +57,7 @@ Generated at 2021-08-12T19:16:35.479622
 - datafactory
 - datalake-analytics
 - datalake-store
+- datamigration
 - dataprotection
 - datashare
 - deploymentmanager
@@ -843,10 +844,10 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Module, LinkedWorkspace, Watcher, SoftwareUpdateConfigurationRunListResult, TypeField, DscCompilationJob, Schedule, DscConfiguration, Runbook, SourceControlSyncJobById, KeyListResult, SoftwareUpdateConfigurationMachineRun, Statistics, AgentRegistration, DscNodeReport, AutomationAccount, JobCollectionItem, RunbookDraft, SoftwareUpdateConfigurationListResult, SoftwareUpdateConfiguration, Webhook, SourceControl, Operation, SourceControlSyncJobStream, JobStreamListResult, SourceControlSyncJob, Variable, Certificate, Credential, PrivateLinkResource, JobStream, HybridRunbookWorkerGroup, RunbookDraftUndoEditResult, TestJob, Usage, JobSchedule, Job, DscNodeConfiguration, Activity, ConnectionType, SoftwareUpdateConfigurationRun, SourceControlSyncJobStreamById, SoftwareUpdateConfigurationMachineRunListResult, NodeCounts, DscNode, PrivateEndpointConnection, Connection]
-INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookProperties, RunbookCreateOrUpdateProperties]
-INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
+INFORMATION (FluentMapper): Add Inner to response types: [RunbookDraft, Certificate, Watcher, Activity, AgentRegistration, SourceControlSyncJob, LinkedWorkspace, JobCollectionItem, Job, Statistics, Connection, PrivateEndpointConnection, Schedule, DscNodeReport, HybridRunbookWorkerGroup, TypeField, SourceControlSyncJobStreamById, AutomationAccount, Webhook, SoftwareUpdateConfigurationListResult, PrivateLinkResource, RunbookDraftUndoEditResult, NodeCounts, SoftwareUpdateConfigurationRun, DscNode, Runbook, JobStream, SourceControlSyncJobById, ConnectionType, DscConfiguration, DscNodeConfiguration, DscCompilationJob, Variable, SoftwareUpdateConfigurationRunListResult, JobStreamListResult, Operation, Usage, SourceControl, KeyListResult, SoftwareUpdateConfiguration, TestJob, Credential, SoftwareUpdateConfigurationMachineRun, Module, SourceControlSyncJobStream, JobSchedule, SoftwareUpdateConfigurationMachineRunListResult]
+INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookCreateOrUpdateProperties, RunbookProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
+INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'PrivateEndpointConnection', method reference 'createOrUpdate', body parameter 'PrivateEndpointConnectionInner'
@@ -1140,67 +1141,6 @@ java.lang.IllegalStateException: model type not found for type String and value 
 </details>
 
 <details>
-<summary>datamigration</summary>
-
-**stdout**
-```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
-(C) 2018 Microsoft Corporation.
-https://aka.ms/autorest
-NOTE: AutoRest core version selected from configuration: 3.4.5.
-   Loading AutoRest core      '/home/runner/.autorest/@autorest_core@3.4.5/node_modules/@autorest/core/dist' (3.4.5)
-INFORMATION: > Loading local AutoRest extension '@autorest/java' (/home/runner/work/autorest.java/autorest.java)
-INFORMATION: > Loading local AutoRest extension '@autorest/java.fluent' (/home/runner/work/autorest.java/autorest.java/fluentgen)
-INFORMATION: > Loading local AutoRest extension '@autorest/java.fluentnamer' (/home/runner/work/autorest.java/autorest.java/fluentnamer)
-INFORMATION: > Loading AutoRest extension '@autorest/modelerfour' (4.18.1->4.18.1)
-WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not supported in Autorest V3. It will just be ignored. (info > x-ms-code-generation-settings)
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/datamigration.json:12:2
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MigrateSyncCompleteCommandProperties > properties > output)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/Commands.json:73:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MigrateMISyncCompleteCommandProperties > properties > output)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/Commands.json:131:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > ConnectToSourceSqlServerTaskOutputDatabaseLevel > properties > compatibilityLevel)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/ConnectToSourceSqlServerTask.json:173:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > ConnectToSourceSqlServerTaskOutputDatabaseLevel > properties > databaseState)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/ConnectToSourceSqlServerTask.json:178:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > ConnectToSourceSqlServerTaskOutputLoginLevel > properties > loginType)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/ConnectToSourceSqlServerTask.json:200:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > ConnectToSourceSqlServerTaskOutputLoginLevel > properties > migrationEligibility)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/ConnectToSourceSqlServerTask.json:215:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > ConnectToSourceSqlServerTaskOutputAgentJobLevel > properties > migrationEligibility)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/ConnectToSourceSqlServerTask.json:266:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MigrateSchemaSqlServerSqlDbTaskOutputMigrationLevel > properties > state)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/MigrateSchemaSqlServerSqlDbTask.json:118:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MigrateSchemaSqlServerSqlDbTaskOutputDatabaseLevel > properties > state)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/MigrateSchemaSqlServerSqlDbTask.json:171:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MigrateSchemaSqlServerSqlDbTaskOutputDatabaseLevel > properties > stage)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/MigrateSchemaSqlServerSqlDbTask.json:176:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MigrateSchemaSqlTaskOutputError > properties > error)
-  keys: [ [32m'readOnly'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/MigrateSchemaSqlServerSqlDbTask.json:252:5
-
-```
-**stderr**
-```
-ERROR: Semantic violation: Discriminator must be a required property. (components > schemas > MigrateSchemaSqlServerSqlDbTaskOutput)
-  discriminator: { propertyName: [32m'resultType'[39m }
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/MigrateSchemaSqlServerSqlDbTask.json:264:3
-  Error: Semantic validation failed. There was some errors
-
-```
-</details>
-
-<details>
 <summary>devspaces</summary>
 
 **stdout**
@@ -1382,7 +1322,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [AndroidMamPolicy, GroupItem, Location, IOsmamPolicy, OperationResult, Device, WipeDeviceOperationResult, FlaggedUser, Application, FlaggedEnrolledApp]
+INFORMATION (FluentMapper): Add Inner to response types: [GroupItem, Device, AndroidMamPolicy, WipeDeviceOperationResult, Application, OperationResult, FlaggedEnrolledApp, FlaggedUser, IOsmamPolicy, Location]
 
 ```
 **stderr**
@@ -1538,7 +1478,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [PackageDownloads, Operation, DeviceGroupModel, AlertModel, SitesList, SensorModel, OnPremiseSensorsList, LocationModel, DefenderSettingsModel, SensorsList, DeviceModel, RecommendationModel, OnPremiseSensor, AlertType, RecommendationType, RecommendationTypeList, SiteModel, AlertTypeList, DefenderSettingsList]
+INFORMATION (FluentMapper): Add Inner to response types: [SitesList, SensorsList, AlertModel, PackageDownloads, AlertTypeList, SiteModel, DeviceModel, DeviceGroupModel, SensorModel, RecommendationType, DefenderSettingsList, LocationModel, AlertType, Operation, OnPremiseSensorsList, DefenderSettingsModel, OnPremiseSensor, RecommendationTypeList, RecommendationModel]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SensorModel', method reference 'createOrUpdate', body parameter 'SensorModelInner'
@@ -1653,8 +1593,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.866 s
-[INFO] Finished at: 2021-08-12T18:37:44Z
+[INFO] Total time:  1.627 s
+[INFO] Finished at: 2021-08-13T18:51:18Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1934,8 +1874,8 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [QuotaRequestSubmitResponse201, AppliedReservations, CurrentQuotaLimitBase, QuotaRequestOneResourceSubmitResponse, ExchangeOperationResultResponse, QuotaRequestDetails, AvailableScopeProperties, Catalog, ReservationOrderResponse, ReservationResponse, OperationResponse, CalculatePriceResponse, CalculateExchangeOperationResultResponse]
-INFORMATION (FluentMapper): Add Inner for type 'CurrentQuotaLimitBase': [QuotaRequestOneResourceProperties, CurrentQuotaLimit]
+INFORMATION (FluentMapper): Add Inner to response types: [ReservationOrderResponse, CalculateExchangeOperationResultResponse, CurrentQuotaLimitBase, QuotaRequestOneResourceSubmitResponse, OperationResponse, AppliedReservations, QuotaRequestSubmitResponse201, AvailableScopeProperties, ExchangeOperationResultResponse, CalculatePriceResponse, ReservationResponse, QuotaRequestDetails, Catalog]
+INFORMATION (FluentMapper): Add Inner for type 'CurrentQuotaLimitBase': [CurrentQuotaLimit, QuotaRequestOneResourceProperties]
 INFORMATION (FluentMapper): Add Inner for type 'QuotaRequestOneResourceProperties': []
 
 ```
@@ -2139,12 +2079,6 @@ WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should 
 WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'machinegroups' in:'MachineGroups_Create'. Consider updating the operationId
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1405:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machineGroups"].post.operationId)
 
-WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:63:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines"].get.parameters[4].name)
-
-WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:332:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/processes"].get.parameters[5].name)
-
 WARNING (OperationIdNounVerb/R1001/SDKViolation): Per the Noun_Verb convention for Operation Ids, the noun 'Machines' should not appear after the underscore. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:971:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/machineGroups"].get.operationId)
 
@@ -2153,6 +2087,12 @@ WARNING (PutInOperationName/R1006/SDKViolation): 'PUT' operation 'MachineGroups_
 
 WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
+
+WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:63:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines"].get.parameters[4].name)
+
+WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:332:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/processes"].get.parameters[5].name)
 
 WARNING (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-enum type extension set with appropriate options. Property name: kind
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1645:8 ($.definitions.ResourceReference.properties.kind)
@@ -2215,7 +2155,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [MachinesSummary, Port, ClientGroupMembersCount, MachineGroup, MapResponse, ClientGroup, Connection, Liveness, Process, ClientGroupMember, Machine]
+INFORMATION (FluentMapper): Add Inner to response types: [Liveness, Machine, ClientGroupMember, ClientGroup, MapResponse, Port, ClientGroupMembersCount, MachineGroup, Process, MachinesSummary, Connection]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -2355,7 +2295,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [OperationResponse, HybridUseBenefitModel]
+INFORMATION (FluentMapper): Add Inner to response types: [HybridUseBenefitModel, OperationResponse]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'HybridUseBenefitModel', method reference 'create', body parameter 'HybridUseBenefitModelInner'
@@ -2459,8 +2399,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.184 s
-[INFO] Finished at: 2021-08-12T19:10:25Z
+[INFO] Total time:  4.033 s
+[INFO] Finished at: 2021-08-13T19:24:27Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-streamanalytics: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/TestDatasourceResultImpl.java:[24,33] cannot find symbol
@@ -2602,8 +2542,8 @@ WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.442 s
-[INFO] Finished at: 2021-08-12T19:12:37Z
+[INFO] Total time:  1.487 s
+[INFO] Finished at: 2021-08-13T19:26:42Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
