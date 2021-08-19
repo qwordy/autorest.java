@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2021-08-18T19:39:34.064303
+Generated at 2021-08-19T19:30:23.915170
 ## Success
 <details>
 <summary>RP count: 177</summary>
@@ -200,7 +200,7 @@ Generated at 2021-08-18T19:39:34.064303
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -226,7 +226,7 @@ FATAL: Error: Name is empty!
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -845,7 +845,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [RunbookDraft, Certificate, Watcher, Activity, AgentRegistration, SourceControlSyncJob, LinkedWorkspace, JobCollectionItem, Job, Statistics, Connection, PrivateEndpointConnection, Schedule, DscNodeReport, HybridRunbookWorkerGroup, TypeField, SourceControlSyncJobStreamById, AutomationAccount, Webhook, SoftwareUpdateConfigurationListResult, PrivateLinkResource, RunbookDraftUndoEditResult, NodeCounts, SoftwareUpdateConfigurationRun, DscNode, Runbook, JobStream, SourceControlSyncJobById, ConnectionType, DscConfiguration, DscNodeConfiguration, DscCompilationJob, Variable, SoftwareUpdateConfigurationRunListResult, JobStreamListResult, Operation, Usage, SourceControl, KeyListResult, SoftwareUpdateConfiguration, TestJob, Credential, SoftwareUpdateConfigurationMachineRun, Module, SourceControlSyncJobStream, JobSchedule, SoftwareUpdateConfigurationMachineRunListResult]
+INFORMATION (FluentMapper): Add Inner to response types: [Job, SourceControlSyncJob, Activity, DscNode, JobCollectionItem, Module, NodeCounts, SourceControl, AgentRegistration, Statistics, Schedule, DscNodeReport, AutomationAccount, TypeField, ConnectionType, Watcher, RunbookDraft, DscNodeConfiguration, HybridRunbookWorkerGroup, SoftwareUpdateConfigurationRun, SoftwareUpdateConfigurationRunListResult, Credential, SourceControlSyncJobStream, JobStream, TestJob, SoftwareUpdateConfiguration, Runbook, KeyListResult, SourceControlSyncJobStreamById, PrivateLinkResource, SoftwareUpdateConfigurationListResult, JobStreamListResult, JobSchedule, DscCompilationJob, LinkedWorkspace, SoftwareUpdateConfigurationMachineRun, Connection, Certificate, PrivateEndpointConnection, SoftwareUpdateConfigurationMachineRunListResult, RunbookDraftUndoEditResult, Usage, Webhook, Variable, DscConfiguration, Operation, SourceControlSyncJobById]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookCreateOrUpdateProperties, RunbookProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
@@ -1146,7 +1146,7 @@ java.lang.IllegalStateException: model type not found for type String and value 
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -1172,7 +1172,7 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -1323,7 +1323,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [IOsmamPolicy, OperationResult, FlaggedEnrolledApp, GroupItem, Location, WipeDeviceOperationResult, Application, FlaggedUser, AndroidMamPolicy, Device]
+INFORMATION (FluentMapper): Add Inner to response types: [WipeDeviceOperationResult, Application, Location, OperationResult, FlaggedUser, IOsmamPolicy, Device, AndroidMamPolicy, FlaggedEnrolledApp, GroupItem]
 
 ```
 **stderr**
@@ -1357,7 +1357,7 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -1485,7 +1485,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [SiteModel, OnPremiseSensorsList, SitesList, OnPremiseSensor, AlertType, PackageDownloads, RecommendationTypeList, Operation, SensorModel, AlertModel, DeviceModel, DefenderSettingsList, AlertTypeList, DeviceVulnerabilityModel, DeviceGroupModel, DefenderSettingsModel, LocationModel, SensorsList, RecommendationModel, RecommendationType]
+INFORMATION (FluentMapper): Add Inner to response types: [AlertModel, OnPremiseSensor, SitesList, PackageDownloads, AlertTypeList, SensorsList, RecommendationModel, LocationModel, DeviceModel, AlertType, DeviceVulnerabilityModel, Operation, DefenderSettingsModel, RecommendationType, SiteModel, DefenderSettingsList, RecommendationTypeList, SensorModel, DeviceGroupModel, OnPremiseSensorsList]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SensorModel', method reference 'createOrUpdate', body parameter 'SensorModelInner'
@@ -1600,8 +1600,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.872 s
-[INFO] Finished at: 2021-08-18T18:55:43Z
+[INFO] Total time:  1.723 s
+[INFO] Finished at: 2021-08-19T18:51:33Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1626,7 +1626,7 @@ java.lang.NullPointerException
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -1651,7 +1651,7 @@ Use --help to get help information.
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -1806,7 +1806,7 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -1881,7 +1881,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [QuotaRequestSubmitResponse201, CurrentQuotaLimitBase, ReservationOrderResponse, QuotaRequestOneResourceSubmitResponse, AvailableScopeProperties, AppliedReservations, Catalog, OperationResponse, QuotaRequestDetails, ReservationResponse, ExchangeOperationResultResponse, CalculatePriceResponse, CalculateExchangeOperationResultResponse]
+INFORMATION (FluentMapper): Add Inner to response types: [ExchangeOperationResultResponse, AppliedReservations, CalculatePriceResponse, QuotaRequestOneResourceSubmitResponse, Catalog, CurrentQuotaLimitBase, ReservationOrderResponse, OperationResponse, QuotaRequestSubmitResponse201, QuotaRequestDetails, CalculateExchangeOperationResultResponse, AvailableScopeProperties, ReservationResponse]
 INFORMATION (FluentMapper): Add Inner for type 'CurrentQuotaLimitBase': [QuotaRequestOneResourceProperties, CurrentQuotaLimit]
 INFORMATION (FluentMapper): Add Inner for type 'QuotaRequestOneResourceProperties': []
 
@@ -1925,7 +1925,7 @@ java.lang.NullPointerException
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -1950,7 +1950,7 @@ Use --help to get help information.
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -2162,7 +2162,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Liveness, Machine, ClientGroupMember, ClientGroup, MapResponse, Port, ClientGroupMembersCount, MachineGroup, Process, MachinesSummary, Connection]
+INFORMATION (FluentMapper): Add Inner to response types: [ClientGroupMembersCount, MapResponse, Machine, Liveness, ClientGroup, MachinesSummary, ClientGroupMember, MachineGroup, Process, Connection, Port]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -2233,7 +2233,7 @@ ERROR (DeleteOperationResponses/R4011/ARMViolation): The delete operation is def
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -2406,8 +2406,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.399 s
-[INFO] Finished at: 2021-08-18T19:32:27Z
+[INFO] Total time:  4.270 s
+[INFO] Finished at: 2021-08-19T19:24:05Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-streamanalytics: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/TestDatasourceResultImpl.java:[24,33] cannot find symbol
@@ -2451,7 +2451,7 @@ java.lang.NullPointerException
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.3.2; node: v14.17.4]
+AutoRest code generation utility [cli version: 3.3.2; node: v14.17.5]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 NOTE: AutoRest core version selected from configuration: 3.4.5.
@@ -2549,8 +2549,8 @@ WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.547 s
-[INFO] Finished at: 2021-08-18T19:35:01Z
+[INFO] Total time:  1.686 s
+[INFO] Finished at: 2021-08-19T19:26:20Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
