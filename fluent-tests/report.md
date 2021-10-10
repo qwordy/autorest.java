@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2021-10-09T19:50:48.325786
+Generated at 2021-10-10T19:32:07.163014
 ## Success
 <details>
 <summary>RP count: 179</summary>
@@ -255,8 +255,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.938 s
-[INFO] Finished at: 2021-10-09T18:24:35Z
+[INFO] Total time:  3.791 s
+[INFO] Finished at: 2021-10-10T18:23:09Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[225,19] method principalId() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
@@ -677,7 +677,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Schedule, PrivateEndpointConnection, SoftwareUpdateConfigurationMachineRun, DscNodeReport, DscConfiguration, RunbookDraftUndoEditResult, DscNode, AutomationAccount, JobStream, SoftwareUpdateConfigurationListResult, NodeCounts, SourceControl, Credential, JobCollectionItem, SoftwareUpdateConfigurationRunListResult, Module, JobStreamListResult, Variable, SoftwareUpdateConfiguration, Activity, JobSchedule, DscNodeConfiguration, Webhook, Operation, Statistics, HybridRunbookWorker, AgentRegistration, DscCompilationJob, Watcher, Connection, Certificate, GraphicalRunbookContent, SoftwareUpdateConfigurationMachineRunListResult, SourceControlSyncJob, RunbookDraft, SourceControlSyncJobStreamById, SourceControlSyncJobById, SoftwareUpdateConfigurationRun, HybridRunbookWorkerGroup, Runbook, Usage, KeyListResult, Job, TestJob, LinkedWorkspace, TypeField, ConnectionType, SourceControlSyncJobStream, PrivateLinkResource]
+INFORMATION (FluentMapper): Add Inner to response types: [Connection, Operation, HybridRunbookWorker, AutomationAccount, Job, SoftwareUpdateConfigurationListResult, DscNode, Variable, PrivateLinkResource, AgentRegistration, SoftwareUpdateConfigurationMachineRun, Statistics, PrivateEndpointConnection, NodeCounts, Usage, SourceControlSyncJobById, Schedule, TestJob, Webhook, GraphicalRunbookContent, SoftwareUpdateConfigurationRun, JobStreamListResult, DscConfiguration, Module, KeyListResult, ConnectionType, DscNodeReport, SoftwareUpdateConfiguration, SoftwareUpdateConfigurationMachineRunListResult, Runbook, JobCollectionItem, DscNodeConfiguration, SourceControlSyncJobStream, SourceControlSyncJob, SoftwareUpdateConfigurationRunListResult, RunbookDraft, Certificate, HybridRunbookWorkerGroup, JobSchedule, Activity, RunbookDraftUndoEditResult, SourceControlSyncJobStreamById, DscCompilationJob, JobStream, Watcher, TypeField, LinkedWorkspace, SourceControl, Credential]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookCreateOrUpdateProperties, RunbookProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
@@ -1125,7 +1125,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [IOsmamPolicy, OperationResult, FlaggedEnrolledApp, GroupItem, Location, WipeDeviceOperationResult, Application, FlaggedUser, AndroidMamPolicy, Device]
+INFORMATION (FluentMapper): Add Inner to response types: [GroupItem, WipeDeviceOperationResult, Application, FlaggedUser, AndroidMamPolicy, Device, OperationResult, FlaggedEnrolledApp, Location, IOsmamPolicy]
 
 ```
 **stderr**
@@ -1280,7 +1280,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [DeviceGroupModel, SensorModel, DeviceVulnerabilityModel, RecommendationModel, SensorsList, RecommendationType, DefenderSettingsModel, LocationModel, AlertModel, AlertTypeList, RecommendationTypeList, Operation, SitesList, AlertType, DeviceModel, SiteModel, OnPremiseSensorsList, PackageDownloads, OnPremiseSensor, DefenderSettingsList]
+INFORMATION (FluentMapper): Add Inner to response types: [SensorsList, DeviceGroupModel, RecommendationTypeList, RecommendationType, DefenderSettingsModel, Operation, SiteModel, OnPremiseSensor, DefenderSettingsList, AlertTypeList, RecommendationModel, AlertModel, DeviceModel, PackageDownloads, OnPremiseSensorsList, DeviceVulnerabilityModel, AlertType, LocationModel, SensorModel, SitesList]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SensorModel', method reference 'createOrUpdate', body parameter 'SensorModelInner'
@@ -1394,8 +1394,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.255 s
-[INFO] Finished at: 2021-10-09T19:00:41Z
+[INFO] Total time:  1.687 s
+[INFO] Finished at: 2021-10-10T18:51:50Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1845,6 +1845,8 @@ WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive 
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:63:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines"].get.parameters[4].name)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:332:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/processes"].get.parameters[5].name)
+WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (OperationIdNounVerb/R1001/SDKViolation): Per the Noun_Verb convention for Operation Ids, the noun 'Machines' should not appear after the underscore. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:971:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/machineGroups"].get.operationId)
 WARNING (PutInOperationName/R1006/SDKViolation): 'PUT' operation 'MachineGroups_Update' should use method name 'Create'. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
@@ -1861,8 +1863,6 @@ WARNING (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:2754:8 ($.definitions.HostingConfiguration.properties.kind)
 WARNING (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-enum type extension set with appropriate options. Property name: provider
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:3014:8 ($.definitions.ProcessHostingConfiguration.properties.provider)
-WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-enum type extension set with appropriate options. Property name: kind
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:3021:8 ($.definitions.ProcessHostingConfiguration.properties.kind)
 WARNING (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-enum type extension set with appropriate options. Property name: kind
@@ -1903,7 +1903,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Liveness, MapResponse, ClientGroupMembersCount, MachineGroup, ClientGroupMember, Process, Port, Machine, ClientGroup, MachinesSummary, Connection]
+INFORMATION (FluentMapper): Add Inner to response types: [ClientGroupMembersCount, MapResponse, Machine, Liveness, ClientGroup, MachinesSummary, ClientGroupMember, MachineGroup, Process, Connection, Port]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -2128,8 +2128,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.239 s
-[INFO] Finished at: 2021-10-09T19:41:38Z
+[INFO] Total time:  3.975 s
+[INFO] Finished at: 2021-10-10T19:24:47Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-streamanalytics: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/TestDatasourceResultImpl.java:[24,33] cannot find symbol
@@ -2206,8 +2206,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.708 s
-[INFO] Finished at: 2021-10-09T19:45:42Z
+[INFO] Total time:  1.383 s
+[INFO] Finished at: 2021-10-10T19:28:00Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
