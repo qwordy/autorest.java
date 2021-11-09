@@ -1,8 +1,8 @@
 # Java Codegen Report
-Generated at 2021-11-08T19:50:14.302989
+Generated at 2021-11-09T19:36:33.458592
 ## Success
 <details>
-<summary>RP count: 182</summary>
+<summary>RP count: 185</summary>
 
 - EnterpriseKnowledgeGraph
 - addons
@@ -94,6 +94,7 @@ Generated at 2021-11-08T19:50:14.302989
 - imagebuilder
 - iotcentral
 - iothub
+- iotsecurity
 - keyvault
 - kubernetesconfiguration
 - labservices
@@ -162,6 +163,7 @@ Generated at 2021-11-08T19:50:14.302989
 - servicefabricmesh
 - servicelinker
 - signalr
+- solutions
 - sql
 - sqlvirtualmachine
 - storSimple1200Series
@@ -171,6 +173,7 @@ Generated at 2021-11-08T19:50:14.302989
 - storagepool
 - storagesync
 - storsimple8000series
+- streamanalytics
 - subscription
 - support
 - synapse
@@ -190,7 +193,6 @@ Generated at 2021-11-08T19:50:14.302989
 
 ## Failure at Codegen
 - automation
-- iotsecurity
 - reservations
 - softwareplan
 
@@ -198,7 +200,6 @@ Generated at 2021-11-08T19:50:14.302989
 - authorization
 - datafactory
 - iotspaces
-- streamanalytics
 - visualstudio
 
 ## Logs
@@ -259,8 +260,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.258 s
-[INFO] Finished at: 2021-11-08T18:25:41Z
+[INFO] Total time:  4.007 s
+[INFO] Finished at: 2021-11-09T18:24:42Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[225,19] method principalId() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
@@ -681,10 +682,10 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Operation, SoftwareUpdateConfigurationMachineRun, Webhook, Schedule, KeyListResult, Variable, SourceControlSyncJobById, SoftwareUpdateConfigurationMachineRunListResult, AgentRegistration, JobCollectionItem, SoftwareUpdateConfigurationRun, SoftwareUpdateConfigurationListResult, SourceControlSyncJob, Activity, DscNodeReport, SourceControl, Runbook, TypeField, JobStreamListResult, SoftwareUpdateConfigurationRunListResult, Connection, SoftwareUpdateConfiguration, Usage, TestJob, AutomationAccount, Credential, ConnectionType, JobStream, Job, LinkedWorkspace, NodeCounts, PrivateLinkResource, HybridRunbookWorkerGroup, DscCompilationJob, Watcher, DscNodeConfiguration, RunbookDraft, Certificate, Module, JobSchedule, DscNode, GraphicalRunbookContent, SourceControlSyncJobStreamById, DscConfiguration, PrivateEndpointConnection, HybridRunbookWorker, RunbookDraftUndoEditResult, SourceControlSyncJobStream, Statistics]
-INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookProperties, RunbookCreateOrUpdateProperties]
-INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
+INFORMATION (FluentMapper): Add Inner to response types: [JobStream, RunbookDraftUndoEditResult, JobSchedule, Runbook, KeyListResult, Connection, SourceControlSyncJobById, DscConfiguration, DscNode, Operation, TypeField, GraphicalRunbookContent, AgentRegistration, SoftwareUpdateConfiguration, SourceControl, AutomationAccount, DscCompilationJob, Watcher, TestJob, SourceControlSyncJobStream, PrivateLinkResource, Activity, HybridRunbookWorkerGroup, HybridRunbookWorker, LinkedWorkspace, NodeCounts, Certificate, Schedule, SourceControlSyncJobStreamById, Variable, SoftwareUpdateConfigurationMachineRunListResult, PrivateEndpointConnection, DscNodeConfiguration, RunbookDraft, Webhook, ConnectionType, JobStreamListResult, Usage, Job, Module, SourceControlSyncJob, JobCollectionItem, Credential, SoftwareUpdateConfigurationRun, SoftwareUpdateConfigurationRunListResult, SoftwareUpdateConfigurationMachineRun, DscNodeReport, SoftwareUpdateConfigurationListResult, Statistics]
+INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookCreateOrUpdateProperties, RunbookProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
+INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'PrivateEndpointConnection', method reference 'createOrUpdate', body parameter 'PrivateEndpointConnectionInner'
@@ -1013,8 +1014,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  7.340 s
-[INFO] Finished at: 2021-11-08T18:46:02Z
+[INFO] Total time:  6.201 s
+[INFO] Finished at: 2021-11-09T18:41:10Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-datafactory: Compilation failure
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-datafactory/src/main/java/com/azure/resourcemanager/datafactory/models/Flowlet.java:[217,19] method additionalProperties() is already defined in class com.azure.resourcemanager.datafactory.models.Flowlet
@@ -1177,7 +1178,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [FlaggedUser, Location, Application, FlaggedEnrolledApp, WipeDeviceOperationResult, Device, GroupItem, IOsmamPolicy, OperationResult, AndroidMamPolicy]
+INFORMATION (FluentMapper): Add Inner to response types: [Application, Device, GroupItem, AndroidMamPolicy, FlaggedEnrolledApp, OperationResult, Location, FlaggedUser, IOsmamPolicy, WipeDeviceOperationResult]
 
 ```
 **stderr**
@@ -1190,219 +1191,6 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 	at com.azure.autorest.mapper.ClientMapper.map(ClientMapper.java:119)
 	at com.azure.autorest.fluent.FluentGen.handleMap(FluentGen.java:174)
 	at com.azure.autorest.fluent.FluentGen.processInternal(FluentGen.java:100)
-	at com.azure.autorest.extension.base.plugin.NewPlugin.process(NewPlugin.java:206)
-	at com.azure.autorest.fluent.Main.lambda$main$1(Main.java:18)
-	at com.azure.autorest.extension.base.jsonrpc.Connection.lambda$dispatch$2(Connection.java:151)
-	at com.azure.autorest.extension.base.jsonrpc.Connection.lambda$process$3(Connection.java:270)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-
-  Error: Plugin fluentgen reported failure.
-
-```
-</details>
-
-<details>
-<summary>iotsecurity</summary>
-
-**stdout**
-```
-AutoRest code generation utility [cli version: 3.4.2; node: v14.18.1]
-(C) 2018 Microsoft Corporation.
-https://aka.ms/autorest
-info    | AutoRest core version selected from configuration: 3.4.5.
-   Loading AutoRest core      '/home/runner/.autorest/@autorestcore@3.4.5/nodemodules/@autorest/core/dist' (3.4.5)
-INFORMATION: > Loading local AutoRest extension '@autorest/java' (/home/runner/work/autorest.java/autorest.java)
-INFORMATION: > Loading local AutoRest extension '@autorest/java.fluent' (/home/runner/work/autorest.java/autorest.java/fluentgen)
-INFORMATION: > Loading local AutoRest extension '@autorest/java.fluentnamer' (/home/runner/work/autorest.java/autorest.java/fluentnamer)
-INFORMATION: > Loading AutoRest extension '@autorest/modelerfour' (4.18.1->4.18.1)
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > SiteModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/sites.json:59:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > SensorModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/sensors.json:59:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > OnPremiseSensor > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/onPremiseSensors.json:59:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > LocationModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/locations.json:64:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DeviceGroupModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/deviceGroups.json:64:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DeviceModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/devices.json:64:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DeviceProperties > properties > deviceDataSource)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/devices.json:86:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DeviceProperties > properties > sensor)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/devices.json:92:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DeviceProperties > properties > hardware)
-  keys: [ [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/devices.json:213:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DeviceProperties > properties > operatingSystem)
-  keys: [ [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/devices.json:225:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MergedDevice > properties > deviceDataSource)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/devices.json:607:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MergedDevice > properties > sensor)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-02-01-preview/devices.json:613:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > AlertModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-07-01-preview/alerts.json:64:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > AlertPropertiesModel > properties > severity)
-  keys: [ [32m'type'[39m, [32m'example'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-07-01-preview/alerts.json:176:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > AlertPropertiesModel > properties > status)
-  keys: [ [32m'type'[39m, [32m'example'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-07-01-preview/alerts.json:266:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > AlertPatchPropertiesModel > properties > properties > properties > severity)
-  keys: [ [32m'type'[39m, [32m'example'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-07-01-preview/alerts.json:298:7
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > AlertPatchPropertiesModel > properties > properties > properties > status)
-  keys: [ [32m'type'[39m, [32m'example'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-07-01-preview/alerts.json:304:7
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > AlertType > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-07-01-preview/alertTypes.json:58:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RecommendationModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-07-01-preview/recommendations.json:64:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RecommendationType > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-07-01-preview/recommendationTypes.json:58:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DeviceVulnerabilityModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-07-01-preview/vulnerabilities.json:64:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DeviceVulnerabilityPropertiesModel > properties > severityScore)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m, [32m'example'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-07-01-preview/vulnerabilities.json:87:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > LocationModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-09-01-preview/locations.json:64:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > SiteModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-09-01-preview/sites.json:59:5
-WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > SensorModel > properties > systemData)
-  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/iotsecurity/resource-manager/Microsoft.IoTSecurity/preview/2021-09-01-preview/sensors.json:59:5
-WARNING (PreCheck/SchemaMissingType): The schema 'ErrorResponseModel-error' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
-WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
-INFORMATION (FluentNamer): Load fluent settings
-INFORMATION (FluentJavaSettings): Option, string, add-inner : null
-INFORMATION (FluentJavaSettings): Option, string, remove-inner : null
-INFORMATION (FluentJavaSettings): Option, string, rename-model : null
-INFORMATION (FluentJavaSettings): Option, string, remove-model : null
-INFORMATION (FluentJavaSettings): Option, string, preserve-model : null
-INFORMATION (FluentJavaSettings): Option, string, name-for-ungrouped-operations : null
-INFORMATION (FluentJavaSettings): Option, string, pom-file : null
-INFORMATION (FluentJavaSettings): Option, string, package-version : null
-INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
-INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
-INFORMATION (FluentNamer): Transform code model
-WARNING (FluentTransformer): Modify parameter 'iotDefenderLocation' implementation from CLIENT to METHOD
-WARNING (OperationNameNormalization): Conflict operation name found after attempted rename '[createOrUpdate, get, list, delete]', in operation group 'Sites'
-WARNING (OperationNameNormalization): Conflict operation name found after attempted rename '[downloadActivation, createOrUpdate, get, downloadResetPassword, list, delete, triggerTiPackageUpdate]', in operation group 'Sensors'
-WARNING (OperationNameNormalization): Conflict operation name found after attempted rename '[get, list]', in operation group 'Locations'
-INFORMATION (ResourceTypeNormalization): Change parent from 'Resource' to 'ProxyResource', for 'ProxyResource'
-INFORMATION (ResourceTypeNormalization): Change parent from 'Resource' to 'ProxyResource', for 'SensorModel'
-INFORMATION (ErrorTypeNormalization): Rename error from 'ErrorResponse' to 'ManagementError'
-INFORMATION (ErrorTypeNormalization): Rename error from 'ErrorResponseModel' to 'ManagementError'
-INFORMATION (SchemaCleanup): Remove unused object schema 'Resource'
-INFORMATION (SchemaCleanup): Remove unused object schema 'ManagementError'
-INFORMATION (SchemaCleanup): Remove unused object schema 'ErrorAdditionalInfo'
-INFORMATION (SchemaCleanup): Remove unused choice schema 'CreatedByType'
-INFORMATION (FluentGen): Read YAML
-INFORMATION (FluentJavaSettings): Option, string, add-inner : null
-INFORMATION (FluentJavaSettings): Option, string, remove-inner : null
-INFORMATION (FluentJavaSettings): Option, string, rename-model : null
-INFORMATION (FluentJavaSettings): Option, string, remove-model : null
-INFORMATION (FluentJavaSettings): Option, string, preserve-model : null
-INFORMATION (FluentJavaSettings): Option, string, name-for-ungrouped-operations : null
-INFORMATION (FluentJavaSettings): Option, string, pom-file : null
-INFORMATION (FluentJavaSettings): Option, string, package-version : null
-INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
-INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
-INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [SitesList, DeviceVulnerabilityModel, SiteModel, DeviceModel, PackageDownloads, SensorsList, AlertType, OnPremiseSensorsList, DefenderSettingsModel, SensorModel, LocationModel, RecommendationTypeList, DeviceGroupModel, AlertTypeList, DefenderSettingsList, OnPremiseSensor, RecommendationModel, RecommendationType, Operation, AlertModel]
-INFORMATION (FluentGen): Java template for client model
-INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
-INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SensorModel', method reference 'createOrUpdate', body parameter 'SensorModelInner'
-INFORMATION (ResourceParser): Fluent model 'SensorModel' as category SCOPEASPARENT
-INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'SensorModel', method reference 'createOrUpdate', body parameter 'SensorModelInner'
-INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'SensorModel', method reference 'get'
-INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'SensorModel', method reference 'delete'
-INFORMATION (ResourceActions): ResourceActions: Fluent model 'SensorModel', action methods: [downloadActivation, downloadResetPassword, triggerTiPackageUpdate]
-INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'DeviceGroupModel', method reference 'createOrUpdate', body parameter 'DeviceGroupModelInner'
-INFORMATION (ResourceParser): Fluent model 'DeviceGroupModel' as category NESTED_CHILD
-INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'DeviceGroupModel', method reference 'createOrUpdate', body parameter 'DeviceGroupModelInner'
-INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'DeviceGroupModel', method reference 'get'
-INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'DeviceGroupModel', method reference 'delete'
-INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SiteModel', method reference 'createOrUpdate', body parameter 'SiteModelInner'
-INFORMATION (ResourceParser): Fluent model 'SiteModel' as category NESTED_CHILD
-INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'SiteModel', method reference 'createOrUpdate', body parameter 'SiteModelInner'
-INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'SiteModel', method reference 'get'
-INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'SiteModel', method reference 'delete'
-INFORMATION (ExampleParser): Parse collection method example 'List IoT Defender settings'
-INFORMATION (ExampleParser): Parse collection method example 'Get IoT Defender settings'
-INFORMATION (ExampleParser): Parse collection method example 'Create or update IoT Defender settings'
-INFORMATION (ExampleParser): Parse collection method example 'Delete IoT Defender settings'
-INFORMATION (ExampleParser): Parse collection method example 'Package downloads'
-INFORMATION (ExampleParser): Parse collection method example 'Download quota data of the subscription'
-INFORMATION (ExampleParser): Parse collection method example 'Create or update IoT Defender settings'
-INFORMATION (ExampleParser): Parse collection method example 'List IoT sites'
-INFORMATION (ExampleParser): Parse collection method example 'Get IoT site'
-INFORMATION (ExampleParser): Parse collection method example 'Create or update IoT site'
-INFORMATION (ExampleParser): Parse collection method example 'Delete IoT site'
-INFORMATION (ExampleParser): Parse collection method example 'List IoT sites'
-INFORMATION (ExampleParser): Parse collection method example 'Get IoT site'
-INFORMATION (ExampleParser): Parse collection method example 'Create or update IoT site'
-INFORMATION (ExampleParser): Parse collection method example 'Delete IoT site'
-INFORMATION (ExampleParser): Parse collection method example 'List IoT sensors'
-INFORMATION (ExampleParser): Parse collection method example 'Get IoT sensor'
-INFORMATION (ExampleParser): Parse collection method example 'Delete IoT sensor'
-INFORMATION (ExampleParser): Parse collection method example 'Download activation file'
-INFORMATION (ExampleParser): Parse collection method example 'Download file for reset password of the sensor'
-INFORMATION (ExampleParser): Parse collection method example 'Trigger threat intelligence package update'
-INFORMATION (ExampleParser): Parse collection method example 'List IoT sensors'
-INFORMATION (ExampleParser): Parse collection method example 'Get IoT sensor'
-INFORMATION (ExampleParser): Parse collection method example 'Delete IoT sensor'
-INFORMATION (ExampleParser): Parse collection method example 'Download activation file'
-INFORMATION (ExampleParser): Parse collection method example 'Download file for reset password of the sensor'
-INFORMATION (ExampleParser): Parse collection method example 'Trigger threat intelligence package update'
-INFORMATION (ExampleParser): Parse resource create example 'Create or update IoT sensor'
-INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SensorModel', resource define method 'define'
-INFORMATION (ExampleParser): Parse resource create example 'Create or update IoT sensor'
-
-```
-**stderr**
-```
-ERROR (FluentGen): Failed to successfully run fluentgen plugin java.lang.NullPointerException
-java.lang.NullPointerException
-	at com.azure.autorest.fluent.mapper.ExampleParser.parseNodeFromParameter(ExampleParser.java:427)
-	at com.azure.autorest.fluent.mapper.ExampleParser.parseResourceCreate(ExampleParser.java:268)
-	at com.azure.autorest.fluent.mapper.ExampleParser.lambda$parseResourceCollection$3(ExampleParser.java:106)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at com.azure.autorest.fluent.mapper.ExampleParser.parseResourceCollection(ExampleParser.java:105)
-	at com.azure.autorest.fluent.mapper.FluentMapper.lambda$map$1(FluentMapper.java:65)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:271)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-	at com.azure.autorest.fluent.mapper.FluentMapper.map(FluentMapper.java:67)
-	at com.azure.autorest.fluent.FluentGen.handleFluentLite(FluentGen.java:291)
-	at com.azure.autorest.fluent.FluentGen.processInternal(FluentGen.java:106)
 	at com.azure.autorest.extension.base.plugin.NewPlugin.process(NewPlugin.java:206)
 	at com.azure.autorest.fluent.Main.lambda$main$1(Main.java:18)
 	at com.azure.autorest.extension.base.jsonrpc.Connection.lambda$dispatch$2(Connection.java:151)
@@ -1446,8 +1234,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.183 s
-[INFO] Finished at: 2021-11-08T19:02:10Z
+[INFO] Total time:  1.910 s
+[INFO] Finished at: 2021-11-09T18:54:31Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1740,8 +1528,8 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [CurrentQuotaLimitBase, QuotaRequestOneResourceSubmitResponse, AppliedReservations, QuotaRequestDetails, ExchangeOperationResultResponse, ReservationResponse, CalculateExchangeOperationResultResponse, QuotaRequestSubmitResponse201, ReservationOrderResponse, ChangeDirectoryResponse, AvailableScopeProperties, OperationResponse, Catalog, CalculatePriceResponse]
-INFORMATION (FluentMapper): Add Inner for type 'CurrentQuotaLimitBase': [QuotaRequestOneResourceProperties, CurrentQuotaLimit]
+INFORMATION (FluentMapper): Add Inner to response types: [ReservationResponse, ExchangeOperationResultResponse, CurrentQuotaLimitBase, QuotaRequestSubmitResponse201, AvailableScopeProperties, ReservationOrderResponse, QuotaRequestOneResourceSubmitResponse, QuotaRequestDetails, CalculatePriceResponse, Catalog, CalculateExchangeOperationResultResponse, ChangeDirectoryResponse, AppliedReservations, OperationResponse]
+INFORMATION (FluentMapper): Add Inner for type 'CurrentQuotaLimitBase': [CurrentQuotaLimit, QuotaRequestOneResourceProperties]
 INFORMATION (FluentMapper): Add Inner for type 'QuotaRequestOneResourceProperties': []
 
 ```
@@ -1897,12 +1685,12 @@ WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive 
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:63:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines"].get.parameters[4].name)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:332:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/processes"].get.parameters[5].name)
-WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (OperationIdNounVerb/R1001/SDKViolation): Per the Noun_Verb convention for Operation Ids, the noun 'Machines' should not appear after the underscore. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:971:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/machineGroups"].get.operationId)
 WARNING (PutInOperationName/R1006/SDKViolation): 'PUT' operation 'MachineGroups_Update' should use method name 'Create'. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1515:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machineGroups/{machineGroupName}"].put.operationId)
+WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-enum type extension set with appropriate options. Property name: kind
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1645:8 ($.definitions.ResourceReference.properties.kind)
 WARNING (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-enum type extension set with appropriate options. Property name: kind
@@ -1955,7 +1743,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [MapResponse, Machine, Process, MachinesSummary, Liveness, ClientGroup, Port, Connection, MachineGroup, ClientGroupMembersCount, ClientGroupMember]
+INFORMATION (FluentMapper): Add Inner to response types: [ClientGroupMember, Port, MachinesSummary, Machine, Liveness, MachineGroup, Connection, ClientGroupMembersCount, Process, ClientGroup, MapResponse]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -2134,93 +1922,6 @@ java.lang.NullPointerException
 </details>
 
 <details>
-<summary>streamanalytics</summary>
-
-**stdout**
-```
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] --< com.azure.resourcemanager:azure-resourcemanager-streamanalytics >---
-[INFO] Building Microsoft Azure SDK for StreamAnalytics Management 1.0.0-beta.1
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ azure-resourcemanager-streamanalytics ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ azure-resourcemanager-streamanalytics ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 279 source files to /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/target/classes
-[INFO] -------------------------------------------------------------
-[ERROR] COMPILATION ERROR : 
-[INFO] -------------------------------------------------------------
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/TestDatasourceResultImpl.java:[24,33] cannot find symbol
-  symbol:   method status()
-  location: class com.azure.resourcemanager.streamanalytics.fluent.models.TestDatasourceResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/QueryTestingResultImpl.java:[24,33] cannot find symbol
-  symbol:   method status()
-  location: class com.azure.resourcemanager.streamanalytics.fluent.models.QueryTestingResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/QueryTestingResultImpl.java:[28,33] cannot find symbol
-  symbol:   method outputUri()
-  location: class com.azure.resourcemanager.streamanalytics.fluent.models.QueryTestingResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/SampleInputResultImpl.java:[26,33] cannot find symbol
-  symbol:   method status()
-  location: class com.azure.resourcemanager.streamanalytics.fluent.models.SampleInputResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/SampleInputResultImpl.java:[30,47] cannot find symbol
-  symbol:   method diagnostics()
-  location: class com.azure.resourcemanager.streamanalytics.fluent.models.SampleInputResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/SampleInputResultImpl.java:[39,33] cannot find symbol
-  symbol:   method eventsDownloadUrl()
-  location: class com.azure.resourcemanager.streamanalytics.fluent.models.SampleInputResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/SampleInputResultImpl.java:[43,33] cannot find symbol
-  symbol:   method lastArrivalTime()
-  location: class com.azure.resourcemanager.streamanalytics.fluent.models.SampleInputResultInner
-[INFO] 7 errors 
-[INFO] -------------------------------------------------------------
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.993 s
-[INFO] Finished at: 2021-11-08T19:41:24Z
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-streamanalytics: Compilation failure: Compilation failure: 
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/TestDatasourceResultImpl.java:[24,33] cannot find symbol
-[ERROR]   symbol:   method status()
-[ERROR]   location: class com.azure.resourcemanager.streamanalytics.fluent.models.TestDatasourceResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/QueryTestingResultImpl.java:[24,33] cannot find symbol
-[ERROR]   symbol:   method status()
-[ERROR]   location: class com.azure.resourcemanager.streamanalytics.fluent.models.QueryTestingResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/QueryTestingResultImpl.java:[28,33] cannot find symbol
-[ERROR]   symbol:   method outputUri()
-[ERROR]   location: class com.azure.resourcemanager.streamanalytics.fluent.models.QueryTestingResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/SampleInputResultImpl.java:[26,33] cannot find symbol
-[ERROR]   symbol:   method status()
-[ERROR]   location: class com.azure.resourcemanager.streamanalytics.fluent.models.SampleInputResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/SampleInputResultImpl.java:[30,47] cannot find symbol
-[ERROR]   symbol:   method diagnostics()
-[ERROR]   location: class com.azure.resourcemanager.streamanalytics.fluent.models.SampleInputResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/SampleInputResultImpl.java:[39,33] cannot find symbol
-[ERROR]   symbol:   method eventsDownloadUrl()
-[ERROR]   location: class com.azure.resourcemanager.streamanalytics.fluent.models.SampleInputResultInner
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-streamanalytics/src/main/java/com/azure/resourcemanager/streamanalytics/implementation/SampleInputResultImpl.java:[43,33] cannot find symbol
-[ERROR]   symbol:   method lastArrivalTime()
-[ERROR]   location: class com.azure.resourcemanager.streamanalytics.fluent.models.SampleInputResultInner
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-
-```
-**stderr**
-```
-
-```
-</details>
-
-<details>
 <summary>visualstudio</summary>
 
 **stdout**
@@ -2258,8 +1959,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.727 s
-[INFO] Finished at: 2021-11-08T19:45:29Z
+[INFO] Total time:  1.636 s
+[INFO] Finished at: 2021-11-09T19:32:19Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
