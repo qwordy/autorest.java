@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2021-12-13T19:34:05.613808
+Generated at 2021-12-14T19:34:15.179386
 ## Success
 <details>
 <summary>RP count: 186</summary>
@@ -285,8 +285,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.784 s
-[INFO] Finished at: 2021-12-13T18:23:46Z
+[INFO] Total time:  4.091 s
+[INFO] Finished at: 2021-12-14T18:24:06Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-applicationinsights: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-applicationinsights/src/main/java/com/azure/resourcemanager/applicationinsights/fluent/OperationsClient.java:[46,39] method list() is already defined in interface com.azure.resourcemanager.applicationinsights.fluent.OperationsClient
@@ -363,8 +363,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.944 s
-[INFO] Finished at: 2021-12-13T18:24:54Z
+[INFO] Total time:  3.908 s
+[INFO] Finished at: 2021-12-14T18:25:14Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[225,19] method principalId() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
@@ -786,7 +786,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [KeyListResult, JobStream, TestJob, SourceControl, Usage, HybridRunbookWorkerGroup, ConnectionType, Runbook, DscNode, JobStreamListResult, DscNodeReport, Credential, Module, SoftwareUpdateConfiguration, LinkedWorkspace, RunbookDraft, Statistics, Job, SourceControlSyncJobStream, Connection, SoftwareUpdateConfigurationMachineRunListResult, RunbookDraftUndoEditResult, AgentRegistration, Certificate, JobCollectionItem, Watcher, NodeCounts, Variable, PrivateEndpointConnection, HybridRunbookWorker, SoftwareUpdateConfigurationMachineRun, Webhook, Operation, DscConfiguration, SoftwareUpdateConfigurationListResult, SoftwareUpdateConfigurationRunListResult, JobSchedule, GraphicalRunbookContent, DscCompilationJob, PrivateLinkResource, Schedule, SoftwareUpdateConfigurationRun, SourceControlSyncJobStreamById, SourceControlSyncJob, SourceControlSyncJobById, Activity, DscNodeConfiguration, AutomationAccount, TypeField]
+INFORMATION (FluentMapper): Add Inner to response types: [DscNode, SoftwareUpdateConfigurationRun, SoftwareUpdateConfigurationMachineRun, Certificate, KeyListResult, Connection, DscCompilationJob, JobCollectionItem, Schedule, JobSchedule, DscConfiguration, Usage, HybridRunbookWorkerGroup, Activity, SoftwareUpdateConfigurationMachineRunListResult, RunbookDraftUndoEditResult, PrivateEndpointConnection, AgentRegistration, SourceControl, Watcher, SoftwareUpdateConfigurationListResult, JobStreamListResult, GraphicalRunbookContent, Statistics, Job, Variable, SoftwareUpdateConfiguration, AutomationAccount, TypeField, Runbook, TestJob, SoftwareUpdateConfigurationRunListResult, HybridRunbookWorker, JobStream, NodeCounts, DscNodeReport, Module, RunbookDraft, SourceControlSyncJobStreamById, ConnectionType, Webhook, Credential, SourceControlSyncJobStream, SourceControlSyncJobById, SourceControlSyncJob, LinkedWorkspace, PrivateLinkResource, DscNodeConfiguration, Operation]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookProperties, RunbookCreateOrUpdateProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
@@ -1119,8 +1119,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.986 s
-[INFO] Finished at: 2021-12-13T18:29:27Z
+[INFO] Total time:  3.078 s
+[INFO] Finished at: 2021-12-14T18:29:46Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-botservice: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-botservice/src/main/java/com/azure/resourcemanager/botservice/models/Site.java:[306,17] method withSiteName(java.lang.String) is already defined in class com.azure.resourcemanager.botservice.models.Site
@@ -1285,7 +1285,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Application, Device, GroupItem, AndroidMamPolicy, FlaggedEnrolledApp, OperationResult, Location, FlaggedUser, IOsmamPolicy, WipeDeviceOperationResult]
+INFORMATION (FluentMapper): Add Inner to response types: [FlaggedUser, Location, Application, FlaggedEnrolledApp, WipeDeviceOperationResult, Device, GroupItem, IOsmamPolicy, OperationResult, AndroidMamPolicy]
 
 ```
 **stderr**
@@ -1341,8 +1341,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.879 s
-[INFO] Finished at: 2021-12-13T18:53:20Z
+[INFO] Total time:  1.699 s
+[INFO] Finished at: 2021-12-14T18:53:29Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1786,7 +1786,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [EntityTimelineResponse, DataConnectorRequirementsState, Repo, MetadataModel, Settings, WatchlistItem, EntityQueryTemplate, Entity, DataConnector, SentinelOnboardingState, SentinelOnboardingStatesList, SourceControl, AlertRule, Relation, EntityExpandResponse, ThreatIntelligenceMetricsList, IncidentAlertList, IncidentEntitiesResponse, SettingList, Watchlist, TeamInformation, BookmarkExpandResponse, GetQueriesResponse, ActionResponse, Bookmark, IncidentComment, Operation, EntityGetInsightsResponse, EnrichmentIpGeodata, OfficeConsent, EntityQuery, AlertRuleTemplate, EnrichmentDomainWhois, IncidentBookmarkList, ThreatIntelligenceInformation, AutomationRule, Incident]
+INFORMATION (FluentMapper): Add Inner to response types: [ThreatIntelligenceInformation, EntityQuery, DataConnectorRequirementsState, Operation, Relation, SettingList, SentinelOnboardingState, Repo, AlertRuleTemplate, EntityQueryTemplate, ActionResponse, EntityTimelineResponse, EnrichmentDomainWhois, EntityGetInsightsResponse, DataConnector, SentinelOnboardingStatesList, Bookmark, Settings, Watchlist, BookmarkExpandResponse, Entity, ThreatIntelligenceMetricsList, AlertRule, EntityExpandResponse, GetQueriesResponse, SourceControl, WatchlistItem, MetadataModel, Incident, TeamInformation, EnrichmentIpGeodata, IncidentAlertList, AutomationRule, IncidentComment, OfficeConsent, IncidentBookmarkList, IncidentEntitiesResponse]
 INFORMATION (FluentMapper): Add Inner for type 'TeamInformation': [IncidentProperties]
 INFORMATION (FluentMapper): Add Inner for type 'IncidentProperties': []
 
@@ -1964,7 +1964,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [MachineGroup, Connection, ClientGroupMember, ClientGroup, ClientGroupMembersCount, Liveness, Machine, MachinesSummary, Process, MapResponse, Port]
+INFORMATION (FluentMapper): Add Inner to response types: [Liveness, MapResponse, Process, ClientGroupMembersCount, Machine, ClientGroup, MachineGroup, Connection, ClientGroupMember, MachinesSummary, Port]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -2103,7 +2103,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [OperationResponse, HybridUseBenefitModel]
+INFORMATION (FluentMapper): Add Inner to response types: [HybridUseBenefitModel, OperationResponse]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'HybridUseBenefitModel', method reference 'create', body parameter 'HybridUseBenefitModelInner'
@@ -2197,8 +2197,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.453 s
-[INFO] Finished at: 2021-12-13T19:30:05Z
+[INFO] Total time:  1.527 s
+[INFO] Finished at: 2021-12-14T19:30:13Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
