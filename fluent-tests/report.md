@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2021-12-29T19:34:05.463018
+Generated at 2021-12-30T19:38:45.251698
 ## Success
 <details>
 <summary>RP count: 188</summary>
@@ -286,8 +286,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.762 s
-[INFO] Finished at: 2021-12-29T18:24:27Z
+[INFO] Total time:  3.924 s
+[INFO] Finished at: 2021-12-30T18:24:20Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-applicationinsights: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-applicationinsights/src/main/java/com/azure/resourcemanager/applicationinsights/fluent/OperationsClient.java:[46,39] method list() is already defined in interface com.azure.resourcemanager.applicationinsights.fluent.OperationsClient
@@ -364,8 +364,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.687 s
-[INFO] Finished at: 2021-12-29T18:25:43Z
+[INFO] Total time:  3.934 s
+[INFO] Finished at: 2021-12-30T18:25:39Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[225,19] method principalId() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
@@ -1120,8 +1120,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.001 s
-[INFO] Finished at: 2021-12-29T18:30:07Z
+[INFO] Total time:  2.983 s
+[INFO] Finished at: 2021-12-30T18:30:19Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-botservice: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-botservice/src/main/java/com/azure/resourcemanager/botservice/models/Site.java:[306,17] method withSiteName(java.lang.String) is already defined in class com.azure.resourcemanager.botservice.models.Site
@@ -1286,7 +1286,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Application, OperationResult, GroupItem, Device, WipeDeviceOperationResult, IOsmamPolicy, AndroidMamPolicy, FlaggedEnrolledApp, Location, FlaggedUser]
+INFORMATION (FluentMapper): Add Inner to response types: [GroupItem, FlaggedUser, Device, FlaggedEnrolledApp, OperationResult, AndroidMamPolicy, IOsmamPolicy, Application, WipeDeviceOperationResult, Location]
 
 ```
 **stderr**
@@ -1342,8 +1342,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.889 s
-[INFO] Finished at: 2021-12-29T18:53:33Z
+[INFO] Total time:  1.950 s
+[INFO] Finished at: 2021-12-30T18:55:07Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1787,7 +1787,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [OfficeConsent, SentinelOnboardingStatesList, SourceControl, ActionResponse, SentinelOnboardingState, IncidentComment, TeamInformation, EntityGetInsightsResponse, Watchlist, EnrichmentDomainWhois, Operation, Bookmark, WatchlistItem, AutomationRule, Entity, MetadataModel, SettingList, EntityExpandResponse, EntityTimelineResponse, DataConnector, ThreatIntelligenceMetricsList, Relation, EnrichmentIpGeodata, EntityQueryTemplate, IncidentAlertList, EntityQuery, DataConnectorRequirementsState, IncidentBookmarkList, AlertRule, Repo, IncidentEntitiesResponse, BookmarkExpandResponse, ThreatIntelligenceInformation, AlertRuleTemplate, Incident, GetQueriesResponse, Settings]
+INFORMATION (FluentMapper): Add Inner to response types: [TeamInformation, WatchlistItem, IncidentEntitiesResponse, SourceControl, SentinelOnboardingStatesList, Watchlist, EnrichmentDomainWhois, GetQueriesResponse, EntityGetInsightsResponse, IncidentBookmarkList, IncidentComment, SettingList, ThreatIntelligenceInformation, MetadataModel, BookmarkExpandResponse, IncidentAlertList, Repo, ActionResponse, EntityTimelineResponse, Settings, Entity, EntityExpandResponse, EntityQuery, Operation, AlertRuleTemplate, SentinelOnboardingState, AlertRule, OfficeConsent, DataConnectorRequirementsState, ThreatIntelligenceMetricsList, DataConnector, EnrichmentIpGeodata, Relation, AutomationRule, Incident, Bookmark, EntityQueryTemplate]
 INFORMATION (FluentMapper): Add Inner for type 'TeamInformation': [IncidentProperties]
 INFORMATION (FluentMapper): Add Inner for type 'IncidentProperties': []
 
@@ -2078,8 +2078,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.586 s
-[INFO] Finished at: 2021-12-29T19:30:08Z
+[INFO] Total time:  1.951 s
+[INFO] Finished at: 2021-12-30T19:34:23Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
