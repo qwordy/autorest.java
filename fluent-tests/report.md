@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2022-01-19T20:07:03.782561
+Generated at 2022-01-20T20:02:12.804496
 ## Success
 <details>
 <summary>RP count: 189</summary>
@@ -286,8 +286,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.502 s
-[INFO] Finished at: 2022-01-19T18:25:40Z
+[INFO] Total time:  5.264 s
+[INFO] Finished at: 2022-01-20T18:25:12Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-applicationinsights: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-applicationinsights/src/main/java/com/azure/resourcemanager/applicationinsights/fluent/OperationsClient.java:[46,39] method list() is already defined in interface com.azure.resourcemanager.applicationinsights.fluent.OperationsClient
@@ -349,30 +349,36 @@ FATAL: Error: Name is empty!
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ azure-resourcemanager-authorization ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 271 source files to /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/target/classes
+[INFO] Compiling 139 source files to /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/target/classes
 [INFO] -------------------------------------------------------------
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[225,19] method principalId() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[234,42] method principalType() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[243,19] method principalName() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[252,19] method userPrincipalName() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewScheduleDefinitionProperties.java:[627,43] method principalType() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewScheduleDefinitionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[223,19] method id() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[232,19] method displayName() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[277,19] method principalId() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[286,42] method principalType() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[295,19] method principalName() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[304,19] method userPrincipalName() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewScheduleDefinitionProperties.java:[689,43] method principalType() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewScheduleDefinitionProperties
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewRecurrenceSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewRecurrenceSettings
-[INFO] 6 errors 
+[INFO] 9 errors 
 [INFO] -------------------------------------------------------------
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.573 s
-[INFO] Finished at: 2022-01-19T18:27:29Z
+[INFO] Total time:  4.121 s
+[INFO] Finished at: 2022-01-20T18:26:42Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[225,19] method principalId() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[234,42] method principalType() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[243,19] method principalName() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[252,19] method userPrincipalName() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
-[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewScheduleDefinitionProperties.java:[627,43] method principalType() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewScheduleDefinitionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[223,19] method id() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[232,19] method displayName() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[277,19] method principalId() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[286,42] method principalType() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[295,19] method principalName() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewDecisionProperties.java:[304,19] method userPrincipalName() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewDecisionProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewScheduleDefinitionProperties.java:[689,43] method principalType() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewScheduleDefinitionProperties
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewRecurrenceSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewRecurrenceSettings
 [ERROR] -> [Help 1]
 [ERROR] 
@@ -1120,8 +1126,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.299 s
-[INFO] Finished at: 2022-01-19T18:33:55Z
+[INFO] Total time:  4.114 s
+[INFO] Finished at: 2022-01-20T18:32:44Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-botservice: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-botservice/src/main/java/com/azure/resourcemanager/botservice/models/Site.java:[306,17] method withSiteName(java.lang.String) is already defined in class com.azure.resourcemanager.botservice.models.Site
@@ -1286,7 +1292,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Location, Device, OperationResult, AndroidMamPolicy, WipeDeviceOperationResult, GroupItem, Application, IOsmamPolicy, FlaggedUser, FlaggedEnrolledApp]
+INFORMATION (FluentMapper): Add Inner to response types: [GroupItem, OperationResult, AndroidMamPolicy, Location, Application, WipeDeviceOperationResult, Device, IOsmamPolicy, FlaggedEnrolledApp, FlaggedUser]
 
 ```
 **stderr**
@@ -1342,8 +1348,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.803 s
-[INFO] Finished at: 2022-01-19T19:09:02Z
+[INFO] Total time:  2.495 s
+[INFO] Finished at: 2022-01-20T19:05:37Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1708,7 +1714,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Port, MachineGroup, ClientGroupMember, Machine, MapResponse, Liveness, ClientGroup, MachinesSummary, Process, ClientGroupMembersCount, Connection]
+INFORMATION (FluentMapper): Add Inner to response types: [Process, Connection, Port, MapResponse, ClientGroupMember, ClientGroupMembersCount, MachinesSummary, ClientGroup, Machine, MachineGroup, Liveness]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -1821,8 +1827,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.146 s
-[INFO] Finished at: 2022-01-19T20:01:37Z
+[INFO] Total time:  2.342 s
+[INFO] Finished at: 2022-01-20T19:56:45Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
