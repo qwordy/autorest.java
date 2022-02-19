@@ -1,8 +1,8 @@
 # Java Codegen Report
-Generated at 2022-02-18T19:41:05.697925
+Generated at 2022-02-19T19:42:16.817676
 ## Success
 <details>
-<summary>RP count: 192</summary>
+<summary>RP count: 194</summary>
 
 - EnterpriseKnowledgeGraph
 - addons
@@ -59,6 +59,7 @@ Generated at 2022-02-18T19:41:05.697925
 - datafactory
 - datalake-analytics
 - datalake-store
+- datamigration
 - dataprotection
 - datashare
 - deploymentmanager
@@ -120,6 +121,7 @@ Generated at 2022-02-18T19:41:05.697925
 - mediaservices
 - migrate
 - mixedreality
+- mobilenetwork
 - monitor
 - msi
 - mysql
@@ -269,8 +271,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.401 s
-[INFO] Finished at: 2022-02-18T18:25:43Z
+[INFO] Total time:  3.390 s
+[INFO] Finished at: 2022-02-19T18:24:31Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
@@ -1028,8 +1030,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.073 s
-[INFO] Finished at: 2022-02-18T18:30:35Z
+[INFO] Total time:  3.112 s
+[INFO] Finished at: 2022-02-19T18:29:25Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-botservice: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-botservice/src/main/java/com/azure/resourcemanager/botservice/models/Site.java:[306,17] method withSiteName(java.lang.String) is already defined in class com.azure.resourcemanager.botservice.models.Site
@@ -1045,26 +1047,6 @@ java.lang.IllegalStateException: model type not found for type String and value 
 ```
 **stderr**
 ```
-
-```
-</details>
-
-<details>
-<summary>datamigration</summary>
-
-**stdout**
-```
-SourceMapConsumer.initialize is a no-op when running in node.js
-AutoRest code generation utility [cli version: 3.5.1; node: v14.19.0]
-(C) 2018 Microsoft Corporation.
-https://aka.ms/autorest
-info    | AutoRest core version selected from configuration: 3.4.5.
-   Loading AutoRest core      '/home/runner/.autorest/@autorestcore@3.4.5/nodemodules/@autorest/core/dist' (3.4.5)
-
-```
-**stderr**
-```
-  Error: Unable to acquire exclusive lock on 'home_runner.autorest.busy-lock' before timeout 20000 msec.
 
 ```
 </details>
@@ -1214,7 +1196,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [OperationResult, GroupItem, Application, IOsmamPolicy, AndroidMamPolicy, Location, WipeDeviceOperationResult, FlaggedEnrolledApp, Device, FlaggedUser]
+INFORMATION (FluentMapper): Add Inner to response types: [Device, FlaggedUser, AndroidMamPolicy, FlaggedEnrolledApp, OperationResult, Application, IOsmamPolicy, Location, GroupItem, WipeDeviceOperationResult]
 
 ```
 **stderr**
@@ -1270,8 +1252,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.215 s
-[INFO] Finished at: 2022-02-18T18:56:40Z
+[INFO] Total time:  1.872 s
+[INFO] Finished at: 2022-02-19T18:56:24Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1636,7 +1618,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Port, ClientGroup, MachinesSummary, MachineGroup, Process, Machine, Connection, MapResponse, ClientGroupMembersCount, ClientGroupMember, Liveness]
+INFORMATION (FluentMapper): Add Inner to response types: [Port, MachineGroup, ClientGroupMember, Machine, MapResponse, Liveness, ClientGroup, MachinesSummary, Process, ClientGroupMembersCount, Connection]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -1749,8 +1731,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.723 s
-[INFO] Finished at: 2022-02-18T19:36:42Z
+[INFO] Total time:  1.642 s
+[INFO] Finished at: 2022-02-19T19:37:51Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
