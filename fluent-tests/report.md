@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2022-04-09T19:37:03.295086
+Generated at 2022-04-10T19:54:42.437928
 ## Success
 <details>
 <summary>RP count: 196</summary>
@@ -272,8 +272,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.942 s
-[INFO] Finished at: 2022-04-09T18:25:53Z
+[INFO] Total time:  3.433 s
+[INFO] Finished at: 2022-04-10T18:27:48Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
@@ -697,7 +697,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [DscCompilationJob, TestJob, Connection, ConnectionType, AgentRegistration, Schedule, SourceControlSyncJobStream, Activity, RunbookDraft, Credential, LinkedWorkspace, HybridRunbookWorker, JobStream, Runbook, DscNodeReport, NodeCounts, Webhook, TypeField, PrivateEndpointConnection, SoftwareUpdateConfigurationRun, SourceControlSyncJobStreamById, Watcher, Module, SourceControlSyncJobById, HybridRunbookWorkerGroup, JobSchedule, KeyListResult, DscNodeConfiguration, Variable, Job, Operation, SoftwareUpdateConfigurationRunListResult, Statistics, SoftwareUpdateConfigurationListResult, Usage, DscNode, JobCollectionItem, SoftwareUpdateConfigurationMachineRunListResult, SourceControl, SoftwareUpdateConfigurationMachineRun, AutomationAccount, GraphicalRunbookContent, SourceControlSyncJob, DscConfiguration, PrivateLinkResource, JobStreamListResult, RunbookDraftUndoEditResult, Certificate, SoftwareUpdateConfiguration]
+INFORMATION (FluentMapper): Add Inner to response types: [Connection, ConnectionType, Variable, DscNode, Schedule, Usage, AutomationAccount, HybridRunbookWorkerGroup, Statistics, SourceControlSyncJobStreamById, DscConfiguration, SoftwareUpdateConfigurationMachineRun, RunbookDraft, Watcher, PrivateLinkResource, GraphicalRunbookContent, HybridRunbookWorker, RunbookDraftUndoEditResult, Operation, DscNodeReport, Webhook, Credential, SourceControlSyncJob, DscCompilationJob, JobStream, Job, JobSchedule, SourceControlSyncJobStream, SoftwareUpdateConfigurationListResult, TypeField, Activity, DscNodeConfiguration, SourceControlSyncJobById, JobCollectionItem, SoftwareUpdateConfiguration, NodeCounts, SoftwareUpdateConfigurationMachineRunListResult, JobStreamListResult, SourceControl, SoftwareUpdateConfigurationRun, KeyListResult, TestJob, PrivateEndpointConnection, Certificate, SoftwareUpdateConfigurationRunListResult, Module, LinkedWorkspace, Runbook, AgentRegistration]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookProperties, RunbookCreateOrUpdateProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
@@ -1030,8 +1030,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.933 s
-[INFO] Finished at: 2022-04-09T18:30:22Z
+[INFO] Total time:  3.478 s
+[INFO] Finished at: 2022-04-10T18:33:14Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-botservice: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-botservice/src/main/java/com/azure/resourcemanager/botservice/models/Site.java:[306,17] method withSiteName(java.lang.String) is already defined in class com.azure.resourcemanager.botservice.models.Site
@@ -1194,7 +1194,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [OperationResult, FlaggedEnrolledApp, Device, GroupItem, WipeDeviceOperationResult, AndroidMamPolicy, Location, IOsmamPolicy, Application, FlaggedUser]
+INFORMATION (FluentMapper): Add Inner to response types: [FlaggedEnrolledApp, Device, WipeDeviceOperationResult, AndroidMamPolicy, OperationResult, Location, FlaggedUser, GroupItem, Application, IOsmamPolicy]
 
 ```
 **stderr**
@@ -1250,8 +1250,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.714 s
-[INFO] Finished at: 2022-04-09T18:54:57Z
+[INFO] Total time:  2.190 s
+[INFO] Finished at: 2022-04-10T19:02:51Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1587,7 +1587,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [MapResponse, MachinesSummary, MachineGroup, ClientGroupMember, Connection, Machine, Liveness, ClientGroupMembersCount, ClientGroup, Process, Port]
+INFORMATION (FluentMapper): Add Inner to response types: [Port, ClientGroup, MachineGroup, ClientGroupMembersCount, MachinesSummary, Process, Connection, ClientGroupMember, Machine, MapResponse, Liveness]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -1700,8 +1700,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.471 s
-[INFO] Finished at: 2022-04-09T19:33:02Z
+[INFO] Total time:  1.910 s
+[INFO] Finished at: 2022-04-10T19:49:41Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
