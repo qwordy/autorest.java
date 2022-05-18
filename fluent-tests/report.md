@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2022-05-17T19:50:29.686678
+Generated at 2022-05-18T20:00:41.044289
 ## Success
 <details>
 <summary>RP count: 201</summary>
@@ -279,8 +279,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.344 s
-[INFO] Finished at: 2022-05-17T18:29:08Z
+[INFO] Total time:  3.648 s
+[INFO] Finished at: 2022-05-18T18:29:15Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
@@ -1037,8 +1037,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.280 s
-[INFO] Finished at: 2022-05-17T18:34:10Z
+[INFO] Total time:  3.609 s
+[INFO] Finished at: 2022-05-18T18:34:56Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-botservice: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-botservice/src/main/java/com/azure/resourcemanager/botservice/models/Site.java:[306,17] method withSiteName(java.lang.String) is already defined in class com.azure.resourcemanager.botservice.models.Site
@@ -1114,8 +1114,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.871 s
-[INFO] Finished at: 2022-05-17T18:54:42Z
+[INFO] Total time:  3.625 s
+[INFO] Finished at: 2022-05-18T18:58:03Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-education: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-education/src/main/java/com/azure/resourcemanager/education/fluent/models/LabProperties.java:[264,19] method currency() is already defined in class com.azure.resourcemanager.education.fluent.models.LabProperties
@@ -1254,7 +1254,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [FlaggedUser, AndroidMamPolicy, Location, Application, Device, GroupItem, WipeDeviceOperationResult, IOsmamPolicy, OperationResult, FlaggedEnrolledApp]
+INFORMATION (FluentMapper): Add Inner to response types: [Device, IOsmamPolicy, WipeDeviceOperationResult, Application, FlaggedEnrolledApp, GroupItem, OperationResult, Location, FlaggedUser, AndroidMamPolicy]
 
 ```
 **stderr**
@@ -1310,8 +1310,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.163 s
-[INFO] Finished at: 2022-05-17T19:02:32Z
+[INFO] Total time:  2.447 s
+[INFO] Finished at: 2022-05-18T19:06:54Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1578,8 +1578,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.098 s
-[INFO] Finished at: 2022-05-17T19:18:09Z
+[INFO] Total time:  3.489 s
+[INFO] Finished at: 2022-05-18T19:24:31Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-orbital: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-orbital/src/main/java/com/azure/resourcemanager/orbital/models/Status.java:[28,5] variable SUCCEEDED is already defined in enum com.azure.resourcemanager.orbital.models.Status
@@ -1774,7 +1774,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Port, MapResponse, Connection, Liveness, MachineGroup, ClientGroup, MachinesSummary, Process, ClientGroupMembersCount, ClientGroupMember, Machine]
+INFORMATION (FluentMapper): Add Inner to response types: [Liveness, Machine, MapResponse, MachinesSummary, ClientGroupMembersCount, Port, Process, MachineGroup, ClientGroup, Connection, ClientGroupMember]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -1887,8 +1887,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.763 s
-[INFO] Finished at: 2022-05-17T19:45:46Z
+[INFO] Total time:  1.961 s
+[INFO] Finished at: 2022-05-18T19:55:25Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
