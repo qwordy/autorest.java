@@ -1,8 +1,8 @@
 # Java Codegen Report
-Generated at 2022-06-15T19:45:27.833112
+Generated at 2022-06-16T19:59:24.423674
 ## Success
 <details>
-<summary>RP count: 203</summary>
+<summary>RP count: 202</summary>
 
 - EnterpriseKnowledgeGraph
 - addons
@@ -81,7 +81,6 @@ Generated at 2022-06-15T19:45:27.833112
 - elastic
 - elasticsan
 - engagementfabric
-- eventgrid
 - eventhub
 - extendedlocation
 - fluidrelay
@@ -281,8 +280,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.124 s
-[INFO] Finished at: 2022-06-15T18:27:15Z
+[INFO] Total time:  3.615 s
+[INFO] Finished at: 2022-06-16T18:29:33Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
@@ -706,7 +705,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [DscNodeReport, Webhook, DscNode, Job, SoftwareUpdateConfigurationMachineRun, Schedule, SoftwareUpdateConfigurationListResult, SourceControlSyncJobById, SoftwareUpdateConfigurationMachineRunListResult, SourceControlSyncJobStream, AutomationAccount, TestJob, RunbookDraftUndoEditResult, Module, SoftwareUpdateConfigurationRunListResult, KeyListResult, Usage, Certificate, Credential, GraphicalRunbookContent, RunbookDraft, Runbook, Variable, JobStream, JobSchedule, PrivateEndpointConnection, JobStreamListResult, HybridRunbookWorkerGroup, SourceControl, TypeField, SoftwareUpdateConfigurationRun, Statistics, DscNodeConfiguration, SourceControlSyncJob, Operation, SourceControlSyncJobStreamById, HybridRunbookWorker, DscCompilationJob, LinkedWorkspace, NodeCounts, PrivateLinkResource, Activity, DscConfiguration, AgentRegistration, Watcher, JobCollectionItem, Connection, ConnectionType, SoftwareUpdateConfiguration]
+INFORMATION (FluentMapper): Add Inner to response types: [Operation, SoftwareUpdateConfigurationRunListResult, AutomationAccount, SoftwareUpdateConfigurationMachineRunListResult, Statistics, TypeField, DscCompilationJob, SourceControlSyncJobById, HybridRunbookWorkerGroup, SoftwareUpdateConfigurationMachineRun, TestJob, SourceControlSyncJobStream, GraphicalRunbookContent, RunbookDraftUndoEditResult, DscNodeConfiguration, KeyListResult, Credential, Variable, ConnectionType, Schedule, SourceControlSyncJobStreamById, SoftwareUpdateConfiguration, SoftwareUpdateConfigurationListResult, DscNode, Watcher, HybridRunbookWorker, NodeCounts, SourceControl, Job, DscConfiguration, Connection, Activity, Runbook, JobStream, Usage, SourceControlSyncJob, RunbookDraft, JobStreamListResult, JobCollectionItem, DscNodeReport, JobSchedule, PrivateLinkResource, AgentRegistration, Certificate, PrivateEndpointConnection, LinkedWorkspace, SoftwareUpdateConfigurationRun, Webhook, Module]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookProperties, RunbookCreateOrUpdateProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
@@ -1039,8 +1038,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.050 s
-[INFO] Finished at: 2022-06-15T18:32:00Z
+[INFO] Total time:  3.648 s
+[INFO] Finished at: 2022-06-16T18:35:06Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-botservice: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-botservice/src/main/java/com/azure/resourcemanager/botservice/models/Site.java:[306,17] method withSiteName(java.lang.String) is already defined in class com.azure.resourcemanager.botservice.models.Site
@@ -1116,8 +1115,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.950 s
-[INFO] Finished at: 2022-06-15T18:51:47Z
+[INFO] Total time:  3.315 s
+[INFO] Finished at: 2022-06-16T18:57:52Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-education: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-education/src/main/java/com/azure/resourcemanager/education/fluent/models/LabProperties.java:[264,19] method currency() is already defined in class com.azure.resourcemanager.education.fluent.models.LabProperties
@@ -1135,6 +1134,54 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 ```
 **stderr**
 ```
+
+```
+</details>
+
+<details>
+<summary>eventgrid</summary>
+
+**stdout**
+```
+AutoRest code generation utility [cli version: 3.6.1; node: v14.19.3]
+(C) 2018 Microsoft Corporation.
+https://aka.ms/autorest
+info    | AutoRest core version selected from configuration: 3.4.5.
+   Loading AutoRest core      '/home/runner/.autorest/@autorestcore@3.4.5/nodemodules/@autorest/core/dist' (3.4.5)
+INFORMATION: > Loading local AutoRest extension '@autorest/java' (/home/runner/work/autorest.java/autorest.java)
+INFORMATION: > Loading local AutoRest extension '@autorest/java.fluent' (/home/runner/work/autorest.java/autorest.java/fluentgen)
+INFORMATION: > Loading local AutoRest extension '@autorest/java.fluentnamer' (/home/runner/work/autorest.java/autorest.java/fluentnamer)
+INFORMATION: > Loading AutoRest extension '@autorest/modelerfour' (4.18.1->4.18.1)
+
+```
+**stderr**
+```
+
+
+#
+# Fatal error in , line 0
+# Check failed: feedback_value->IsPropertyCell().
+#
+#
+#
+#FailureMessage Object: 0x7ffe5dc77640
+ 1: 0xaa82f1  [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+ 2: 0x1a46f04 V8_Fatal(char const*, ...) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+ 3: 0x1ab2dde v8::internal::compiler::JSHeapBroker::ReadFeedbackForGlobalAccess(v8::internal::compiler::FeedbackSource const&) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+ 4: 0x1ab9ef8 v8::internal::compiler::JSHeapBroker::GetFeedbackForGlobalAccess(v8::internal::compiler::FeedbackSource const&) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+ 5: 0x1c8a956 v8::internal::compiler::JSNativeContextSpecialization::ReduceJSLoadGlobal(v8::internal::compiler::Node*) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+ 6: 0x1ae8823  [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+ 7: 0x1c28250 v8::internal::compiler::GraphReducer::Reduce(v8::internal::compiler::Node*) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+ 8: 0x1c29845 v8::internal::compiler::GraphReducer::ReduceTop() [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+ 9: 0x1c29bf8 v8::internal::compiler::GraphReducer::ReduceNode(v8::internal::compiler::Node*) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+10: 0x1af45b5 v8::internal::compiler::InliningPhase::Run(v8::internal::compiler::PipelineData*, v8::internal::Zone*) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+11: 0x1af4b38 v8::internal::compiler::PipelineImpl::CreateGraph() [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+12: 0x1af4f58 v8::internal::compiler::PipelineCompilationJob::PrepareJobImpl(v8::internal::Isolate*) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+13: 0xc8430e v8::internal::OptimizedCompilationJob::PrepareJob(v8::internal::Isolate*) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+14: 0xc85a1b  [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+15: 0xc86bad v8::internal::Compiler::CompileOptimized(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+16: 0x1086691 v8::internal::Runtime_CompileOptimized_Concurrent(int, unsigned long*, v8::internal::Isolate*) [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
+17: 0x1448df9  [/opt/hostedtoolcache/node/14.19.3/x64/bin/node]
 
 ```
 </details>
@@ -1256,7 +1303,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Location, GroupItem, Device, OperationResult, FlaggedEnrolledApp, IOsmamPolicy, WipeDeviceOperationResult, FlaggedUser, AndroidMamPolicy, Application]
+INFORMATION (FluentMapper): Add Inner to response types: [IOsmamPolicy, AndroidMamPolicy, OperationResult, Location, WipeDeviceOperationResult, FlaggedEnrolledApp, Application, Device, FlaggedUser, GroupItem]
 
 ```
 **stderr**
@@ -1312,8 +1359,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.051 s
-[INFO] Finished at: 2022-06-15T18:59:08Z
+[INFO] Total time:  2.128 s
+[INFO] Finished at: 2022-06-16T19:06:01Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1580,8 +1627,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.988 s
-[INFO] Finished at: 2022-06-15T19:14:28Z
+[INFO] Total time:  3.442 s
+[INFO] Finished at: 2022-06-16T19:23:41Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-orbital: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-orbital/src/main/java/com/azure/resourcemanager/orbital/models/Status.java:[28,5] variable SUCCEEDED is already defined in enum com.azure.resourcemanager.orbital.models.Status
@@ -1776,7 +1823,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Port, MapResponse, Connection, Liveness, MachineGroup, ClientGroup, MachinesSummary, Process, ClientGroupMembersCount, ClientGroupMember, Machine]
+INFORMATION (FluentMapper): Add Inner to response types: [ClientGroup, Machine, Process, Connection, Liveness, MachineGroup, MachinesSummary, Port, ClientGroupMember, ClientGroupMembersCount, MapResponse]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -1889,8 +1936,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.650 s
-[INFO] Finished at: 2022-06-15T19:40:47Z
+[INFO] Total time:  1.821 s
+[INFO] Finished at: 2022-06-16T19:53:59Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
