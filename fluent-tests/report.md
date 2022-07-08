@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2022-07-07T19:48:13.900435
+Generated at 2022-07-08T20:08:53.442264
 ## Success
 <details>
 <summary>RP count: 203</summary>
@@ -281,8 +281,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.566 s
-[INFO] Finished at: 2022-07-07T18:31:04Z
+[INFO] Total time:  4.247 s
+[INFO] Finished at: 2022-07-08T18:30:16Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
@@ -356,8 +356,6 @@ WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not su
 WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not supported in Autorest V3. It will just be ignored. (info > x-ms-code-generation-settings)
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/automation/resource-manager/Microsoft.Automation/preview/2020-01-13-preview/credential.json:11:2
 WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not supported in Autorest V3. It will just be ignored. (info > x-ms-code-generation-settings)
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/automation/resource-manager/Microsoft.Automation/stable/2021-06-22/hybridRunbookWorkerGroup.json:11:2
-WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not supported in Autorest V3. It will just be ignored. (info > x-ms-code-generation-settings)
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/automation/resource-manager/Microsoft.Automation/preview/2020-01-13-preview/jobSchedule.json:11:2
 WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not supported in Autorest V3. It will just be ignored. (info > x-ms-code-generation-settings)
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/automation/resource-manager/Microsoft.Automation/preview/2020-01-13-preview/linkedWorkspace.json:11:2
@@ -414,6 +412,10 @@ WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not su
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/webhook.json:11:2
 WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not supported in Autorest V3. It will just be ignored. (info > x-ms-code-generation-settings)
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/automation/resource-manager/Microsoft.Automation/stable/2021-06-22/hybridRunbookWorker.json:11:2
+WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not supported in Autorest V3. It will just be ignored. (info > x-ms-code-generation-settings)
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/automation/resource-manager/Microsoft.Automation/stable/2022-01-31/deletedAutomationAccount.json:11:2
+WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not supported in Autorest V3. It will just be ignored. (info > x-ms-code-generation-settings)
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/automation/resource-manager/Microsoft.Automation/stable/2022-02-22/hybridRunbookWorkerGroup.json:11:2
 WARNING: Semantic violation: Extension 'x-ms-code-generation-settings' is not supported in Autorest V3. It will just be ignored. (info > x-ms-code-generation-settings)
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/schedule.json:11:2
 WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > ScheduleCreateOrUpdateProperties > properties > frequency)
@@ -542,10 +544,6 @@ WARNING (PreCheck/SchemaMissingType): The schema 'Credential' with an undefined 
 WARNING (PreCheck/SchemaMissingType): The schema 'CredentialListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'CredentialUpdateProperties' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'CredentialUpdateParameters' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
-WARNING (PreCheck/SchemaMissingType): The schema 'RunAsCredentialAssociationProperty' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
-WARNING (PreCheck/SchemaMissingType): The schema 'HybridRunbookWorkerGroup' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
-WARNING (PreCheck/SchemaMissingType): The schema 'HybridRunbookWorkerGroupsListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
-WARNING (PreCheck/SchemaMissingType): The schema 'HybridRunbookWorkerGroupUpdateParameters' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'JobScheduleListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'JobSchedule' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'ScheduleAssociationProperty' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
@@ -652,6 +650,9 @@ WARNING (PreCheck/SchemaMissingType): The schema 'RunbookAssociationProperty' wi
 WARNING (PreCheck/SchemaMissingType): The schema 'WebhookCreateOrUpdateParameters' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'WebhookCreateOrUpdateProperties' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'HybridRunbookWorker' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'RunAsCredentialAssociationProperty' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'HybridRunbookWorkerGroup' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'HybridRunbookWorkerGroupsListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
 WARNING (Modeler/MissingType): The schema 'ScheduleCreateOrUpdateProperties-interval' has no type or format information whatsoever. Location:
    file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/automation/resource-manager/Microsoft.Automation/preview/2020-01-13-preview/schedule.json#/components/schemas/ScheduleCreateOrUpdateProperties-interval
@@ -681,16 +682,15 @@ INFORMATION (ResourceTypeNormalization): Change parent from 'Resource' to 'Proxy
 INFORMATION (ResourceTypeNormalization): Change parent from 'TrackedResource' to 'Resource', for 'Module'
 INFORMATION (ResourceTypeNormalization): Change parent from 'Resource' to 'ProxyResource', for 'TrackedResource'
 INFORMATION (ResourceTypeNormalization): Change parent from 'TrackedResource' to 'Resource', for 'AutomationAccount'
-INFORMATION (ResourceTypeNormalization): Add parent ProxyResource, for 'HybridRunbookWorkerGroup'
 INFORMATION (ResourceTypeNormalization): Change parent from 'Resource' to 'ProxyResource', for 'Watcher'
 INFORMATION (ResourceTypeNormalization): Change parent from 'TrackedResource' to 'Resource', for 'DscConfiguration'
 INFORMATION (ResourceTypeNormalization): Add parent ProxyResource, for 'SoftwareUpdateConfiguration'
 INFORMATION (ResourceTypeNormalization): Change parent from 'TrackedResource' to 'Resource', for 'Runbook'
 INFORMATION (ResourceTypeNormalization): Change parent from 'Resource' to 'ProxyResource', for 'HybridRunbookWorker'
+INFORMATION (ResourceTypeNormalization): Change parent from 'Resource' to 'ProxyResource', for 'HybridRunbookWorkerGroup'
 INFORMATION (ErrorTypeNormalization): Rename error from 'ErrorResponse' to 'ManagementError'
 INFORMATION (SchemaCleanup): Remove unused object schema 'Resource'
 INFORMATION (SchemaCleanup): Remove unused object schema 'TrackedResource'
-INFORMATION (SchemaCleanup): Remove unused object schema 'HybridRunbookWorkerGroupUpdateParameters'
 INFORMATION (SchemaCleanup): Remove unused object schema 'RunbookCreateOrUpdateDraftProperties'
 INFORMATION (SchemaCleanup): Remove unused object schema 'RunbookCreateOrUpdateDraftParameters'
 INFORMATION (SchemaCleanup): Remove unused choice schema 'CreatedByType'
@@ -706,7 +706,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [SourceControl, HybridRunbookWorker, Connection, SoftwareUpdateConfigurationMachineRun, KeyListResult, AgentRegistration, PrivateEndpointConnection, RunbookDraftUndoEditResult, Module, SoftwareUpdateConfigurationRunListResult, DscCompilationJob, Job, SourceControlSyncJob, Runbook, TypeField, RunbookDraft, NodeCounts, LinkedWorkspace, TestJob, AutomationAccount, HybridRunbookWorkerGroup, DscNodeReport, DscNodeConfiguration, Variable, JobSchedule, JobCollectionItem, DscNode, DscConfiguration, Operation, Statistics, JobStreamListResult, SoftwareUpdateConfigurationListResult, SourceControlSyncJobStreamById, ConnectionType, SoftwareUpdateConfigurationRun, SoftwareUpdateConfiguration, Watcher, Usage, SoftwareUpdateConfigurationMachineRunListResult, Activity, Webhook, Credential, GraphicalRunbookContent, SourceControlSyncJobStream, PrivateLinkResource, Certificate, SourceControlSyncJobById, Schedule, JobStream]
+INFORMATION (FluentMapper): Add Inner to response types: [SourceControlSyncJobStreamById, ConnectionType, RunbookDraftUndoEditResult, PrivateEndpointConnection, SoftwareUpdateConfigurationMachineRunListResult, Watcher, Webhook, JobSchedule, LinkedWorkspace, SourceControl, SourceControlSyncJobStream, PrivateLinkResource, SourceControlSyncJobById, KeyListResult, SoftwareUpdateConfigurationRun, AutomationAccount, JobStreamListResult, DscCompilationJob, Usage, SoftwareUpdateConfigurationRunListResult, SoftwareUpdateConfigurationMachineRun, SoftwareUpdateConfigurationListResult, JobStream, Activity, DscNodeReport, TestJob, HybridRunbookWorkerGroup, Schedule, TypeField, Statistics, Variable, JobCollectionItem, SoftwareUpdateConfiguration, Runbook, DeletedAutomationAccountListResult, Connection, AgentRegistration, Credential, Operation, SourceControlSyncJob, DscNode, DscConfiguration, GraphicalRunbookContent, Module, NodeCounts, Job, HybridRunbookWorker, DscNodeConfiguration, Certificate, RunbookDraft]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookProperties, RunbookCreateOrUpdateProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
@@ -762,11 +762,6 @@ INFORMATION (ResourceParser): Fluent model 'Credential' as category NESTED_CHILD
 INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'Credential', method reference 'update', body parameter 'CredentialUpdateParameters'
 INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'Credential', method reference 'get'
 INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'Credential', method reference 'delete'
-INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'HybridRunbookWorkerGroup', method reference 'create', body parameter 'HybridRunbookWorkerGroupCreateOrUpdateParameters'
-INFORMATION (ResourceParser): Fluent model 'HybridRunbookWorkerGroup' as category NESTED_CHILD
-INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'HybridRunbookWorkerGroup', method reference 'update', body parameter 'HybridRunbookWorkerGroupCreateOrUpdateParameters'
-INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'HybridRunbookWorkerGroup', method reference 'get'
-INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'HybridRunbookWorkerGroup', method reference 'delete'
 INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'JobSchedule', method reference 'create', body parameter 'JobScheduleCreateParameters'
 INFORMATION (ResourceParser): Fluent model 'JobSchedule' as category NESTED_CHILD
 INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'JobSchedule', method reference 'get'
@@ -818,6 +813,11 @@ INFORMATION (ResourceParser): Fluent model 'HybridRunbookWorker' as category NES
 INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'HybridRunbookWorker', method reference 'get'
 INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'HybridRunbookWorker', method reference 'delete'
 INFORMATION (ResourceActions): ResourceActions: Fluent model 'HybridRunbookWorker', action methods: [move]
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'HybridRunbookWorkerGroup', method reference 'create', body parameter 'HybridRunbookWorkerGroupCreateOrUpdateParameters'
+INFORMATION (ResourceParser): Fluent model 'HybridRunbookWorkerGroup' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'HybridRunbookWorkerGroup', method reference 'update', body parameter 'HybridRunbookWorkerGroupCreateOrUpdateParameters'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'HybridRunbookWorkerGroup', method reference 'get'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'HybridRunbookWorkerGroup', method reference 'delete'
 INFORMATION (ExampleParser): Parse collection method example 'Gets private endpoint connection.'
 INFORMATION (ExampleParser): Parse collection method example 'Gets private endpoint connection.'
 INFORMATION (ExampleParser): Parse collection method example 'Deletes a private endpoint connection with a given name.'
@@ -910,12 +910,6 @@ INFORMATION (ExampleParser): Parse collection method example 'List credentials b
 INFORMATION (ExampleParser): Parse resource create example 'Create a credential'
 INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'Credential', resource define method 'define'
 INFORMATION (ExampleParser): Parse resource update example 'Update a credential'
-INFORMATION (ExampleParser): Parse collection method example 'Delete a hybrid worker group'
-INFORMATION (ExampleParser): Parse collection method example 'Get a hybrid worker group'
-INFORMATION (ExampleParser): Parse collection method example 'List hybrid worker groups by Automation Account'
-INFORMATION (ExampleParser): Parse resource create example 'Create a hybrid worker group'
-INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'HybridRunbookWorkerGroup', resource define method 'define'
-INFORMATION (ExampleParser): Parse resource update example 'Update hybrid worker group'
 INFORMATION (ExampleParser): Parse collection method example 'Delete a job schedule'
 INFORMATION (ExampleParser): Parse collection method example 'Get a job schedule'
 INFORMATION (ExampleParser): Parse collection method example 'List all job schedules by automation account'
@@ -1039,8 +1033,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.227 s
-[INFO] Finished at: 2022-07-07T18:35:47Z
+[INFO] Total time:  4.038 s
+[INFO] Finished at: 2022-07-08T18:36:16Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-botservice: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-botservice/src/main/java/com/azure/resourcemanager/botservice/models/Site.java:[306,17] method withSiteName(java.lang.String) is already defined in class com.azure.resourcemanager.botservice.models.Site
@@ -1116,8 +1110,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.742 s
-[INFO] Finished at: 2022-07-07T18:55:10Z
+[INFO] Total time:  3.650 s
+[INFO] Finished at: 2022-07-08T19:01:00Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-education: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-education/src/main/java/com/azure/resourcemanager/education/fluent/models/LabProperties.java:[264,19] method currency() is already defined in class com.azure.resourcemanager.education.fluent.models.LabProperties
@@ -1256,7 +1250,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [AndroidMamPolicy, Location, FlaggedUser, Application, Device, IOsmamPolicy, FlaggedEnrolledApp, WipeDeviceOperationResult, OperationResult, GroupItem]
+INFORMATION (FluentMapper): Add Inner to response types: [OperationResult, Location, WipeDeviceOperationResult, IOsmamPolicy, FlaggedEnrolledApp, AndroidMamPolicy, Device, GroupItem, FlaggedUser, Application]
 
 ```
 **stderr**
@@ -1312,8 +1306,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.772 s
-[INFO] Finished at: 2022-07-07T19:02:22Z
+[INFO] Total time:  2.563 s
+[INFO] Finished at: 2022-07-08T19:10:20Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1578,8 +1572,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.185 s
-[INFO] Finished at: 2022-07-07T19:17:50Z
+[INFO] Total time:  4.376 s
+[INFO] Finished at: 2022-07-08T19:30:02Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-orbital: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-orbital/src/main/java/com/azure/resourcemanager/orbital/implementation/SpacecraftsClientImpl.java:[1563,37] cannot find symbol
@@ -1674,10 +1668,6 @@ WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See 
 WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MachineReferenceWithHints > properties > properties > properties > osFamilyHint)
   keys: [ [32m'readOnly'[39m ]
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:179:7
-WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'generatemap' in:'Maps_Generate'. Consider updating the operationId
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1231:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/generateMap"].post.operationId)
-WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'machinegroups' in:'MachineGroups_Create'. Consider updating the operationId
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1405:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machineGroups"].post.operationId)
 WARNING (PreCheck/SchemaMissingType): The schema 'Resource' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'ResourceReference' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'MachineReference' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
@@ -1726,12 +1716,16 @@ WARNING (PreCheck/SchemaMissingType): The schema 'MachineListMapRequest' with an
 WARNING (PreCheck/SchemaMissingType): The schema 'MachineGroupMapRequest' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
 WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'MachineGroup' has a property 'etag' that is already declared the parent schema 'CoreResource' but isn't significantly different. The property has been removed from MachineGroup
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'generatemap' in:'Maps_Generate'. Consider updating the operationId
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1231:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/generateMap"].post.operationId)
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'machinegroups' in:'MachineGroups_Create'. Consider updating the operationId
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1405:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machineGroups"].post.operationId)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:63:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines"].get.parameters[4].name)
-WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:332:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/processes"].get.parameters[5].name)
+WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (OperationIdNounVerb/R1001/SDKViolation): Per the Noun_Verb convention for Operation Ids, the noun 'Machines' should not appear after the underscore. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:971:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/machineGroups"].get.operationId)
 WARNING (PutInOperationName/R1006/SDKViolation): 'PUT' operation 'MachineGroups_Update' should use method name 'Create'. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
@@ -1885,8 +1879,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.482 s
-[INFO] Finished at: 2022-07-07T19:43:25Z
+[INFO] Total time:  2.043 s
+[INFO] Finished at: 2022-07-08T20:02:52Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
