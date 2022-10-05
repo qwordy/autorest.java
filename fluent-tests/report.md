@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2022-10-04T20:34:19.562411
+Generated at 2022-10-05T20:25:20.967410
 ## Success
 <details>
 <summary>RP count: 206</summary>
@@ -229,7 +229,7 @@ Generated at 2022-10-04T20:34:19.562411
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.6.2; node: v14.20.0]
+AutoRest code generation utility [cli version: 3.6.2; node: v14.20.1]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 info    | AutoRest core version selected from configuration: 3.4.5.
@@ -284,8 +284,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.406 s
-[INFO] Finished at: 2022-10-04T18:42:41Z
+[INFO] Total time:  4.458 s
+[INFO] Finished at: 2022-10-05T18:44:13Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
@@ -317,7 +317,7 @@ FATAL: Error: Name is empty!
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.6.2; node: v14.20.0]
+AutoRest code generation utility [cli version: 3.6.2; node: v14.20.1]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 info    | AutoRest core version selected from configuration: 3.4.5.
@@ -675,10 +675,10 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [JobStream, JobStreamListResult, SoftwareUpdateConfigurationListResult, DscNodeConfiguration, DscCompilationJob, Connection, JobCollectionItem, Statistics, GraphicalRunbookContent, Runbook, HybridRunbookWorkerGroup, NodeCounts, Job, Schedule, PrivateEndpointConnection, Module, SoftwareUpdateConfigurationRunListResult, Certificate, Watcher, AgentRegistration, KeyListResult, PrivateLinkResource, AutomationAccount, HybridRunbookWorker, LinkedWorkspace, DscConfiguration, SourceControlSyncJob, Variable, DscNode, Operation, SourceControlSyncJobStreamById, SourceControlSyncJobById, SourceControlSyncJobStream, SoftwareUpdateConfiguration, TypeField, Webhook, RunbookDraft, TestJob, SoftwareUpdateConfigurationMachineRun, JobSchedule, Activity, SoftwareUpdateConfigurationRun, Credential, DeletedAutomationAccountListResult, SourceControl, Usage, DscNodeReport, SoftwareUpdateConfigurationMachineRunListResult, ConnectionType]
-INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookCreateOrUpdateProperties, RunbookProperties]
-INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
+INFORMATION (FluentMapper): Add Inner to response types: [NodeCounts, SoftwareUpdateConfigurationRun, AgentRegistration, Schedule, TypeField, JobStream, SourceControlSyncJobStream, PrivateLinkResource, Connection, SourceControl, Usage, HybridRunbookWorkerGroup, SoftwareUpdateConfiguration, DscCompilationJob, Runbook, SoftwareUpdateConfigurationMachineRun, SourceControlSyncJobStreamById, Activity, JobCollectionItem, Module, SoftwareUpdateConfigurationRunListResult, Job, DscNodeConfiguration, GraphicalRunbookContent, JobSchedule, DscNode, RunbookDraft, ConnectionType, DeletedAutomationAccountListResult, Webhook, SourceControlSyncJob, PrivateEndpointConnection, DscConfiguration, DscNodeReport, Credential, Watcher, TestJob, SoftwareUpdateConfigurationListResult, Certificate, JobStreamListResult, SoftwareUpdateConfigurationMachineRunListResult, Statistics, Operation, KeyListResult, LinkedWorkspace, HybridRunbookWorker, Variable, AutomationAccount, SourceControlSyncJobById]
+INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookProperties, RunbookCreateOrUpdateProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
+INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'PrivateEndpointConnection', method reference 'createOrUpdate', body parameter 'PrivateEndpointConnectionInner'
@@ -944,7 +944,7 @@ java.lang.IllegalStateException: model type not found for type String and value 
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.6.2; node: v14.20.0]
+AutoRest code generation utility [cli version: 3.6.2; node: v14.20.1]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 info    | AutoRest core version selected from configuration: 3.4.5.
@@ -995,8 +995,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.095 s
-[INFO] Finished at: 2022-10-04T19:17:54Z
+[INFO] Total time:  3.371 s
+[INFO] Finished at: 2022-10-05T19:15:30Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-education: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-education/src/main/java/com/azure/resourcemanager/education/fluent/models/LabProperties.java:[264,19] method currency() is already defined in class com.azure.resourcemanager.education.fluent.models.LabProperties
@@ -1023,7 +1023,7 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.6.2; node: v14.20.0]
+AutoRest code generation utility [cli version: 3.6.2; node: v14.20.1]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 info    | AutoRest core version selected from configuration: 3.4.5.
@@ -1191,8 +1191,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.582 s
-[INFO] Finished at: 2022-10-04T19:28:43Z
+[INFO] Total time:  2.434 s
+[INFO] Finished at: 2022-10-05T19:25:11Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1217,7 +1217,7 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.6.2; node: v14.20.0]
+AutoRest code generation utility [cli version: 3.6.2; node: v14.20.1]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 info    | AutoRest core version selected from configuration: 3.4.5.
@@ -1242,7 +1242,7 @@ Use --help to get help information.
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.6.2; node: v14.20.0]
+AutoRest code generation utility [cli version: 3.6.2; node: v14.20.1]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 info    | AutoRest core version selected from configuration: 3.4.5.
@@ -1457,8 +1457,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.554 s
-[INFO] Finished at: 2022-10-04T19:50:40Z
+[INFO] Total time:  4.086 s
+[INFO] Finished at: 2022-10-05T19:45:16Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-orbital: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-orbital/src/main/java/com/azure/resourcemanager/orbital/implementation/SpacecraftsClientImpl.java:[1563,37] cannot find symbol
@@ -1520,7 +1520,7 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 
 **stdout**
 ```
-AutoRest code generation utility [cli version: 3.6.2; node: v14.20.0]
+AutoRest code generation utility [cli version: 3.6.2; node: v14.20.1]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
 info    | AutoRest core version selected from configuration: 3.4.5.
@@ -1593,11 +1593,7 @@ WARNING (PreCheck/SchemaMissingType): The schema 'ImageConfiguration' with an un
 WARNING (PreCheck/SchemaMissingType): The schema 'ProcessUser' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'ProcessDetails' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'ProcessHostedService' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
-WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'generatemap' in:'Maps_Generate'. Consider updating the operationId
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1231:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/generateMap"].post.operationId)
 WARNING (PreCheck/SchemaMissingType): The schema 'ProcessHostingConfiguration' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
-WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'machinegroups' in:'MachineGroups_Create'. Consider updating the operationId
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1405:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machineGroups"].post.operationId)
 WARNING (PreCheck/SchemaMissingType): The schema 'AzureProcessHostingConfiguration' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'SingleMachineDependencyMapRequest' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'MultipleMachinesMapRequest' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
@@ -1605,16 +1601,20 @@ WARNING (PreCheck/SchemaMissingType): The schema 'MachineListMapRequest' with an
 WARNING (PreCheck/SchemaMissingType): The schema 'MachineGroupMapRequest' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
 WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'MachineGroup' has a property 'etag' that is already declared the parent schema 'CoreResource' but isn't significantly different. The property has been removed from MachineGroup
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'generatemap' in:'Maps_Generate'. Consider updating the operationId
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1231:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/generateMap"].post.operationId)
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'machinegroups' in:'MachineGroups_Create'. Consider updating the operationId
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1405:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machineGroups"].post.operationId)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:63:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines"].get.parameters[4].name)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:332:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/processes"].get.parameters[5].name)
 WARNING (OperationIdNounVerb/R1001/SDKViolation): Per the Noun_Verb convention for Operation Ids, the noun 'Machines' should not appear after the underscore. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:971:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/machineGroups"].get.operationId)
-WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (PutInOperationName/R1006/SDKViolation): 'PUT' operation 'MachineGroups_Update' should use method name 'Create'. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1515:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machineGroups/{machineGroupName}"].put.operationId)
+WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:3140:8 ($.definitions.Liveness.properties.live)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: filterProcesses
@@ -1755,8 +1755,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  17.651 s
-[INFO] Finished at: 2022-10-04T20:17:10Z
+[INFO] Total time:  15.201 s
+[INFO] Finished at: 2022-10-05T20:09:56Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-sql: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-sql/src/main/java/com/azure/resourcemanager/sql/implementation/SqlVulnerabilityAssessmentImpl.java:[131,65] incompatible types: com.azure.resourcemanager.sql.models.VulnerabilityAssessmentName cannot be converted to com.azure.resourcemanager.sql.models.SqlVulnerabilityAssessmentNameAutoGenerated
@@ -1814,8 +1814,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.240 s
-[INFO] Finished at: 2022-10-04T20:27:39Z
+[INFO] Total time:  1.840 s
+[INFO] Finished at: 2022-10-05T20:19:14Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
