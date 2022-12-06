@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2022-12-05T20:12:28.863205
+Generated at 2022-12-06T19:47:07.061685
 ## Success
 <details>
 <summary>RP count: 212</summary>
@@ -24,7 +24,6 @@ Generated at 2022-12-05T20:12:28.863205
 - azurearcdata
 - azuredata
 - azurestack
-- azurestackhci
 - baremetalinfrastructure
 - batch
 - billing
@@ -109,6 +108,7 @@ Generated at 2022-12-05T20:12:28.863205
 - keyvault
 - kubernetesconfiguration
 - labservices
+- liftrqumulo
 - loadtestservice
 - logic
 - logz
@@ -223,6 +223,7 @@ Generated at 2022-12-05T20:12:28.863205
 
 ## Failure at Build
 - authorization
+- azurestackhci
 - education
 - iotspaces
 - orbital
@@ -290,8 +291,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.926 s
-[INFO] Finished at: 2022-12-05T18:28:38Z
+[INFO] Total time:  3.655 s
+[INFO] Finished at: 2022-12-06T18:26:28Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
@@ -662,7 +663,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [DscNodeConfiguration, RunbookDraft, Connection, KeyListResult, LinkedWorkspace, Runbook, DeletedAutomationAccountListResult, DscNodeReport, JobStream, Schedule, JobSchedule, SourceControlSyncJobStream, JobStreamListResult, SoftwareUpdateConfigurationListResult, Watcher, Certificate, HybridRunbookWorkerGroup, TestJob, HybridRunbookWorker, SoftwareUpdateConfigurationRun, Operation, SoftwareUpdateConfigurationMachineRunListResult, NodeCounts, SourceControl, SourceControlSyncJobById, DscNode, Activity, Statistics, PrivateEndpointConnection, DscConfiguration, TypeField, Module, SoftwareUpdateConfigurationRunListResult, Job, Credential, SourceControlSyncJob, SoftwareUpdateConfigurationMachineRun, SoftwareUpdateConfiguration, SourceControlSyncJobStreamById, Webhook, Usage, ConnectionType, DscCompilationJob, PrivateLinkResource, JobCollectionItem, RunbookDraftUndoEditResult, Variable, AgentRegistration, GraphicalRunbookContent, AutomationAccount]
+INFORMATION (FluentMapper): Add Inner to response types: [RunbookDraft, Module, SourceControl, SoftwareUpdateConfigurationRun, DscConfiguration, Certificate, JobStream, SourceControlSyncJob, SourceControlSyncJobById, Usage, AgentRegistration, Schedule, PrivateEndpointConnection, Runbook, KeyListResult, RunbookDraftUndoEditResult, SoftwareUpdateConfigurationRunListResult, DscNode, SoftwareUpdateConfigurationListResult, Job, DscNodeReport, TestJob, Activity, HybridRunbookWorkerGroup, TypeField, NodeCounts, HybridRunbookWorker, Connection, JobStreamListResult, SourceControlSyncJobStream, SourceControlSyncJobStreamById, Operation, PrivateLinkResource, JobSchedule, Watcher, Credential, GraphicalRunbookContent, DeletedAutomationAccountListResult, DscNodeConfiguration, DscCompilationJob, Statistics, JobCollectionItem, ConnectionType, SoftwareUpdateConfiguration, SoftwareUpdateConfigurationMachineRun, Webhook, AutomationAccount, Variable, LinkedWorkspace, SoftwareUpdateConfigurationMachineRunListResult]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookCreateOrUpdateProperties, RunbookProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
@@ -921,6 +922,95 @@ java.lang.IllegalStateException: model type not found for type String and value 
 </details>
 
 <details>
+<summary>azurestackhci</summary>
+
+**stdout**
+```
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---< com.azure.resourcemanager:azure-resourcemanager-azurestackhci >----
+[INFO] Building Microsoft Azure SDK for AzureStackHci Management 1.0.0-beta.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ azure-resourcemanager-azurestackhci ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ azure-resourcemanager-azurestackhci ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 166 source files to /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Update.java:[526,11] cannot find symbol
+  symbol:   class Update
+  location: interface com.azure.resourcemanager.azurestackhci.models.Update
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Update.java:[529,5] interface com.azure.resourcemanager.azurestackhci.models.Update is already defined in package com.azure.resourcemanager.azurestackhci.models
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Severity.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.Severity
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/PackageVersionInfo.java:[15,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.PackageVersionInfo
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/State.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.State
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/HealthState.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.HealthState
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/UpdatePrerequisite.java:[17,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.UpdatePrerequisite
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/fluent/models/UpdateStateProperties.java:[17,14] duplicate class: com.azure.resourcemanager.azurestackhci.fluent.models.UpdateStateProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/PrecheckResultTags.java:[14,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.PrecheckResultTags
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/ProvisioningState.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.ProvisioningState
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/fluent/models/UpdateProperties.java:[24,14] duplicate class: com.azure.resourcemanager.azurestackhci.fluent.models.UpdateProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Status.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.Status
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/fluent/models/UpdateInner.java:[26,14] duplicate class: com.azure.resourcemanager.azurestackhci.fluent.models.UpdateInner
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/PrecheckResult.java:[15,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.PrecheckResult
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/AvailabilityType.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.AvailabilityType
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/implementation/UpdateImpl.java:[24,14] com.azure.resourcemanager.azurestackhci.implementation.UpdateImpl is not abstract and does not override abstract method refresh(com.azure.core.util.Context) in com.azure.resourcemanager.azurestackhci.models.Update
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/implementation/UpdateImpl.java:[244,19] refresh(com.azure.core.util.Context) in com.azure.resourcemanager.azurestackhci.implementation.UpdateImpl cannot implement refresh(com.azure.core.util.Context) in com.azure.resourcemanager.azurestackhci.models.Update
+  return type com.azure.resourcemanager.azurestackhci.models.Update.Update is not compatible with com.azure.resourcemanager.azurestackhci.models.Update
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/implementation/UpdateImpl.java:[234,19] refresh() in com.azure.resourcemanager.azurestackhci.implementation.UpdateImpl cannot implement refresh() in com.azure.resourcemanager.azurestackhci.models.Update
+  return type com.azure.resourcemanager.azurestackhci.models.Update.Update is not compatible with com.azure.resourcemanager.azurestackhci.models.Update
+[INFO] 18 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.620 s
+[INFO] Finished at: 2022-12-06T18:29:15Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-azurestackhci: Compilation failure: Compilation failure: 
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Update.java:[526,11] cannot find symbol
+[ERROR]   symbol:   class Update
+[ERROR]   location: interface com.azure.resourcemanager.azurestackhci.models.Update
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Update.java:[529,5] interface com.azure.resourcemanager.azurestackhci.models.Update is already defined in package com.azure.resourcemanager.azurestackhci.models
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Severity.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.Severity
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/PackageVersionInfo.java:[15,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.PackageVersionInfo
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/State.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.State
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/HealthState.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.HealthState
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/UpdatePrerequisite.java:[17,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.UpdatePrerequisite
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/fluent/models/UpdateStateProperties.java:[17,14] duplicate class: com.azure.resourcemanager.azurestackhci.fluent.models.UpdateStateProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/PrecheckResultTags.java:[14,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.PrecheckResultTags
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/ProvisioningState.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.ProvisioningState
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/fluent/models/UpdateProperties.java:[24,14] duplicate class: com.azure.resourcemanager.azurestackhci.fluent.models.UpdateProperties
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Status.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.Status
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/fluent/models/UpdateInner.java:[26,14] duplicate class: com.azure.resourcemanager.azurestackhci.fluent.models.UpdateInner
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/PrecheckResult.java:[15,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.PrecheckResult
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/AvailabilityType.java:[12,14] duplicate class: com.azure.resourcemanager.azurestackhci.models.AvailabilityType
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/implementation/UpdateImpl.java:[24,14] com.azure.resourcemanager.azurestackhci.implementation.UpdateImpl is not abstract and does not override abstract method refresh(com.azure.core.util.Context) in com.azure.resourcemanager.azurestackhci.models.Update
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/implementation/UpdateImpl.java:[244,19] refresh(com.azure.core.util.Context) in com.azure.resourcemanager.azurestackhci.implementation.UpdateImpl cannot implement refresh(com.azure.core.util.Context) in com.azure.resourcemanager.azurestackhci.models.Update
+[ERROR]   return type com.azure.resourcemanager.azurestackhci.models.Update.Update is not compatible with com.azure.resourcemanager.azurestackhci.models.Update
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/implementation/UpdateImpl.java:[234,19] refresh() in com.azure.resourcemanager.azurestackhci.implementation.UpdateImpl cannot implement refresh() in com.azure.resourcemanager.azurestackhci.models.Update
+[ERROR]   return type com.azure.resourcemanager.azurestackhci.models.Update.Update is not compatible with com.azure.resourcemanager.azurestackhci.models.Update
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+```
+**stderr**
+```
+
+```
+</details>
+
+<details>
 <summary>devspaces</summary>
 
 **stdout**
@@ -976,8 +1066,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.499 s
-[INFO] Finished at: 2022-12-05T19:00:52Z
+[INFO] Total time:  2.524 s
+[INFO] Finished at: 2022-12-06T18:51:13Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-education: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-education/src/main/java/com/azure/resourcemanager/education/fluent/models/LabProperties.java:[264,19] method currency() is already defined in class com.azure.resourcemanager.education.fluent.models.LabProperties
@@ -1116,7 +1206,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [OperationResult, Device, Application, Location, WipeDeviceOperationResult, GroupItem, FlaggedUser, AndroidMamPolicy, IOsmamPolicy, FlaggedEnrolledApp]
+INFORMATION (FluentMapper): Add Inner to response types: [GroupItem, IOsmamPolicy, OperationResult, Location, Application, Device, FlaggedUser, AndroidMamPolicy, FlaggedEnrolledApp, WipeDeviceOperationResult]
 
 ```
 **stderr**
@@ -1172,8 +1262,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.392 s
-[INFO] Finished at: 2022-12-05T19:10:34Z
+[INFO] Total time:  1.871 s
+[INFO] Finished at: 2022-12-06T18:58:46Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1438,8 +1528,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.951 s
-[INFO] Finished at: 2022-12-05T19:30:44Z
+[INFO] Total time:  3.080 s
+[INFO] Finished at: 2022-12-06T19:14:43Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-orbital: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-orbital/src/main/java/com/azure/resourcemanager/orbital/implementation/SpacecraftsClientImpl.java:[1563,37] cannot find symbol
@@ -1736,8 +1826,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  15.984 s
-[INFO] Finished at: 2022-12-05T19:56:38Z
+[INFO] Total time:  11.558 s
+[INFO] Finished at: 2022-12-06T19:34:47Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-sql: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-sql/src/main/java/com/azure/resourcemanager/sql/implementation/SqlVulnerabilityAssessmentImpl.java:[131,65] incompatible types: com.azure.resourcemanager.sql.models.VulnerabilityAssessmentName cannot be converted to com.azure.resourcemanager.sql.models.SqlVulnerabilityAssessmentNameAutoGenerated
@@ -1795,8 +1885,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.867 s
-[INFO] Finished at: 2022-12-05T20:06:14Z
+[INFO] Total time:  1.528 s
+[INFO] Finished at: 2022-12-06T19:42:15Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
