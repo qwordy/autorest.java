@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2022-12-14T19:54:47.285182
+Generated at 2022-12-15T20:08:04.851894
 ## Success
 <details>
 <summary>RP count: 212</summary>
@@ -291,8 +291,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.737 s
-[INFO] Finished at: 2022-12-14T18:26:37Z
+[INFO] Total time:  4.413 s
+[INFO] Finished at: 2022-12-15T18:26:17Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
@@ -663,7 +663,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Activity, Job, TestJob, RunbookDraftUndoEditResult, Schedule, NodeCounts, LinkedWorkspace, PrivateEndpointConnection, SoftwareUpdateConfiguration, JobSchedule, ConnectionType, Operation, HybridRunbookWorkerGroup, Usage, Connection, DscConfiguration, Webhook, SoftwareUpdateConfigurationRunListResult, Statistics, DscNode, SourceControlSyncJobById, Module, Watcher, Credential, SoftwareUpdateConfigurationListResult, JobStreamListResult, RunbookDraft, AgentRegistration, KeyListResult, AutomationAccount, SoftwareUpdateConfigurationMachineRun, JobStream, SourceControlSyncJob, JobCollectionItem, DscNodeReport, DscNodeConfiguration, DeletedAutomationAccountListResult, SourceControl, Certificate, SoftwareUpdateConfigurationMachineRunListResult, PrivateLinkResource, TypeField, HybridRunbookWorker, GraphicalRunbookContent, Runbook, Variable, SoftwareUpdateConfigurationRun, DscCompilationJob, SourceControlSyncJobStream, SourceControlSyncJobStreamById]
+INFORMATION (FluentMapper): Add Inner to response types: [JobStream, NodeCounts, KeyListResult, GraphicalRunbookContent, DscCompilationJob, PrivateLinkResource, Watcher, DeletedAutomationAccountListResult, SourceControlSyncJobStream, DscNodeConfiguration, SoftwareUpdateConfigurationMachineRunListResult, ConnectionType, Credential, TestJob, HybridRunbookWorker, AgentRegistration, AutomationAccount, JobCollectionItem, Usage, Connection, RunbookDraft, JobStreamListResult, Job, LinkedWorkspace, SoftwareUpdateConfiguration, SoftwareUpdateConfigurationListResult, SourceControl, SoftwareUpdateConfigurationMachineRun, SoftwareUpdateConfigurationRunListResult, DscNode, Certificate, Runbook, Variable, TypeField, DscConfiguration, Statistics, JobSchedule, Webhook, Schedule, Operation, HybridRunbookWorkerGroup, SourceControlSyncJobStreamById, SourceControlSyncJob, Module, PrivateEndpointConnection, Activity, SourceControlSyncJobById, SoftwareUpdateConfigurationRun, DscNodeReport, RunbookDraftUndoEditResult]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookProperties, RunbookCreateOrUpdateProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
@@ -969,8 +969,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.616 s
-[INFO] Finished at: 2022-12-14T18:29:41Z
+[INFO] Total time:  4.233 s
+[INFO] Finished at: 2022-12-15T18:29:49Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-azurestackhci: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Update.java:[526,11] cannot find symbol
@@ -1066,8 +1066,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.816 s
-[INFO] Finished at: 2022-12-14T18:53:35Z
+[INFO] Total time:  3.512 s
+[INFO] Finished at: 2022-12-15T18:57:31Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-education: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-education/src/main/java/com/azure/resourcemanager/education/fluent/models/LabProperties.java:[264,19] method currency() is already defined in class com.azure.resourcemanager.education.fluent.models.LabProperties
@@ -1206,7 +1206,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Application, FlaggedUser, Device, IOsmamPolicy, Location, AndroidMamPolicy, OperationResult, GroupItem, WipeDeviceOperationResult, FlaggedEnrolledApp]
+INFORMATION (FluentMapper): Add Inner to response types: [Location, FlaggedEnrolledApp, IOsmamPolicy, WipeDeviceOperationResult, AndroidMamPolicy, GroupItem, Device, FlaggedUser, OperationResult, Application]
 
 ```
 **stderr**
@@ -1262,8 +1262,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.897 s
-[INFO] Finished at: 2022-12-14T19:01:47Z
+[INFO] Total time:  2.525 s
+[INFO] Finished at: 2022-12-15T19:06:59Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1528,8 +1528,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.701 s
-[INFO] Finished at: 2022-12-14T19:19:15Z
+[INFO] Total time:  4.011 s
+[INFO] Finished at: 2022-12-15T19:27:05Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-orbital: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-orbital/src/main/java/com/azure/resourcemanager/orbital/implementation/SpacecraftsClientImpl.java:[1563,37] cannot find symbol
@@ -1722,7 +1722,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [ClientGroup, Port, MachinesSummary, Liveness, MapResponse, MachineGroup, Machine, Process, ClientGroupMembersCount, Connection, ClientGroupMember]
+INFORMATION (FluentMapper): Add Inner to response types: [Connection, ClientGroupMembersCount, Port, MachinesSummary, ClientGroup, MachineGroup, Process, Machine, MapResponse, ClientGroupMember, Liveness]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -1826,8 +1826,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  12.723 s
-[INFO] Finished at: 2022-12-14T19:41:19Z
+[INFO] Total time:  14.847 s
+[INFO] Finished at: 2022-12-15T19:52:29Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-sql: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-sql/src/main/java/com/azure/resourcemanager/sql/implementation/SqlVulnerabilityAssessmentImpl.java:[131,65] incompatible types: com.azure.resourcemanager.sql.models.VulnerabilityAssessmentName cannot be converted to com.azure.resourcemanager.sql.models.SqlVulnerabilityAssessmentNameAutoGenerated
@@ -1885,8 +1885,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.615 s
-[INFO] Finished at: 2022-12-14T19:49:30Z
+[INFO] Total time:  2.088 s
+[INFO] Finished at: 2022-12-15T20:01:57Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
