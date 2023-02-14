@@ -1,8 +1,8 @@
 # Java Codegen Report
-Generated at 2023-02-13T19:48:17.028337
+Generated at 2023-02-14T19:50:21.786587
 ## Success
 <details>
-<summary>RP count: 215</summary>
+<summary>RP count: 214</summary>
 
 - EnterpriseKnowledgeGraph
 - addons
@@ -128,7 +128,6 @@ Generated at 2023-02-13T19:48:17.028337
 - marketplacecatalog
 - marketplacenotifications
 - marketplaceordering
-- mediaservices
 - migrate
 - mixedreality
 - mobilenetwork
@@ -229,6 +228,7 @@ Generated at 2023-02-13T19:48:17.028337
 - azurestackhci
 - education
 - iotspaces
+- mediaservices
 - orbital
 - portalservices
 - sql
@@ -295,8 +295,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.687 s
-[INFO] Finished at: 2023-02-13T18:26:22Z
+[INFO] Total time:  3.571 s
+[INFO] Finished at: 2023-02-14T18:27:00Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
@@ -667,7 +667,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [JobCollectionItem, DscNodeReport, SoftwareUpdateConfigurationMachineRunListResult, Webhook, RunbookDraftUndoEditResult, AutomationAccount, SoftwareUpdateConfigurationRun, AgentRegistration, PrivateEndpointConnection, RunbookDraft, SourceControl, LinkedWorkspace, Runbook, SoftwareUpdateConfigurationListResult, KeyListResult, SourceControlSyncJob, Connection, DeletedAutomationAccountListResult, DscCompilationJob, Credential, Schedule, SourceControlSyncJobById, Usage, JobSchedule, Job, SoftwareUpdateConfigurationRunListResult, SourceControlSyncJobStreamById, HybridRunbookWorker, Operation, GraphicalRunbookContent, TestJob, Variable, DscConfiguration, PrivateLinkResource, Module, SoftwareUpdateConfiguration, Certificate, TypeField, JobStreamListResult, SoftwareUpdateConfigurationMachineRun, DscNodeConfiguration, Activity, SourceControlSyncJobStream, JobStream, Watcher, NodeCounts, HybridRunbookWorkerGroup, Statistics, DscNode, ConnectionType]
+INFORMATION (FluentMapper): Add Inner to response types: [GraphicalRunbookContent, SoftwareUpdateConfigurationMachineRun, JobSchedule, SourceControl, Schedule, JobStream, SoftwareUpdateConfiguration, RunbookDraft, TestJob, JobCollectionItem, SourceControlSyncJob, DscNodeConfiguration, Operation, Connection, PrivateEndpointConnection, HybridRunbookWorker, KeyListResult, JobStreamListResult, DscNode, Runbook, AutomationAccount, Credential, DeletedAutomationAccountListResult, Job, RunbookDraftUndoEditResult, AgentRegistration, NodeCounts, SoftwareUpdateConfigurationListResult, Activity, Statistics, HybridRunbookWorkerGroup, DscNodeReport, SoftwareUpdateConfigurationRun, SoftwareUpdateConfigurationRunListResult, SourceControlSyncJobStream, Webhook, SoftwareUpdateConfigurationMachineRunListResult, Certificate, PrivateLinkResource, ConnectionType, Watcher, SourceControlSyncJobStreamById, Variable, TypeField, DscConfiguration, DscCompilationJob, Usage, SourceControlSyncJobById, LinkedWorkspace, Module]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookCreateOrUpdateProperties, RunbookProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
@@ -973,8 +973,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.414 s
-[INFO] Finished at: 2023-02-13T18:29:13Z
+[INFO] Total time:  3.548 s
+[INFO] Finished at: 2023-02-14T18:29:51Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-azurestackhci: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Update.java:[526,11] cannot find symbol
@@ -1044,8 +1044,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.670 s
-[INFO] Finished at: 2023-02-13T18:51:16Z
+[INFO] Total time:  2.911 s
+[INFO] Finished at: 2023-02-14T18:52:24Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-education: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-education/src/main/java/com/azure/resourcemanager/education/fluent/models/LabProperties.java:[264,19] method currency() is already defined in class com.azure.resourcemanager.education.fluent.models.LabProperties
@@ -1184,7 +1184,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [OperationResult, Location, Device, FlaggedUser, WipeDeviceOperationResult, AndroidMamPolicy, Application, FlaggedEnrolledApp, GroupItem, IOsmamPolicy]
+INFORMATION (FluentMapper): Add Inner to response types: [Location, OperationResult, FlaggedEnrolledApp, IOsmamPolicy, AndroidMamPolicy, WipeDeviceOperationResult, Device, GroupItem, Application, FlaggedUser]
 
 ```
 **stderr**
@@ -1240,8 +1240,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.788 s
-[INFO] Finished at: 2023-02-13T18:59:00Z
+[INFO] Total time:  2.053 s
+[INFO] Finished at: 2023-02-14T19:00:08Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1278,6 +1278,267 @@ INFORMATION: > Loading AutoRest extension '@autorest/modelerfour' (4.18.1->4.18.
 [Exception] No input files provided.
 
 Use --help to get help information.
+
+```
+**stderr**
+```
+
+```
+</details>
+
+<details>
+<summary>mediaservices</summary>
+
+**stdout**
+```
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---< com.azure.resourcemanager:azure-resourcemanager-mediaservices >----
+[INFO] Building Microsoft Azure SDK for MediaServices Management 1.0.0-beta.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ azure-resourcemanager-mediaservices ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ azure-resourcemanager-mediaservices ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 488 source files to /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2733,37] cannot find symbol
+  symbol:   class LiveEventGetStatusResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2734,37] cannot find symbol
+  symbol:   class LiveEventGetStatusResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2730,35] cannot find symbol
+  symbol:   class LiveEventGetStatusResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2730,61] cannot find symbol
+  symbol:   class LiveEventGetStatusResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2742,28] cannot find symbol
+  symbol:   method getT1()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2743,28] cannot find symbol
+  symbol:   method getT1()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2744,28] cannot find symbol
+  symbol:   method getT1()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2745,28] cannot find symbol
+  symbol:   method getT2()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2811,25] cannot find symbol
+  symbol:   class LiveEventGetStatusResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2812,25] cannot find symbol
+  symbol:   class LiveEventGetStatusResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2808,23] cannot find symbol
+  symbol:   class LiveEventGetStatusResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2808,49] cannot find symbol
+  symbol:   class LiveEventGetStatusResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2959,37] cannot find symbol
+  symbol:   class LiveEventGetStreamEventsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2960,37] cannot find symbol
+  symbol:   class LiveEventGetStreamEventsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2956,35] cannot find symbol
+  symbol:   class LiveEventGetStreamEventsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2956,67] cannot find symbol
+  symbol:   class LiveEventGetStreamEventsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2968,28] cannot find symbol
+  symbol:   method getT1()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2969,28] cannot find symbol
+  symbol:   method getT1()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2970,28] cannot find symbol
+  symbol:   method getT1()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2971,28] cannot find symbol
+  symbol:   method getT2()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3037,25] cannot find symbol
+  symbol:   class LiveEventGetStreamEventsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3038,25] cannot find symbol
+  symbol:   class LiveEventGetStreamEventsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3034,23] cannot find symbol
+  symbol:   class LiveEventGetStreamEventsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3034,55] cannot find symbol
+  symbol:   class LiveEventGetStreamEventsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3186,41] cannot find symbol
+  symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3187,41] cannot find symbol
+  symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3182,35] cannot find symbol
+  symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3182,76] cannot find symbol
+  symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3195,28] cannot find symbol
+  symbol:   method getT1()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3196,28] cannot find symbol
+  symbol:   method getT1()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3197,28] cannot find symbol
+  symbol:   method getT1()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3198,28] cannot find symbol
+  symbol:   method getT2()
+  location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3264,25] cannot find symbol
+  symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3265,25] cannot find symbol
+  symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3261,23] cannot find symbol
+  symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3261,64] cannot find symbol
+  symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+  location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[INFO] 36 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.211 s
+[INFO] Finished at: 2023-02-14T19:08:14Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-mediaservices: Compilation failure: Compilation failure: 
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2733,37] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStatusResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2734,37] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStatusResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2730,35] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStatusResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2730,61] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStatusResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2742,28] cannot find symbol
+[ERROR]   symbol:   method getT1()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2743,28] cannot find symbol
+[ERROR]   symbol:   method getT1()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2744,28] cannot find symbol
+[ERROR]   symbol:   method getT1()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2745,28] cannot find symbol
+[ERROR]   symbol:   method getT2()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2811,25] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStatusResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2812,25] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStatusResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2808,23] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStatusResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2808,49] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStatusResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2959,37] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStreamEventsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2960,37] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStreamEventsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2956,35] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStreamEventsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2956,67] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStreamEventsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2968,28] cannot find symbol
+[ERROR]   symbol:   method getT1()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2969,28] cannot find symbol
+[ERROR]   symbol:   method getT1()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2970,28] cannot find symbol
+[ERROR]   symbol:   method getT1()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2971,28] cannot find symbol
+[ERROR]   symbol:   method getT2()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3037,25] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStreamEventsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3038,25] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStreamEventsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3034,23] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStreamEventsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3034,55] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetStreamEventsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3186,41] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3187,41] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3182,35] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3182,76] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3195,28] cannot find symbol
+[ERROR]   symbol:   method getT1()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3196,28] cannot find symbol
+[ERROR]   symbol:   method getT1()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3197,28] cannot find symbol
+[ERROR]   symbol:   method getT1()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3198,28] cannot find symbol
+[ERROR]   symbol:   method getT2()
+[ERROR]   location: variable res of type java.lang.Object
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3264,25] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3265,25] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3261,23] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[3261,64] cannot find symbol
+[ERROR]   symbol:   class LiveEventGetTrackIngestHeartbeatsResult
+[ERROR]   location: class com.azure.resourcemanager.mediaservices.implementation.LiveEventsClientImpl
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 
 ```
 **stderr**
@@ -1506,8 +1767,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.113 s
-[INFO] Finished at: 2023-02-13T19:15:46Z
+[INFO] Total time:  3.282 s
+[INFO] Finished at: 2023-02-14T19:16:52Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-orbital: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-orbital/src/main/java/com/azure/resourcemanager/orbital/implementation/SpacecraftsClientImpl.java:[1563,37] cannot find symbol
@@ -1591,8 +1852,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.967 s
-[INFO] Finished at: 2023-02-13T19:17:03Z
+[INFO] Total time:  2.055 s
+[INFO] Finished at: 2023-02-14T19:18:11Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-portalservices: Compilation failure
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-portalservices/src/main/java/module-info.java:[10,60] package is empty or does not exist: com.azure.resourcemanager.portalservices.fluent.models
@@ -1702,12 +1963,12 @@ WARNING (PreCheck/SchemaMissingType): The schema 'MachineListMapRequest' with an
 WARNING (PreCheck/SchemaMissingType): The schema 'MachineGroupMapRequest' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
 WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'MachineGroup' has a property 'etag' that is already declared the parent schema 'CoreResource' but isn't significantly different. The property has been removed from MachineGroup
+WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:63:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines"].get.parameters[4].name)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:332:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/processes"].get.parameters[5].name)
-WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (OperationIdNounVerb/R1001/SDKViolation): Per the Noun_Verb convention for Operation Ids, the noun 'Machines' should not appear after the underscore. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:971:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/machineGroups"].get.operationId)
 WARNING (PutInOperationName/R1006/SDKViolation): 'PUT' operation 'MachineGroups_Update' should use method name 'Create'. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
@@ -1748,7 +2009,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Port, Machine, MachinesSummary, Process, MachineGroup, ClientGroup, MapResponse, Liveness, Connection, ClientGroupMembersCount, ClientGroupMember]
+INFORMATION (FluentMapper): Add Inner to response types: [Port, MachineGroup, Process, Connection, ClientGroupMembersCount, MapResponse, ClientGroup, MachinesSummary, ClientGroupMember, Liveness, Machine]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -1852,8 +2113,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  11.422 s
-[INFO] Finished at: 2023-02-13T19:36:00Z
+[INFO] Total time:  11.740 s
+[INFO] Finished at: 2023-02-14T19:37:38Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-sql: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-sql/src/main/java/com/azure/resourcemanager/sql/implementation/SqlVulnerabilityAssessmentImpl.java:[131,65] incompatible types: com.azure.resourcemanager.sql.models.VulnerabilityAssessmentName cannot be converted to com.azure.resourcemanager.sql.models.SqlVulnerabilityAssessmentNameAutoGenerated
@@ -1911,8 +2172,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.388 s
-[INFO] Finished at: 2023-02-13T19:43:16Z
+[INFO] Total time:  1.688 s
+[INFO] Finished at: 2023-02-14T19:45:16Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
