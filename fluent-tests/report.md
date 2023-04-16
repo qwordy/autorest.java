@@ -1,5 +1,5 @@
 # Java Codegen Report
-Generated at 2023-04-15T20:16:45.171236
+Generated at 2023-04-16T19:54:26.292510
 ## Success
 <details>
 <summary>RP count: 215</summary>
@@ -300,8 +300,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.815 s
-[INFO] Finished at: 2023-04-15T18:26:11Z
+[INFO] Total time:  3.787 s
+[INFO] Finished at: 2023-04-16T18:26:19Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewHistoryScheduleSettings.java:[103,44] method type() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewHistoryScheduleSettings
@@ -979,8 +979,8 @@ java.lang.IllegalStateException: model type not found for type String and value 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.557 s
-[INFO] Finished at: 2023-04-15T18:29:59Z
+[INFO] Total time:  3.529 s
+[INFO] Finished at: 2023-04-16T18:29:17Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-azurestackhci: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-azurestackhci/src/main/java/com/azure/resourcemanager/azurestackhci/models/Update.java:[526,11] cannot find symbol
@@ -1133,8 +1133,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] no common parent fou
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.443 s
-[INFO] Finished at: 2023-04-15T18:38:14Z
+[INFO] Total time:  2.647 s
+[INFO] Finished at: 2023-04-16T18:35:47Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-confidentialledger: Compilation failure
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-confidentialledger/src/main/java/com/azure/resourcemanager/confidentialledger/fluent/models/ConfidentialLedgerInner.java:[110,36] method withTags(java.util.Map<java.lang.String,java.lang.String>) is already defined in class com.azure.resourcemanager.confidentialledger.fluent.models.ConfidentialLedgerInner
@@ -1183,8 +1183,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] no common parent fou
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.230 s
-[INFO] Finished at: 2023-04-15T18:53:11Z
+[INFO] Total time:  2.644 s
+[INFO] Finished at: 2023-04-16T18:47:25Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-developerhub: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-developerhub/src/main/java/com/azure/resourcemanager/developerhub/fluent/models/WorkflowProperties.java:[642,19] method namespace() is already defined in class com.azure.resourcemanager.developerhub.fluent.models.WorkflowProperties
@@ -1235,8 +1235,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] no common parent fou
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.395 s
-[INFO] Finished at: 2023-04-15T18:58:57Z
+[INFO] Total time:  2.838 s
+[INFO] Finished at: 2023-04-16T18:51:52Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-education: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-education/src/main/java/com/azure/resourcemanager/education/fluent/models/LabProperties.java:[264,19] method currency() is already defined in class com.azure.resourcemanager.education.fluent.models.LabProperties
@@ -1375,7 +1375,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Location, IOsmamPolicy, Application, OperationResult, GroupItem, Device, FlaggedEnrolledApp, FlaggedUser, AndroidMamPolicy, WipeDeviceOperationResult]
+INFORMATION (FluentMapper): Add Inner to response types: [FlaggedEnrolledApp, Device, WipeDeviceOperationResult, IOsmamPolicy, OperationResult, Location, FlaggedUser, AndroidMamPolicy, GroupItem, Application]
 
 ```
 **stderr**
@@ -1432,8 +1432,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.420 s
-[INFO] Finished at: 2023-04-15T19:09:44Z
+[INFO] Total time:  1.809 s
+[INFO] Finished at: 2023-04-16T19:00:14Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1613,8 +1613,8 @@ Use --help to get help information.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  7.174 s
-[INFO] Finished at: 2023-04-15T19:20:45Z
+[INFO] Total time:  5.297 s
+[INFO] Finished at: 2023-04-16T19:09:11Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-mediaservices: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2733,37] cannot find symbol
@@ -1961,8 +1961,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.787 s
-[INFO] Finished at: 2023-04-15T19:32:15Z
+[INFO] Total time:  3.283 s
+[INFO] Finished at: 2023-04-16T19:18:50Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-orbital: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-orbital/src/main/java/com/azure/resourcemanager/orbital/implementation/SpacecraftsClientImpl.java:[1563,37] cannot find symbol
@@ -2047,8 +2047,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.264 s
-[INFO] Finished at: 2023-04-15T19:34:28Z
+[INFO] Total time:  2.060 s
+[INFO] Finished at: 2023-04-16T19:20:38Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-portalservices: Compilation failure
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-portalservices/src/main/java/module-info.java:[10,60] package is empty or does not exist: com.azure.resourcemanager.portalservices.fluent.models
@@ -2096,8 +2096,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.982 s
-[INFO] Finished at: 2023-04-15T19:37:17Z
+[INFO] Total time:  2.340 s
+[INFO] Finished at: 2023-04-16T19:22:53Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-professionalservice: Compilation failure
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-professionalservice/src/main/java/com/azure/resourcemanager/professionalservice/models/ProfessionalServiceResourceProperties.java:[244,50] method withBillingPeriod(java.lang.String) is already defined in class com.azure.resourcemanager.professionalservice.models.ProfessionalServiceResourceProperties
@@ -2141,7 +2141,6 @@ WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See 
 WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > Resource > properties > systemData)
   keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:31:5
-WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
 WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'listsecurityadvisoryimpactedresources' in:'SecurityAdvisoryImpactedResources_ListBySubscriptionIdAndEventId'. Consider updating the operationId
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json:506:8 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.ResourceHealth/events/{eventTrackingId}/listSecurityAdvisoryImpactedResources"].post.operationId)
 WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'listsecurityadvisoryimpactedresources' in:'SecurityAdvisoryImpactedResources_ListByTenantIdAndEventId'. Consider updating the operationId
@@ -2150,6 +2149,7 @@ WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should 
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json:683:8 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.ResourceHealth/events/{eventTrackingId}/fetchEventDetails"].post.operationId)
 WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'fetcheventdetails' in:'Event_fetchDetailsByTenantIdAndTrackingId'. Consider updating the operationId
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json:806:8 ($.paths["/providers/Microsoft.ResourceHealth/events/{eventTrackingId}/fetchEventDetails"].post.operationId)
+WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
 WARNING (OperationIdNounConflictingModelNames/R2063/SDKViolation): OperationId has a noun that conflicts with one of the model names in definitions section. The model name will be disambiguated to 'EventsModel'. Consider using the plural form of 'Events' to avoid this. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json:593:8 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.ResourceHealth/events"].get.operationId)
 WARNING (OperationIdNounConflictingModelNames/R2063/SDKViolation): OperationId has a noun that conflicts with one of the model names in definitions section. The model name will be disambiguated to 'EventModel'. Consider using the plural form of 'Event' to avoid this. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
@@ -2168,6 +2168,10 @@ WARNING (AvoidNestedProperties/R2001/SDKViolation): Consider using x-ms-client-f
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json:1707:8 ($.definitions.availabilityStatus.properties.properties)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: published
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json:2195:8 ($.definitions.statusActiveEvent.properties.published)
+WARNING (ParameterNotDefinedInGlobalParameters/R2015/SDKViolation): Parameter "subscriptionid" is referenced but not defined in the global parameters section of Service Definition
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json:2256:2 ($.parameters)
+WARNING (ParameterNotDefinedInGlobalParameters/R2015/SDKViolation): Parameter "api-version" is referenced but not defined in the global parameters section of Service Definition
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json:2256:2 ($.parameters)
 WARNING (DescriptionAndTitleMissing/R4021/SDKViolation): 'KeyVaultProperties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v3/types.json:567:2 ($.definitions.KeyVaultProperties)
 WARNING (DescriptionAndTitleMissing/R4021/SDKViolation): 'identity' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
@@ -2192,10 +2196,6 @@ WARNING (DescriptionAndTitleMissing/R4021/SDKViolation): 'plan' model/property l
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:142:4 ($.definitions.ResourceModelWithAllowedPropertySet.properties.plan)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: isDataAction
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:339:4 ($.definitions.Operation.properties.isDataAction)
-WARNING (ParameterNotDefinedInGlobalParameters/R2015/SDKViolation): Parameter "subscriptionid" is referenced but not defined in the global parameters section of Service Definition
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json:2256:2 ($.parameters)
-WARNING (ParameterNotDefinedInGlobalParameters/R2015/SDKViolation): Parameter "api-version" is referenced but not defined in the global parameters section of Service Definition
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json:2256:2 ($.parameters)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: nameAvailable
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:606:4 ($.definitions.CheckNameAvailabilityResponse.properties.nameAvailable)
 INFORMATION (FluentNamer): Load fluent settings
@@ -2233,7 +2233,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [EmergingIssuesGetResult, MetadataEntity, AvailabilityStatus, EventImpactedResource, OperationListResult, Event]
+INFORMATION (FluentMapper): Add Inner to response types: [EmergingIssuesGetResult, OperationListResult, MetadataEntity, EventImpactedResource, AvailabilityStatus, Event]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'ListHealthBySubscriptionId'
@@ -2271,7 +2271,7 @@ INFORMATION (JavaFormatter): Java version: 11.0.18
 INFORMATION (JavaFormatter): Java formatter enabled
 INFORMATION (FluentGen): Write Xml
 INFORMATION (FluentGen): Write Text
-[30.87 s] Generation Complete
+[29.04 s] Generation Complete
 
 ```
 **stderr**
@@ -2279,12 +2279,12 @@ INFORMATION (FluentGen): Write Text
 FATAL: Failed validating: 'file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/stable/2022-10-01/ResourceHealth.json', error encountered: TypeError: Cannot read property 'properties' of undefined
 ERROR (OperationsAPIImplementation/R3023/ARMViolation): Operations API must be implemented for '/providers//operations'.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v3/types.json:7:1 ($.paths)
-ERROR (OperationsAPIImplementation/R3023/ARMViolation): Operations API must be implemented for '/providers//operations'.
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:7:1 ($.paths)
 ERROR (APIVersionPattern/R3012/ARMViolation): API Version must be in the format: yyyy-MM-dd, optionally followed by -preview, -alpha, -beta, -rc, -privatepreview.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v3/types.json:4:2 ($.info.version)
 ERROR (SecurityDefinitionsStructure/R2054/SDKViolation): Every swagger/configuration must have a security definitions section and it must adhere to the structure described in: https://github.com/Azure/azure-openapi-validator/blob/master/docs/security-definitions-structure-validation.md
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v3/types.json:1:0
+ERROR (OperationsAPIImplementation/R3023/ARMViolation): Operations API must be implemented for '/providers//operations'.
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:7:1 ($.paths)
 ERROR (APIVersionPattern/R3012/ARMViolation): API Version must be in the format: yyyy-MM-dd, optionally followed by -preview, -alpha, -beta, -rc, -privatepreview.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:4:2 ($.info.version)
 ERROR (SecurityDefinitionsStructure/R2054/SDKViolation): Every swagger/configuration must have a security definitions section and it must adhere to the structure described in: https://github.com/Azure/azure-openapi-validator/blob/master/docs/security-definitions-structure-validation.md
@@ -2427,7 +2427,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [MapResponse, MachinesSummary, Liveness, Port, MachineGroup, Machine, Process, ClientGroupMember, ClientGroup, Connection, ClientGroupMembersCount]
+INFORMATION (FluentMapper): Add Inner to response types: [Port, MachineGroup, Process, Connection, ClientGroupMembersCount, MapResponse, ClientGroup, MachinesSummary, ClientGroupMember, Liveness, Machine]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -2532,8 +2532,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  16.488 s
-[INFO] Finished at: 2023-04-15T19:59:39Z
+[INFO] Total time:  12.252 s
+[INFO] Finished at: 2023-04-16T19:41:13Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-sql: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-sql/src/main/java/com/azure/resourcemanager/sql/implementation/SqlVulnerabilityAssessmentImpl.java:[131,65] incompatible types: com.azure.resourcemanager.sql.models.VulnerabilityAssessmentName cannot be converted to com.azure.resourcemanager.sql.models.SqlVulnerabilityAssessmentNameAutoGenerated
@@ -2592,8 +2592,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.039 s
-[INFO] Finished at: 2023-04-15T20:09:32Z
+[INFO] Total time:  1.600 s
+[INFO] Finished at: 2023-04-16T19:49:01Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
