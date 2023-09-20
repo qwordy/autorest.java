@@ -1,8 +1,8 @@
 # Java Codegen Report
-Generated at 2023-09-19T20:10:28.283179
+Generated at 2023-09-20T20:04:14.257817
 ## Success
 <details>
-<summary>RP count: 219</summary>
+<summary>RP count: 218</summary>
 
 - EnterpriseKnowledgeGraph
 - addons
@@ -47,7 +47,6 @@ Generated at 2023-09-19T20:10:28.283179
 - containerinstance
 - containerregistry
 - containerstorage
-- cosmos-db
 - cost-management
 - cpim
 - customer-insights
@@ -227,6 +226,7 @@ Generated at 2023-09-19T20:10:28.283179
 
 ## Failure at Codegen
 - automation
+- cosmos-db
 
 ## Failure at Build
 - authorization
@@ -308,8 +308,8 @@ FATAL: Error: Name is empty!
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  6.391 s
-[INFO] Finished at: 2023-09-19T18:31:13Z
+[INFO] Total time:  4.755 s
+[INFO] Finished at: 2023-09-20T18:26:15Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-authorization: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-authorization/src/main/java/com/azure/resourcemanager/authorization/fluent/models/AccessReviewScheduleDefinitionProperties.java:[689,43] method principalType() is already defined in class com.azure.resourcemanager.authorization.fluent.models.AccessReviewScheduleDefinitionProperties
@@ -680,7 +680,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Schedule, Job, JobSchedule, GraphicalRunbookContent, Connection, PrivateLinkResource, TestJob, SoftwareUpdateConfigurationRun, SourceControlSyncJob, Runbook, Usage, DscConfiguration, SoftwareUpdateConfigurationRunListResult, Statistics, SourceControl, Variable, RunbookDraftUndoEditResult, JobStream, Operation, Activity, RunbookDraft, SourceControlSyncJobStreamById, DscCompilationJob, Watcher, DscNodeConfiguration, JobCollectionItem, HybridRunbookWorkerGroup, PrivateEndpointConnection, SoftwareUpdateConfigurationMachineRun, SourceControlSyncJobById, DscNodeReport, TypeField, SoftwareUpdateConfigurationMachineRunListResult, AutomationAccount, HybridRunbookWorker, ConnectionType, Module, SoftwareUpdateConfiguration, Webhook, DeletedAutomationAccountListResult, NodeCounts, LinkedWorkspace, JobStreamListResult, SoftwareUpdateConfigurationListResult, Credential, KeyListResult, Certificate, SourceControlSyncJobStream, AgentRegistration, DscNode]
+INFORMATION (FluentMapper): Add Inner to response types: [Webhook, HybridRunbookWorker, JobSchedule, JobStreamListResult, DeletedAutomationAccountListResult, JobStream, Connection, Activity, GraphicalRunbookContent, Schedule, SourceControlSyncJobStreamById, PrivateLinkResource, SourceControlSyncJob, DscNodeReport, SoftwareUpdateConfigurationListResult, SoftwareUpdateConfigurationRun, HybridRunbookWorkerGroup, Watcher, SourceControlSyncJobById, TypeField, RunbookDraft, SourceControlSyncJobStream, DscCompilationJob, PrivateEndpointConnection, LinkedWorkspace, Variable, KeyListResult, ConnectionType, SourceControl, Credential, RunbookDraftUndoEditResult, TestJob, SoftwareUpdateConfigurationMachineRun, JobCollectionItem, DscConfiguration, SoftwareUpdateConfigurationMachineRunListResult, DscNodeConfiguration, Usage, Module, AgentRegistration, Runbook, SoftwareUpdateConfigurationRunListResult, AutomationAccount, Statistics, DscNode, Certificate, Operation, NodeCounts, SoftwareUpdateConfiguration, Job]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookDraft': [RunbookProperties, RunbookCreateOrUpdateProperties]
 INFORMATION (FluentMapper): Add Inner for type 'RunbookProperties': []
 INFORMATION (FluentMapper): Add Inner for type 'RunbookCreateOrUpdateProperties': [RunbookCreateOrUpdateParameters]
@@ -1024,6 +1024,859 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] no common parent fou
 </details>
 
 <details>
+<summary>cosmos-db</summary>
+
+**stdout**
+```
+AutoRest code generation utility [cli version: 3.6.3; node: v14.21.3]
+(C) 2018 Microsoft Corporation.
+https://aka.ms/autorest
+info    | AutoRest core version selected from configuration: 3.4.5.
+   Loading AutoRest core      '/home/runner/.autorest/@autorestcore@3.4.5/nodemodules/@autorest/core/dist' (3.4.5)
+INFORMATION: > Loading local AutoRest extension '@autorest/java' (/home/runner/work/autorest.java/autorest.java)
+INFORMATION: > Loading local AutoRest extension '@autorest/java.fluent' (/home/runner/work/autorest.java/autorest.java/fluentgen)
+INFORMATION: > Loading local AutoRest extension '@autorest/java.fluentnamer' (/home/runner/work/autorest.java/autorest.java/fluentnamer)
+INFORMATION: > Loading AutoRest extension '@autorest/modelerfour' (4.18.1->4.18.1)
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetResults > properties > systemData)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:488:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > databaseAccountOfferType)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1168:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > apiProperties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1275:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > analyticalStorageConfiguration)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1284:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > createMode)
+  keys: [ [32m'type'[39m, [32m'default'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1294:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > restoreParameters)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1300:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > backupPolicy)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1305:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > diagnosticLogSettings)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1329:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > capacity)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1338:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > keysMetadata)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1347:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > minimalTlsVersion)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1360:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > customerManagedKeyStatus)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1365:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountGetProperties > properties > defaultPriorityLevel)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1374:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > apiProperties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1458:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > analyticalStorageConfiguration)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1467:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > createMode)
+  keys: [ [32m'type'[39m, [32m'default'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1472:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > backupPolicy)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1478:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > diagnosticLogSettings)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1501:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > restoreParameters)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1510:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > capacity)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1515:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > keysMetadata)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1524:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > minimalTlsVersion)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1537:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > customerManagedKeyStatus)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1542:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountCreateUpdateProperties > properties > defaultPriorityLevel)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1551:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountUpdateProperties > properties > apiProperties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1670:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountUpdateProperties > properties > analyticalStorageConfiguration)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1679:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountUpdateProperties > properties > backupPolicy)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1684:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountUpdateProperties > properties > diagnosticLogSettings)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1707:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountUpdateProperties > properties > capacity)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1716:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountUpdateProperties > properties > keysMetadata)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1725:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountUpdateProperties > properties > minimalTlsVersion)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1738:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountUpdateProperties > properties > customerManagedKeyStatus)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1743:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountUpdateProperties > properties > defaultPriorityLevel)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:1752:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > OptionsResource > properties > autoscaleSettings)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:2548:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountKeysMetadata > properties > primaryMasterKey)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:3785:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountKeysMetadata > properties > secondaryMasterKey)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:3790:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountKeysMetadata > properties > primaryReadonlyMasterKey)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:3795:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DatabaseAccountKeysMetadata > properties > secondaryReadonlyMasterKey)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:3800:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > Usage > properties > name)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:3892:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MetricDefinition > properties > name)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:3999:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > Metric > properties > name)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4058:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > PercentileMetric > properties > name)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4166:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > AnalyticalStorageConfiguration > properties > schemaType)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4332:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > BackupPolicy > properties > type)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4508:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > BackupPolicy > properties > migrationState)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4513:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > BackupPolicyMigrationState > properties > status)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4539:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > BackupPolicyMigrationState > properties > targetType)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4544:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > PeriodicModeBackupPolicy > properties > periodicModeProperties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4579:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > ContinuousModeBackupPolicy > properties > continuousModeProperties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4596:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > PeriodicModeProperties > properties > backupStorageRedundancy)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4620:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > ContinuousModeProperties > properties > tier)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4631:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > LocationGetResult > properties > properties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json:4697:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DataTransferJobProperties > properties > error)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/dataTransferService.json:213:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > DataTransferJobGetResults > properties > properties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/dataTransferService.json:246:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MongoClusterProperties > properties > provisioningState)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/mongoCluster.json:183:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > FirewallRuleProperties > properties > provisioningState)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/mongoCluster.json:261:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableDatabaseAccountGetResult > properties > properties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:54:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableDatabaseAccountProperties > properties > apiType)
+  keys: [ [32m'type'[39m, [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:104:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableSqlDatabaseGetResult > properties > properties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:183:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableSqlDatabaseProperties > properties > resource > properties > operationType)
+  keys: [ [32m'type'[39m, [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:219:7
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableSqlContainerGetResult > properties > properties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:291:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableSqlContainerProperties > properties > resource > properties > operationType)
+  keys: [ [32m'type'[39m, [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:327:7
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableMongodbDatabaseGetResult > properties > properties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:435:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableMongodbDatabaseProperties > properties > resource > properties > operationType)
+  keys: [ [32m'type'[39m, [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:471:7
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableMongodbCollectionGetResult > properties > properties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:514:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableMongodbCollectionProperties > properties > resource > properties > operationType)
+  keys: [ [32m'type'[39m, [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:550:7
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableGremlinDatabaseGetResult > properties > properties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:639:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableGremlinDatabaseProperties > properties > resource > properties > operationType)
+  keys: [ [32m'type'[39m, [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:675:7
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableGremlinGraphGetResult > properties > properties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:718:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableGremlinGraphProperties > properties > resource > properties > operationType)
+  keys: [ [32m'type'[39m, [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:754:7
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableTableGetResult > properties > properties)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:843:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RestorableTableProperties > properties > resource > properties > operationType)
+  keys: [ [32m'type'[39m, [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:879:7
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > BackupInformation > properties > continuousBackupInformation)
+  keys: [ [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json:969:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > ServiceResourceProperties > properties > status)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/services.json:61:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > RegionalServiceResource > properties > status)
+  keys: [ [32m'readOnly'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2023-09-15-preview/services.json:271:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > Resource > properties > systemData)
+  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v3/types.json:31:5
+WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > Resource > properties > systemData)
+  keys: [ [32m'readOnly'[39m, [32m'type'[39m ]
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:32:5
+WARNING (PreCheck/SchemaMissingType): The schema 'DatabaseAccountsListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlDatabaseListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlContainerListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlStoredProcedureListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlUserDefinedFunctionListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlTriggerListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MongoDBDatabaseListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MongoDBCollectionListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'TableListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'CassandraKeyspaceListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'CassandraTableListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'GremlinDatabaseListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'GremlinGraphListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'ErrorResponse' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'CloudError' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'FailoverPolicies' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'RegionForOnlineOffline' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'ClientEncryptionKeyGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'ThroughputSettingsGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'GraphResourceGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlDatabaseGetProperties-resource' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlDatabaseGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlContainerGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlContainerGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlStoredProcedureGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlUserDefinedFunctionGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlTriggerGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MongoDBDatabaseGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MongoDBDatabaseGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MongoDBCollectionGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MongoDBCollectionGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'TableGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'TableGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'CassandraKeyspaceGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'CassandraKeyspaceGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'CassandraTableGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'CassandraTableGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'GremlinDatabaseGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'GremlinDatabaseGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'GremlinGraphGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'GremlinGraphGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'CassandraViewGetProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'CassandraViewGetProperties-options' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'DatabaseAccountListReadOnlyKeysResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'DatabaseAccountListKeysResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'DatabaseAccountConnectionString' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'DatabaseAccountListConnectionStringsResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'PhysicalPartitionThroughputInfoResultProperties-resource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'ManagedServiceIdentity' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'Operation-display' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'OperationListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'UsagesResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'Usage' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'PartitionUsagesResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'PartitionUsage' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MetricDefinitionsListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MetricDefinition' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MetricAvailability' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MetricListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'Metric' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MetricName' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'MetricValue' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'PercentileMetricListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'PercentileMetric' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'PercentileMetricValue' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'PartitionMetricListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'PartitionMetric' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'NotebookWorkspaceConnectionInfoResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlRoleDefinitionResource' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlRoleDefinitionListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlRoleAssignmentListResult' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
+WARNING (PreCheck/DuplicateSchema): Duplicate Schema named ErrorResponse -- properties.code: {"$ref":"#/components/schemas/schemas:33","description":"Error code."} => <none>,properties.message: {"$ref":"#/components/schemas/schemas:34","description":"Error message indicating why the operation failed."} => <none>,properties.error: undefined => {"description":"The error object.","$ref":"#/components/schemas/schemas:1401"},title: undefined => "Error response" 
+WARNING (PreCheck/DuplicateSchema): Duplicate Schema named ProvisioningState -- enum: undefined => ["Succeeded","Failed","Canceled","InProgress","Updating","Dropping"],x-ms-enum: undefined => {"name":"ProvisioningState","modelAsString":true} 
+WARNING (PreCheck/DuplicateSchema): Duplicate Schema named Resource -- properties.id.$ref: undefined => "#/components/schemas/schemas:1368",properties.id.description: undefined => "Fully qualified resource ID for the resource. E.g. \"/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}\"",properties.systemData: undefined => {"readOnly":true,"type":"object","description":"Azure Resource Manager metadata containing createdBy and modifiedBy information.","$ref":"#/components/schemas/schemas:1260"} 
+WARNING (PreCheck/DuplicateSchema): Duplicate Schema named ProxyResource -- allOf.0.$ref: undefined => "#/components/schemas/schemas:1367" 
+WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'DatabaseAccountGetResults' has a property 'identity' that is already declared the parent schema 'ARMResourceProperties' but isn't significantly different. The property has been removed from DatabaseAccountGetResults
+WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'DatabaseAccountCreateUpdateParameters' has a property 'identity' that is already declared the parent schema 'ARMResourceProperties' but isn't significantly different. The property has been removed from DatabaseAccountCreateUpdateParameters
+WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'RestoreParameters' has a property 'restoreSource' that is already declared the parent schema 'RestoreParametersBase' but isn't significantly different. The property has been removed from RestoreParameters
+WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'RestoreParameters' has a property 'restoreTimestampInUtc' that is already declared the parent schema 'RestoreParametersBase' but isn't significantly different. The property has been removed from RestoreParameters
+WARNING (PreNamer/DeduplicateName): Deduplicating schema name: 'Resource' -> 'ResourceAutoGenerated'
+WARNING (PreNamer/DeduplicateName): Deduplicating schema name: 'ErrorResponse' -> 'ErrorResponseAutoGenerated'
+WARNING (PreNamer/DeduplicateName): Deduplicating schema name: 'ProxyResource' -> 'ProxyResourceAutoGenerated'
+INFORMATION (FluentNamer): Load fluent settings
+INFORMATION (FluentJavaSettings): Option, string, add-inner : null
+INFORMATION (FluentJavaSettings): Option, string, remove-inner : null
+INFORMATION (FluentJavaSettings): Option, string, rename-model : null
+INFORMATION (FluentJavaSettings): Option, string, remove-model : null
+INFORMATION (FluentJavaSettings): Option, string, preserve-model : null
+INFORMATION (FluentJavaSettings): Option, string, name-for-ungrouped-operations : null
+INFORMATION (FluentJavaSettings): Option, string, pom-file : null
+INFORMATION (FluentJavaSettings): Option, string, package-version : null
+INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
+INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
+INFORMATION (FluentNamer): Transform code model
+INFORMATION (SchemaNameNormalization): Override default name, from 'eTag' to 'etag'
+INFORMATION (SchemaNameNormalization): Override default name, from 'userName' to 'username'
+WARNING (SchemaNameNormalization): Rename schema default name, from 'Components1Jq1T4ISchemasManagedserviceidentityPropertiesUserassignedidentitiesAdditionalproperties' to 'ManagedServiceIdentityUserAssignedIdentities'
+INFORMATION (OperationNameNormalization): Rename operation from 'get' to 'getByResourceGroup', in operation group 'DatabaseAccounts'
+INFORMATION (OperationNameNormalization): Rename operation from 'listBySubscription' to 'list', in operation group 'CassandraClusters'
+INFORMATION (OperationNameNormalization): Rename operation from 'get' to 'getByResourceGroup', in operation group 'CassandraClusters'
+INFORMATION (OperationNameNormalization): Rename operation from 'get' to 'getByResourceGroup', in operation group 'MongoClusters'
+INFORMATION (ResourceTypeNormalization): Change parent from 'Resource' to 'ProxyResource', for 'ProxyResource'
+INFORMATION (ResourceTypeNormalization): Add parent Resource, for 'ArmResourceProperties'
+INFORMATION (ResourceTypeNormalization): Add parent ProxyResource, for 'ArmProxyResource'
+INFORMATION (ResourceTypeNormalization): Add parent Resource, for 'ManagedCassandraArmResourceProperties'
+INFORMATION (ResourceTypeNormalization): Change parent from 'TrackedResource' to 'Resource', for 'MongoCluster'
+INFORMATION (ResourceTypeNormalization): Change parent from 'ResourceAutoGenerated' to 'ProxyResource', for 'TrackedResource'
+INFORMATION (ResourceTypeNormalization): Change parent from 'ProxyResourceAutoGenerated' to 'ProxyResource', for 'FirewallRule'
+INFORMATION (ResourceTypeNormalization): Change parent from 'ResourceAutoGenerated' to 'ProxyResource', for 'ProxyResourceAutoGenerated'
+INFORMATION (ErrorTypeNormalization): Rename error from 'ErrorResponse' to 'ManagementError'
+INFORMATION (ErrorTypeNormalization): Rename error from 'CloudError' to 'ManagementError'
+INFORMATION (ErrorTypeNormalization): Rename error from 'ErrorResponseAutoGenerated' to 'ManagementError'
+INFORMATION (SchemaCleanup): Remove unused object schema 'Resource'
+INFORMATION (SchemaCleanup): Remove unused object schema 'TrackedResource'
+INFORMATION (SchemaCleanup): Remove unused object schema 'ResourceAutoGenerated'
+INFORMATION (SchemaCleanup): Remove unused object schema 'ManagementError'
+INFORMATION (SchemaCleanup): Remove unused object schema 'ErrorAdditionalInfo'
+INFORMATION (SchemaCleanup): Remove unused object schema 'ProxyResourceAutoGenerated'
+INFORMATION (SchemaCleanup): Remove unused object schema 'DataTransferServiceResource'
+INFORMATION (SchemaCleanup): Remove unused object schema 'SqlDedicatedGatewayServiceResource'
+INFORMATION (SchemaCleanup): Remove unused object schema 'GraphApiComputeServiceResource'
+INFORMATION (SchemaCleanup): Remove unused object schema 'MaterializedViewsBuilderServiceResource'
+INFORMATION (SchemaCleanup): Remove unused choice schema 'CreatedByType'
+INFORMATION (SchemaCleanup): Remove unused choice schema 'NodeStatus'
+INFORMATION (FluentGen): Read YAML
+INFORMATION (FluentJavaSettings): Option, string, add-inner : null
+INFORMATION (FluentJavaSettings): Option, string, remove-inner : null
+INFORMATION (FluentJavaSettings): Option, string, rename-model : null
+INFORMATION (FluentJavaSettings): Option, string, remove-model : null
+INFORMATION (FluentJavaSettings): Option, string, preserve-model : null
+INFORMATION (FluentJavaSettings): Option, string, name-for-ungrouped-operations : null
+INFORMATION (FluentJavaSettings): Option, string, pom-file : null
+INFORMATION (FluentJavaSettings): Option, string, package-version : null
+INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
+INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
+INFORMATION (FluentGen): Map code model to client model
+INFORMATION (FluentMapper): Add Inner to response types: [SqlContainerGetResults, NotebookWorkspace, SqlUserDefinedFunctionGetResults, GraphResourceGetResults, CassandraClusterPublicStatus, ClusterResource, CheckNameAvailabilityResponse, PartitionMetric, SqlRoleAssignmentGetResults, RestorableMongodbDatabaseGetResult, SqlStoredProcedureGetResults, DataTransferJobGetResults, LocationGetResult, MongoDBCollectionGetResults, NotebookWorkspaceConnectionInfoResult, RestorableMongodbCollectionGetResult, CassandraViewGetResults, RestorableGremlinResourcesGetResult, SqlDatabaseGetResults, MongoCluster, ClientEncryptionKeyGetResults, Metric, Usage, RestorableMongodbResourcesGetResult, SqlRoleDefinitionGetResults, PartitionUsage, Operation, DatabaseAccountListConnectionStringsResult, RestorableGremlinGraphGetResult, GremlinDatabaseGetResults, RestorableGremlinDatabaseGetResult, PhysicalPartitionStorageInfoCollection, PrivateLinkResource, GremlinGraphGetResults, TableGetResults, RestorableSqlContainerGetResult, PrivateEndpointConnection, DatabaseAccountListKeysResult, RestorableSqlResourcesGetResult, RestorableTableResourcesGetResult, MongoRoleDefinitionGetResults, RestorableDatabaseAccountGetResult, BackupInformation, BackupResource, RestorableSqlDatabaseGetResult, DatabaseAccountListReadOnlyKeysResult, MongoUserDefinitionGetResults, RestorableTableGetResult, MongoDBDatabaseGetResults, DataCenterResource, CassandraKeyspaceGetResults, MetricDefinition, ListConnectionStringsResult, SqlTriggerGetResults, ThroughputSettingsGetResults, PhysicalPartitionThroughputInfoResult, PercentileMetric, CassandraTableGetResults, CommandOutput, DatabaseAccountGetResults, ServiceResource, FirewallRule]
+INFORMATION (FluentGen): Java template for client model
+INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'DatabaseAccountGetResults', method reference 'createOrUpdate', body parameter 'DatabaseAccountCreateUpdateParameters'
+INFORMATION (ResourceParser): Fluent model 'DatabaseAccountGetResults' as category RESOURCEGROUP_ASPARENT
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'DatabaseAccountGetResults', method reference 'update', body parameter 'DatabaseAccountUpdateParameters'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'DatabaseAccountGetResults', method reference 'getByResourceGroup'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'DatabaseAccountGetResults', method reference 'delete'
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'DatabaseAccountGetResults', action methods: [offlineRegion, listConnectionStrings, listKeys, onlineRegion, regenerateKey, failoverPriorityChange, listReadOnlyKeys]
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'GraphResourceGetResults', method reference 'createUpdateGraph', body parameter 'GraphResourceCreateUpdateParameters'
+INFORMATION (ResourceParser): Fluent model 'GraphResourceGetResults' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'GraphResourceGetResults', method reference 'createUpdateGraph', body parameter 'GraphResourceCreateUpdateParameters'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'GraphResourceGetResults', method reference 'getGraph'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'GraphResourceGetResults', method reference 'deleteGraphResource'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlDatabaseGetResults', method reference 'createUpdateSqlDatabase', body parameter 'SqlDatabaseCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'ClientEncryptionKeyGetResults', method reference 'createUpdateClientEncryptionKey', body parameter 'ClientEncryptionKeyCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlContainerGetResults', method reference 'createUpdateSqlContainer', body parameter 'SqlContainerCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlStoredProcedureGetResults', method reference 'createUpdateSqlStoredProcedure', body parameter 'SqlStoredProcedureCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlUserDefinedFunctionGetResults', method reference 'createUpdateSqlUserDefinedFunction', body parameter 'SqlUserDefinedFunctionCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlTriggerGetResults', method reference 'createUpdateSqlTrigger', body parameter 'SqlTriggerCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlRoleDefinitionGetResults', method reference 'createUpdateSqlRoleDefinition', body parameter 'SqlRoleDefinitionCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlRoleAssignmentGetResults', method reference 'createUpdateSqlRoleAssignment', body parameter 'SqlRoleAssignmentCreateUpdateParameters'
+INFORMATION (ResourceParser): Fluent model 'SqlDatabaseGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'ClientEncryptionKeyGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'SqlContainerGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'SqlStoredProcedureGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'SqlUserDefinedFunctionGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'SqlTriggerGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'SqlRoleDefinitionGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'SqlRoleAssignmentGetResults' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'SqlDatabaseGetResults', method reference 'createUpdateSqlDatabase', body parameter 'SqlDatabaseCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'ClientEncryptionKeyGetResults', method reference 'createUpdateClientEncryptionKey', body parameter 'ClientEncryptionKeyCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'SqlContainerGetResults', method reference 'createUpdateSqlContainer', body parameter 'SqlContainerCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'SqlStoredProcedureGetResults', method reference 'createUpdateSqlStoredProcedure', body parameter 'SqlStoredProcedureCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'SqlUserDefinedFunctionGetResults', method reference 'createUpdateSqlUserDefinedFunction', body parameter 'SqlUserDefinedFunctionCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'SqlTriggerGetResults', method reference 'createUpdateSqlTrigger', body parameter 'SqlTriggerCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'SqlRoleDefinitionGetResults', method reference 'createUpdateSqlRoleDefinition', body parameter 'SqlRoleDefinitionCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'SqlRoleAssignmentGetResults', method reference 'createUpdateSqlRoleAssignment', body parameter 'SqlRoleAssignmentCreateUpdateParameters'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'SqlDatabaseGetResults', method reference 'getSqlDatabase'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'ClientEncryptionKeyGetResults', method reference 'getClientEncryptionKey'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'SqlContainerGetResults', method reference 'getSqlContainer'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'SqlStoredProcedureGetResults', method reference 'getSqlStoredProcedure'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'SqlUserDefinedFunctionGetResults', method reference 'getSqlUserDefinedFunction'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'SqlTriggerGetResults', method reference 'getSqlTrigger'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'SqlRoleDefinitionGetResults', method reference 'getSqlRoleDefinition'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'SqlRoleAssignmentGetResults', method reference 'getSqlRoleAssignment'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'SqlDatabaseGetResults', method reference 'deleteSqlDatabase'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'SqlContainerGetResults', method reference 'deleteSqlContainer'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'SqlStoredProcedureGetResults', method reference 'deleteSqlStoredProcedure'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'SqlUserDefinedFunctionGetResults', method reference 'deleteSqlUserDefinedFunction'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'SqlTriggerGetResults', method reference 'deleteSqlTrigger'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'SqlRoleDefinitionGetResults', method reference 'deleteSqlRoleDefinition'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'SqlRoleAssignmentGetResults', method reference 'deleteSqlRoleAssignment'
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'SqlDatabaseGetResults', action methods: [sqlDatabasePartitionMerge]
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'SqlContainerGetResults', action methods: [listSqlContainerPartitionMerge, retrieveContinuousBackupInformation]
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'MongoDBDatabaseGetResults', method reference 'createUpdateMongoDBDatabase', body parameter 'MongoDBDatabaseCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'MongoDBCollectionGetResults', method reference 'createUpdateMongoDBCollection', body parameter 'MongoDBCollectionCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'MongoRoleDefinitionGetResults', method reference 'createUpdateMongoRoleDefinition', body parameter 'MongoRoleDefinitionCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'MongoUserDefinitionGetResults', method reference 'createUpdateMongoUserDefinition', body parameter 'MongoUserDefinitionCreateUpdateParameters'
+INFORMATION (ResourceParser): Fluent model 'MongoDBDatabaseGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'MongoDBCollectionGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'MongoRoleDefinitionGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'MongoUserDefinitionGetResults' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'MongoDBDatabaseGetResults', method reference 'createUpdateMongoDBDatabase', body parameter 'MongoDBDatabaseCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'MongoDBCollectionGetResults', method reference 'createUpdateMongoDBCollection', body parameter 'MongoDBCollectionCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'MongoRoleDefinitionGetResults', method reference 'createUpdateMongoRoleDefinition', body parameter 'MongoRoleDefinitionCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'MongoUserDefinitionGetResults', method reference 'createUpdateMongoUserDefinition', body parameter 'MongoUserDefinitionCreateUpdateParameters'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'MongoDBDatabaseGetResults', method reference 'getMongoDBDatabase'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'MongoDBCollectionGetResults', method reference 'getMongoDBCollection'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'MongoRoleDefinitionGetResults', method reference 'getMongoRoleDefinition'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'MongoUserDefinitionGetResults', method reference 'getMongoUserDefinition'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'MongoDBDatabaseGetResults', method reference 'deleteMongoDBDatabase'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'MongoDBCollectionGetResults', method reference 'deleteMongoDBCollection'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'MongoRoleDefinitionGetResults', method reference 'deleteMongoRoleDefinition'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'MongoUserDefinitionGetResults', method reference 'deleteMongoUserDefinition'
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'MongoDBDatabaseGetResults', action methods: [mongoDBDatabasePartitionMerge]
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'MongoDBCollectionGetResults', action methods: [retrieveContinuousBackupInformation, listMongoDBCollectionPartitionMerge]
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'TableGetResults', method reference 'createUpdateTable', body parameter 'TableCreateUpdateParameters'
+INFORMATION (ResourceParser): Fluent model 'TableGetResults' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'TableGetResults', method reference 'createUpdateTable', body parameter 'TableCreateUpdateParameters'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'TableGetResults', method reference 'getTable'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'TableGetResults', method reference 'deleteTable'
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'TableGetResults', action methods: [retrieveContinuousBackupInformation]
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'CassandraKeyspaceGetResults', method reference 'createUpdateCassandraKeyspace', body parameter 'CassandraKeyspaceCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'CassandraTableGetResults', method reference 'createUpdateCassandraTable', body parameter 'CassandraTableCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'CassandraViewGetResults', method reference 'createUpdateCassandraView', body parameter 'CassandraViewCreateUpdateParameters'
+INFORMATION (ResourceParser): Fluent model 'CassandraKeyspaceGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'CassandraTableGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'CassandraViewGetResults' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'CassandraKeyspaceGetResults', method reference 'createUpdateCassandraKeyspace', body parameter 'CassandraKeyspaceCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'CassandraTableGetResults', method reference 'createUpdateCassandraTable', body parameter 'CassandraTableCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'CassandraViewGetResults', method reference 'createUpdateCassandraView', body parameter 'CassandraViewCreateUpdateParameters'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'CassandraKeyspaceGetResults', method reference 'getCassandraKeyspace'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'CassandraTableGetResults', method reference 'getCassandraTable'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'CassandraViewGetResults', method reference 'getCassandraView'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'CassandraKeyspaceGetResults', method reference 'deleteCassandraKeyspace'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'CassandraTableGetResults', method reference 'deleteCassandraTable'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'CassandraViewGetResults', method reference 'deleteCassandraView'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'GremlinDatabaseGetResults', method reference 'createUpdateGremlinDatabase', body parameter 'GremlinDatabaseCreateUpdateParameters'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'GremlinGraphGetResults', method reference 'createUpdateGremlinGraph', body parameter 'GremlinGraphCreateUpdateParameters'
+INFORMATION (ResourceParser): Fluent model 'GremlinDatabaseGetResults' as category NESTED_CHILD
+INFORMATION (ResourceParser): Fluent model 'GremlinGraphGetResults' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'GremlinDatabaseGetResults', method reference 'createUpdateGremlinDatabase', body parameter 'GremlinDatabaseCreateUpdateParameters'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'GremlinGraphGetResults', method reference 'createUpdateGremlinGraph', body parameter 'GremlinGraphCreateUpdateParameters'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'GremlinDatabaseGetResults', method reference 'getGremlinDatabase'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'GremlinGraphGetResults', method reference 'getGremlinGraph'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'GremlinDatabaseGetResults', method reference 'deleteGremlinDatabase'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'GremlinGraphGetResults', method reference 'deleteGremlinGraph'
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'GremlinGraphGetResults', action methods: [retrieveContinuousBackupInformation]
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'DataTransferJobGetResults', method reference 'create', body parameter 'CreateJobRequest'
+INFORMATION (ResourceParser): Fluent model 'DataTransferJobGetResults' as category NESTED_CHILD
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'DataTransferJobGetResults', method reference 'get'
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'DataTransferJobGetResults', action methods: [resume, cancel, pause]
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'ClusterResource', method reference 'createUpdate', body parameter 'ClusterResourceInner'
+INFORMATION (ResourceParser): Fluent model 'ClusterResource' as category RESOURCEGROUP_ASPARENT
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'ClusterResource', method reference 'update', body parameter 'ClusterResourceInner'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'ClusterResource', method reference 'getByResourceGroup'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'ClusterResource', method reference 'delete'
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'ClusterResource', action methods: [invokeCommand, deallocate, start]
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'DataCenterResource', method reference 'createUpdate', body parameter 'DataCenterResourceInner'
+INFORMATION (ResourceParser): Fluent model 'DataCenterResource' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'DataCenterResource', method reference 'update', body parameter 'DataCenterResourceInner'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'DataCenterResource', method reference 'get'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'DataCenterResource', method reference 'delete'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'MongoCluster', method reference 'createOrUpdate', body parameter 'MongoClusterInner'
+INFORMATION (ResourceParser): Fluent model 'MongoCluster' as category RESOURCEGROUP_ASPARENT
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'FirewallRule', method reference 'createOrUpdateFirewallRule', body parameter 'FirewallRuleInner'
+INFORMATION (ResourceParser): Fluent model 'FirewallRule' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'MongoCluster', method reference 'update', body parameter 'MongoClusterUpdate'
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'FirewallRule', method reference 'createOrUpdateFirewallRule', body parameter 'FirewallRuleInner'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'MongoCluster', method reference 'getByResourceGroup'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'FirewallRule', method reference 'getFirewallRule'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'MongoCluster', method reference 'delete'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'FirewallRule', method reference 'deleteFirewallRule'
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'MongoCluster', action methods: [listConnectionStrings]
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'NotebookWorkspace', method reference 'createOrUpdate', body parameter 'NotebookWorkspaceCreateUpdateParameters'
+INFORMATION (ResourceParser): Fluent model 'NotebookWorkspace' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'NotebookWorkspace', method reference 'createOrUpdate', body parameter 'NotebookWorkspaceCreateUpdateParameters'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'NotebookWorkspace', method reference 'get'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'NotebookWorkspace', method reference 'delete'
+INFORMATION (ResourceActions): ResourceActions: Fluent model 'NotebookWorkspace', action methods: [start, listConnectionInfo, regenerateAuthToken]
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'PrivateEndpointConnection', method reference 'createOrUpdate', body parameter 'PrivateEndpointConnectionInner'
+INFORMATION (ResourceParser): Fluent model 'PrivateEndpointConnection' as category NESTED_CHILD
+INFORMATION (ResourceUpdate): ResourceUpdate: Fluent model 'PrivateEndpointConnection', method reference 'createOrUpdate', body parameter 'PrivateEndpointConnectionInner'
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'PrivateEndpointConnection', method reference 'get'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'PrivateEndpointConnection', method reference 'delete'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'ServiceResource', method reference 'create', body parameter 'ServiceResourceCreateUpdateParameters'
+INFORMATION (ResourceParser): Fluent model 'ServiceResource' as category NESTED_CHILD
+INFORMATION (ResourceRefresh): ResourceRefresh: Fluent model 'ServiceResource', method reference 'get'
+INFORMATION (ResourceDelete): ResourceDelete: Fluent model 'ServiceResource', method reference 'delete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountFailoverPriorityChange'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountListByResourceGroup'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountListKeys'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountListConnectionStrings'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountListConnectionStringsMongo'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountOfflineRegion'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountOnlineRegion'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountListReadOnlyKeys'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountListReadOnlyKeys'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountRegenerateKey'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountCheckNameExists'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountGetUsages'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountGetMetricDefinitions'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBRestoreDatabaseAccountCreateUpdate.json'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'DatabaseAccountGetResults', resource define method 'define'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBDatabaseAccountCreateMax'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBDatabaseAccountCreateMin'
+INFORMATION (ExampleParser): Parse resource update example 'CosmosDBDatabaseAccountPatch'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBOperationsList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseGetUsages'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseGetMetricDefinitions'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCollectionGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCollectionGetUsages'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCollectionGetMetricDefinitions'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRegionCollectionGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountRegionGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountRegionGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountRegionGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountRegionGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountRegionGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountRegionGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCollectionGetUsages'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountRegionGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDatabaseAccountRegionGetMetrics'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseDelete'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBGraphCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'GraphResourceGetResults', resource define method 'defineUpdateGraph'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseThroughputGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseThroughputUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseMigrateToAutoscale'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseMigrateToManualThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBClientEncryptionKeysList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBClientEncryptionKeyGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabasePartitionMerge'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerPartitionMerge'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerThroughputGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerThroughputUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerMigrateToAutoscale'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerMigrateToManualThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseRetrieveThroughputDistribution'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlDatabaseRedistributeThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerRetrieveThroughputDistribution'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerRedistributeThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlStoredProcedureList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlStoredProcedureGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlStoredProcedureDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlUserDefinedFunctionList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlUserDefinedFunctionGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlUserDefinedFunctionDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlTriggerList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlTriggerGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlTriggerDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlRoleDefinitionGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlRoleDefinitionDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlRoleDefinitionList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlRoleAssignmentGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlRoleAssignmentDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlRoleAssignmentList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBSqlContainerBackupInformation'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBSqlDatabaseCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlDatabaseGetResults', resource define method 'defineUpdateSqlDatabase'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBSqlDatabaseRestore'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBClientEncryptionKeyCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'ClientEncryptionKeyGetResults', resource define method 'defineUpdateClientEncryptionKey'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBSqlMaterializedViewCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlContainerGetResults', resource define method 'defineUpdateSqlContainer'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBSqlContainerCreateUpdate'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBSqlContainerRestore'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBSqlStoredProcedureCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlStoredProcedureGetResults', resource define method 'defineUpdateSqlStoredProcedure'
+WARNING (ExampleParser): Failed to assign sample value to required stage 'WithLocation'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBSqlUserDefinedFunctionCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlUserDefinedFunctionGetResults', resource define method 'defineUpdateSqlUserDefinedFunction'
+WARNING (ExampleParser): Failed to assign sample value to required stage 'WithLocation'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBSqlTriggerCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlTriggerGetResults', resource define method 'defineUpdateSqlTrigger'
+WARNING (ExampleParser): Failed to assign sample value to required stage 'WithLocation'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBSqlRoleDefinitionCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlRoleDefinitionGetResults', resource define method 'defineUpdateSqlRoleDefinition'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBSqlRoleAssignmentCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'SqlRoleAssignmentGetResults', resource define method 'defineUpdateSqlRoleAssignment'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBDatabaseList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBDatabaseGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBDatabaseDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBDatabaseThroughputGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBDatabaseThroughputUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBDatabaseMigrateToAutoscale'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBDatabaseMigrateToManualThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBDatabaseRetrieveThroughputDistribution'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBDatabaseRedistributeThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionRetrieveThroughputDistribution'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionRedistributeThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBDatabasePartitionMerge'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionPartitionMerge'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionThroughputGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionThroughputUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionMigrateToAutoscale'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionMigrateToManualThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoRoleDefinitionGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBRoleDefinitionDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBRoleDefinitionList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBUserDefinitionGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBUserDefinitionDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBUserDefinitionList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBMongoDBCollectionBackupInformation'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBMongoDBDatabaseCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'MongoDBDatabaseGetResults', resource define method 'defineUpdateMongoDBDatabase'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBMongoDBDatabaseRestore'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBMongoDBCollectionRestore'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'MongoDBCollectionGetResults', resource define method 'defineUpdateMongoDBCollection'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBMongoDBCollectionCreateUpdate'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBMongoDBRoleDefinitionCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'MongoRoleDefinitionGetResults', resource define method 'defineUpdateMongoRoleDefinition'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBMongoDBUserDefinitionCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'MongoUserDefinitionGetResults', resource define method 'defineUpdateMongoUserDefinition'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBTableList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBTableGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBTableDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBTableThroughputGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBTableThroughputUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBTableMigrateToAutoscale'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBTableMigrateToManualThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBTableCollectionBackupInformation'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBTableReplace'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'TableGetResults', resource define method 'defineUpdateTable'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraKeyspaceList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraKeyspaceGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraKeyspaceDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraKeyspaceThroughputGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraKeyspaceThroughputUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraKeyspaceMigrateToAutoscale'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraKeyspaceMigrateToManualThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraTableList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraTableGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraTableDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraTableThroughputGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraTableThroughputUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraTableMigrateToAutoscale'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraTableMigrateToManualThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraViewList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraViewGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraViewDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraViewThroughputGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraViewThroughputUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraViewMigrateToAutoscale'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBCassandraViewMigrateToManualThroughput'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBCassandraKeyspaceCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'CassandraKeyspaceGetResults', resource define method 'defineUpdateCassandraKeyspace'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBCassandraTableCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'CassandraTableGetResults', resource define method 'defineUpdateCassandraTable'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBCassandraViewCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'CassandraViewGetResults', resource define method 'defineUpdateCassandraView'
+WARNING (ExampleParser): Failed to assign sample value to required stage 'WithLocation'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinDatabaseList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinDatabaseGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinDatabaseDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinDatabaseThroughputGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinDatabaseThroughputUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinDatabaseMigrateToAutoscale'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinDatabaseMigrateToManualThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinGraphList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinGraphGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinGraphDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinGraphThroughputGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinGraphThroughputUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinGraphMigrateToAutoscale'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinGraphMigrateToManualThroughput'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBGremlinGraphBackupInformation'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBGremlinDatabaseCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'GremlinDatabaseGetResults', resource define method 'defineUpdateGremlinDatabase'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBGremlinGraphCreateUpdate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'GremlinGraphGetResults', resource define method 'defineUpdateGremlinGraph'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBLocationList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBLocationGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDataTransferJobGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDataTransferJobPause'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDataTransferJobCreate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDataTransferJobCreate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBDataTransferJobFeed'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBDataTransferJobCreate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'DataTransferJobGetResults', resource define method 'define'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraClusterListBySubscription'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraClusterListByResourceGroup'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraClusterGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraClusterDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraCommand'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraBackupsList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraBackup'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraClusterDeallocate'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraClusterStart'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraStatus'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBManagedCassandraClusterCreate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'ClusterResource', resource define method 'defineUpdate'
+INFORMATION (ExampleParser): Parse resource update example 'CosmosDBManagedCassandraClusterPatch'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraDataCenterList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraDataCenterGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBManagedCassandraDataCenterDelete'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBManagedCassandraDataCenterCreate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'DataCenterResource', resource define method 'defineUpdate'
+INFORMATION (ExampleParser): Parse resource update example 'CosmosDBManagedCassandraDataCenterUpdate'
+INFORMATION (ExampleParser): Parse collection method example 'List all the mongo clusters'
+INFORMATION (ExampleParser): Parse collection method example 'List the mongo clusters by resource group'
+INFORMATION (ExampleParser): Parse collection method example 'Get the mongo cluster'
+INFORMATION (ExampleParser): Parse collection method example 'Delete the mongo cluster'
+INFORMATION (ExampleParser): Parse collection method example 'Delete the firewall rule of the mongo cluster'
+INFORMATION (ExampleParser): Parse collection method example 'Get the firewall rule of the mongo cluster'
+INFORMATION (ExampleParser): Parse collection method example 'List firewall rules of the mongo cluster'
+INFORMATION (ExampleParser): Parse collection method example 'Check name availability already exists result'
+INFORMATION (ExampleParser): Parse collection method example 'Check name availability'
+INFORMATION (ExampleParser): Parse collection method example 'Get connection string'
+INFORMATION (ExampleParser): Parse resource create example 'Create a new mongo cluster with point in time restore'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'MongoCluster', resource define method 'define'
+INFORMATION (ExampleParser): Parse resource create example 'Create a new mongo cluster'
+INFORMATION (ExampleParser): Parse resource create example 'Create a firewall rule of the mongo cluster'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'FirewallRule', resource define method 'defineFirewallRule'
+INFORMATION (ExampleParser): Parse resource update example 'Add new shard nodes'
+INFORMATION (ExampleParser): Parse resource update example 'Update the mongo cluster'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBNotebookWorkspaceList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBNotebookWorkspaceGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBNotebookWorkspaceDelete'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBNotebookWorkspaceListConnectionInfo'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBNotebookWorkspaceRegenerateAuthToken'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBNotebookWorkspaceStart'
+INFORMATION (ExampleParser): Parse resource create example 'CosmosDBNotebookWorkspaceCreate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'NotebookWorkspace', resource define method 'define'
+INFORMATION (ExampleParser): Parse collection method example 'Gets private endpoint connection.'
+INFORMATION (ExampleParser): Parse collection method example 'Gets private endpoint connection.'
+INFORMATION (ExampleParser): Parse collection method example 'Deletes a private endpoint connection with a given name.'
+INFORMATION (ExampleParser): Parse resource create example 'Approve or reject a private endpoint connection with a given name.'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'PrivateEndpointConnection', resource define method 'define'
+INFORMATION (ExampleParser): Parse collection method example 'Gets private endpoint connection.'
+INFORMATION (ExampleParser): Parse collection method example 'Gets private endpoint connection.'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableDatabaseAccountList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableDatabaseAccountNoLocationList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableDatabaseAccountGet'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableSqlDatabaseList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableSqlContainerList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableSqlResourceList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableMongodbDatabaseList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableMongodbCollectionList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableMongodbResourceList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableGremlinDatabaseList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableGremlinGraphList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableGremlinResourceList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableTableList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBRestorableTableResourceList'
+INFORMATION (ExampleParser): Parse collection method example 'CosmosDBServicesList'
+INFORMATION (ExampleParser): Parse collection method example 'DataTransferServiceGet'
+INFORMATION (ExampleParser): Parse collection method example 'GraphAPIComputeServiceGet'
+INFORMATION (ExampleParser): Parse collection method example 'SqlDedicatedGatewayServiceGet'
+INFORMATION (ExampleParser): Parse collection method example 'MaterializedViewsBuilderServiceGet'
+INFORMATION (ExampleParser): Parse collection method example 'SqlDedicatedGatewayServiceDelete'
+INFORMATION (ExampleParser): Parse collection method example 'MaterializedViewsBuilderServiceDelete'
+INFORMATION (ExampleParser): Parse collection method example 'DataTransferServiceDelete'
+INFORMATION (ExampleParser): Parse collection method example 'GraphAPIComputeServiceDelete'
+INFORMATION (ExampleParser): Parse resource create example 'SqlDedicatedGatewayServiceCreate'
+INFORMATION (ResourceCreate): ResourceCreate: Fluent model 'ServiceResource', resource define method 'define'
+INFORMATION (ExampleParser): Parse resource create example 'DataTransferServiceCreate'
+INFORMATION (ExampleParser): Parse resource create example 'MaterializedViewsBuilderServiceCreate'
+INFORMATION (ExampleParser): Parse resource create example 'GraphAPIComputeServiceCreate'
+INFORMATION (FluentJavaSettings): Option, string, tag : package-preview-2023-09
+INFORMATION (FluentJavaSettings): Option, string, base-folder : .
+INFORMATION (FluentJavaSettings): Option, string, output-folder : /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-cosmos-db
+INFORMATION (FluentJavaSettings): Option, string, azure-libraries-for-java-folder : null
+INFORMATION (FluentJavaSettings): List of input files : [Microsoft.DocumentDB/preview/2023-09-15-preview/cosmos-db.json, Microsoft.DocumentDB/preview/2023-09-15-preview/dataTransferService.json, Microsoft.DocumentDB/preview/2023-09-15-preview/managedCassandra.json, Microsoft.DocumentDB/preview/2023-09-15-preview/mongoCluster.json, Microsoft.DocumentDB/preview/2023-09-15-preview/mongorbac.json, Microsoft.DocumentDB/preview/2023-09-15-preview/notebook.json, Microsoft.DocumentDB/preview/2023-09-15-preview/privateEndpointConnection.json, Microsoft.DocumentDB/preview/2023-09-15-preview/privateLinkResources.json, Microsoft.DocumentDB/preview/2023-09-15-preview/rbac.json, Microsoft.DocumentDB/preview/2023-09-15-preview/restorable.json, Microsoft.DocumentDB/preview/2023-09-15-preview/services.json]
+INFORMATION (FluentGen): Write Java
+INFORMATION (JavaFormatter): Java version: 11.0.20
+INFORMATION (JavaFormatter): Java formatter enabled
+
+```
+**stderr**
+```
+FATAL (FluentGen): Unhandled error: Java heap space
+java.lang.OutOfMemoryError: Java heap space
+	at com.azure.autorest.fluent.checker.JavaFormatter.fixOverlongStringLiteral(JavaFormatter.java:122)
+	at com.azure.autorest.fluent.checker.JavaFormatter.format(JavaFormatter.java:68)
+	at com.azure.autorest.fluent.FluentGen.processInternal(FluentGen.java:117)
+	at com.azure.autorest.extension.base.plugin.NewPlugin.process(NewPlugin.java:206)
+	at com.azure.autorest.fluent.Main.lambda$main$1(Main.java:18)
+	at com.azure.autorest.fluent.Main$$Lambda$15/0x00000001000f0440.apply(Unknown Source)
+	at com.azure.autorest.extension.base.jsonrpc.Connection.lambda$dispatch$2(Connection.java:151)
+	at com.azure.autorest.extension.base.jsonrpc.Connection$$Lambda$16/0x00000001000f0840.apply(Unknown Source)
+	at com.azure.autorest.extension.base.jsonrpc.Connection.lambda$process$3(Connection.java:270)
+	at com.azure.autorest.extension.base.jsonrpc.Connection$$Lambda$19/0x00000001000f7840.run(Unknown Source)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+  Error: Plugin fluentgen reported failure.
+
+```
+</details>
+
+<details>
 <summary>databox</summary>
 
 **stdout**
@@ -1051,8 +1904,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] no common parent fou
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.422 s
-[INFO] Finished at: 2023-09-19T18:48:28Z
+[INFO] Total time:  3.117 s
+[INFO] Finished at: 2023-09-20T18:43:47Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-databox: Compilation failure
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-databox/src/main/java/com/azure/resourcemanager/databox/models/PortalDelayErrorCode.java:[25,46] variable ACTIVE_ORDER_LIMIT_BREACHED_DELAY_1 is already defined in class com.azure.resourcemanager.databox.models.PortalDelayErrorCode
@@ -1101,8 +1954,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] no common parent fou
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.970 s
-[INFO] Finished at: 2023-09-19T18:55:26Z
+[INFO] Total time:  2.690 s
+[INFO] Finished at: 2023-09-20T18:50:24Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-developerhub: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-developerhub/src/main/java/com/azure/resourcemanager/developerhub/fluent/models/WorkflowProperties.java:[642,19] method namespace() is already defined in class com.azure.resourcemanager.developerhub.fluent.models.WorkflowProperties
@@ -1153,8 +2006,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] no common parent fou
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.175 s
-[INFO] Finished at: 2023-09-19T19:00:25Z
+[INFO] Total time:  2.899 s
+[INFO] Finished at: 2023-09-20T18:55:01Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-education: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-education/src/main/java/com/azure/resourcemanager/education/fluent/models/LabProperties.java:[264,19] method currency() is already defined in class com.azure.resourcemanager.education.fluent.models.LabProperties
@@ -1328,7 +2181,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [OperationResult, GroupItem, FlaggedUser, FlaggedEnrolledApp, Device, Application, Location, AndroidMamPolicy, WipeDeviceOperationResult, IOsmamPolicy]
+INFORMATION (FluentMapper): Add Inner to response types: [FlaggedUser, Location, FlaggedEnrolledApp, AndroidMamPolicy, OperationResult, GroupItem, WipeDeviceOperationResult, IOsmamPolicy, Device, Application]
 
 ```
 **stderr**
@@ -1385,8 +2238,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.239 s
-[INFO] Finished at: 2023-09-19T19:10:29Z
+[INFO] Total time:  2.064 s
+[INFO] Finished at: 2023-09-20T19:04:17Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-iotspaces: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-iotspaces/src/main/java/module-info.java:[10,55] package is empty or does not exist: com.azure.resourcemanager.iotspaces.fluent.models
@@ -1437,8 +2290,8 @@ java.lang.IllegalArgumentException: [JavaCheck/SchemaError] item name value not 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.630 s
-[INFO] Finished at: 2023-09-19T19:11:17Z
+[INFO] Total time:  3.100 s
+[INFO] Finished at: 2023-09-20T19:05:00Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-kubernetesconfiguration: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-kubernetesconfiguration/src/main/java/com/azure/resourcemanager/kubernetesconfiguration/models/KustomizationPatchDefinition.java:[231,20] wait() in com.azure.resourcemanager.kubernetesconfiguration.models.KustomizationPatchDefinition cannot override wait() in java.lang.Object
@@ -1530,8 +2383,8 @@ Use --help to get help information.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  6.846 s
-[INFO] Finished at: 2023-09-19T19:17:19Z
+[INFO] Total time:  5.974 s
+[INFO] Finished at: 2023-09-20T19:10:39Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-managednetworkfabric: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-managednetworkfabric/src/main/java/com/azure/resourcemanager/managednetworkfabric/implementation/ValidateConfigurationResponseImpl.java:[24,33] cannot find symbol
@@ -1702,8 +2555,8 @@ Use --help to get help information.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.830 s
-[INFO] Finished at: 2023-09-19T19:20:47Z
+[INFO] Total time:  5.478 s
+[INFO] Finished at: 2023-09-20T19:13:48Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-mediaservices: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-mediaservices/src/main/java/com/azure/resourcemanager/mediaservices/implementation/LiveEventsClientImpl.java:[2733,37] cannot find symbol
@@ -2050,8 +2903,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.591 s
-[INFO] Finished at: 2023-09-19T19:31:13Z
+[INFO] Total time:  3.292 s
+[INFO] Finished at: 2023-09-20T19:24:32Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-orbital: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-orbital/src/main/java/com/azure/resourcemanager/orbital/implementation/SpacecraftsClientImpl.java:[1563,37] cannot find symbol
@@ -2136,8 +2989,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.716 s
-[INFO] Finished at: 2023-09-19T19:35:45Z
+[INFO] Total time:  2.695 s
+[INFO] Finished at: 2023-09-20T19:29:01Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-professionalservice: Compilation failure
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-professionalservice/src/main/java/com/azure/resourcemanager/professionalservice/models/ProfessionalServiceResourceProperties.java:[244,50] method withBillingPeriod(java.lang.String) is already defined in class com.azure.resourcemanager.professionalservice.models.ProfessionalServiceResourceProperties
@@ -2190,8 +3043,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.451 s
-[INFO] Finished at: 2023-09-19T19:37:03Z
+[INFO] Total time:  3.194 s
+[INFO] Finished at: 2023-09-20T19:30:18Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-quota: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-quota/src/main/java/com/azure/resourcemanager/quota/implementation/AzureQuotaExtensionApiBuilder.java:[57,20] variable endpoint is already defined in class com.azure.resourcemanager.quota.implementation.AzureQuotaExtensionApiBuilder
@@ -2248,8 +3101,8 @@ ERROR: Semantic violation: Discriminator must be a required property. (component
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.604 s
-[INFO] Finished at: 2023-09-19T19:42:06Z
+[INFO] Total time:  2.507 s
+[INFO] Finished at: 2023-09-20T19:35:22Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-resourcegraph: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-resourcegraph/src/main/java/com/azure/resourcemanager/resourcegraph/fluent/ResourceGraphClient.java:[24,12] method getEndpoint() is already defined in interface com.azure.resourcemanager.resourcegraph.fluent.ResourceGraphClient
@@ -2306,6 +3159,10 @@ WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should 
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/preview/2023-07-01-preview/ResourceHealth.json:683:8 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.ResourceHealth/events/{eventTrackingId}/fetchEventDetails"].post.operationId)
 WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'fetcheventdetails' in:'Event_fetchDetailsByTenantIdAndTrackingId'. Consider updating the operationId
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/preview/2023-07-01-preview/ResourceHealth.json:806:8 ($.paths["/providers/Microsoft.ResourceHealth/events/{eventTrackingId}/fetchEventDetails"].post.operationId)
+WARNING (ParameterNotDefinedInGlobalParameters/R2015/SDKViolation): Parameter "subscriptionid" is referenced but not defined in the global parameters section of Service Definition
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/preview/2023-07-01-preview/ResourceHealth.json:2304:2 ($.parameters)
+WARNING (ParameterNotDefinedInGlobalParameters/R2015/SDKViolation): Parameter "api-version" is referenced but not defined in the global parameters section of Service Definition
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/preview/2023-07-01-preview/ResourceHealth.json:2304:2 ($.parameters)
 WARNING (OperationIdNounConflictingModelNames/R2063/SDKViolation): OperationId has a noun that conflicts with one of the model names in definitions section. The model name will be disambiguated to 'EventsModel'. Consider using the plural form of 'Events' to avoid this. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/preview/2023-07-01-preview/ResourceHealth.json:593:8 ($.paths["/subscriptions/{subscriptionId}/providers/Microsoft.ResourceHealth/events"].get.operationId)
 WARNING (OperationIdNounConflictingModelNames/R2063/SDKViolation): OperationId has a noun that conflicts with one of the model names in definitions section. The model name will be disambiguated to 'EventModel'. Consider using the plural form of 'Event' to avoid this. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
@@ -2324,10 +3181,6 @@ WARNING (AvoidNestedProperties/R2001/SDKViolation): Consider using x-ms-client-f
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/preview/2023-07-01-preview/ResourceHealth.json:1730:8 ($.definitions.availabilityStatus.properties.properties)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: published
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/preview/2023-07-01-preview/ResourceHealth.json:2243:8 ($.definitions.statusActiveEvent.properties.published)
-WARNING (ParameterNotDefinedInGlobalParameters/R2015/SDKViolation): Parameter "subscriptionid" is referenced but not defined in the global parameters section of Service Definition
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/preview/2023-07-01-preview/ResourceHealth.json:2304:2 ($.parameters)
-WARNING (ParameterNotDefinedInGlobalParameters/R2015/SDKViolation): Parameter "api-version" is referenced but not defined in the global parameters section of Service Definition
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/preview/2023-07-01-preview/ResourceHealth.json:2304:2 ($.parameters)
 WARNING (DescriptionAndTitleMissing/R4021/SDKViolation): 'KeyVaultProperties' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v3/types.json:567:2 ($.definitions.KeyVaultProperties)
 WARNING (DescriptionAndTitleMissing/R4021/SDKViolation): 'identity' model/property lacks 'description' and 'title' property. Consider adding a 'description'/'title' element. Accurate description/title is essential for maintaining reference documentation.
@@ -2389,7 +3242,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [OperationListResult, EmergingIssuesGetResult, AvailabilityStatus, Event, EventImpactedResource, MetadataEntity]
+INFORMATION (FluentMapper): Add Inner to response types: [OperationListResult, MetadataEntity, AvailabilityStatus, EventImpactedResource, EmergingIssuesGetResult, Event]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'ListHealthBySubscriptionId'
@@ -2427,30 +3280,30 @@ INFORMATION (JavaFormatter): Java version: 11.0.20
 INFORMATION (JavaFormatter): Java formatter enabled
 INFORMATION (FluentGen): Write Xml
 INFORMATION (FluentGen): Write Text
-[28.81 s] Generation Complete
+[26.54 s] Generation Complete
 
 ```
 **stderr**
 ```
 FATAL: Failed validating: 'file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/resourcehealth/resource-manager/Microsoft.ResourceHealth/preview/2023-07-01-preview/ResourceHealth.json', error encountered: TypeError: Cannot read property 'properties' of undefined
-ERROR (OperationsAPIImplementation/R3023/ARMViolation): Operations API must be implemented for '/providers//operations'.
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v3/types.json:7:1 ($.paths)
 ERROR (APIVersionPattern/R3012/ARMViolation): API Version must be in the format: yyyy-MM-dd, optionally followed by -preview, -alpha, -beta, -rc, -privatepreview.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v3/types.json:4:2 ($.info.version)
 ERROR (SecurityDefinitionsStructure/R2054/SDKViolation): Every swagger/configuration must have a security definitions section and it must adhere to the structure described in: https://github.com/Azure/azure-openapi-validator/blob/master/docs/security-definitions-structure-validation.md
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v3/types.json:1:0
+ERROR (APIVersionPattern/R3012/ARMViolation): API Version must be in the format: yyyy-MM-dd, optionally followed by -preview, -alpha, -beta, -rc, -privatepreview.
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:4:2 ($.info.version)
+ERROR (SecurityDefinitionsStructure/R2054/SDKViolation): Every swagger/configuration must have a security definitions section and it must adhere to the structure described in: https://github.com/Azure/azure-openapi-validator/blob/master/docs/security-definitions-structure-validation.md
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:1:0
+ERROR (OperationsAPIImplementation/R3023/ARMViolation): Operations API must be implemented for '/providers//operations'.
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v3/types.json:7:1 ($.paths)
 ERROR (OperationsAPIImplementation/R3023/ARMViolation): Operations API must be implemented for '/providers//operations'.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:7:1 ($.paths)
 ERROR (ValidFormats/R2003/SDKViolation): 'arm-id' is not a known format.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:17:5 ($.definitions.Resource.properties.id.format)
-ERROR (APIVersionPattern/R3012/ARMViolation): API Version must be in the format: yyyy-MM-dd, optionally followed by -preview, -alpha, -beta, -rc, -privatepreview.
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:4:2 ($.info.version)
 ERROR (ValidFormats/R2003/SDKViolation): 'arm-id' is not a known format.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:432:5 ($.definitions.OperationStatusResult.properties.id.format)
 ERROR (ValidFormats/R2003/SDKViolation): 'arm-id' is not a known format.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:437:5 ($.definitions.OperationStatusResult.properties.resourceId.format)
-ERROR (SecurityDefinitionsStructure/R2054/SDKViolation): Every swagger/configuration must have a security definitions section and it must adhere to the structure described in: https://github.com/Azure/azure-openapi-validator/blob/master/docs/security-definitions-structure-validation.md
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/common-types/resource-management/v5/types.json:1:0
 
 ```
 </details>
@@ -2483,8 +3336,8 @@ ERROR (SecurityDefinitionsStructure/R2054/SDKViolation): Every swagger/configura
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  7.072 s
-[INFO] Finished at: 2023-09-19T19:46:16Z
+[INFO] Total time:  7.094 s
+[INFO] Finished at: 2023-09-20T19:39:29Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-security: Compilation failure
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-security/src/main/java/com/azure/resourcemanager/security/fluent/models/DefenderForStorageSettingProperties.java:[218,41] method operationStatus() is already defined in class com.azure.resourcemanager.security.fluent.models.DefenderForStorageSettingProperties
@@ -2540,10 +3393,6 @@ WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See 
 WARNING: Semantic violation: Sibling values alongside $ref will be ignored. See https://github.com/Azure/autorest/blob/main/docs/openapi/howto/$ref-siblings.md for allowed values (components > schemas > MachineReferenceWithHints > properties > properties > properties > osFamilyHint)
   keys: [ [32m'readOnly'[39m ]
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:179:7
-WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'generatemap' in:'Maps_Generate'. Consider updating the operationId
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1231:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/generateMap"].post.operationId)
-WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'machinegroups' in:'MachineGroups_Create'. Consider updating the operationId
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1405:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machineGroups"].post.operationId)
 WARNING (PreCheck/SchemaMissingType): The schema 'Resource' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'ResourceReference' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/SchemaMissingType): The schema 'MachineReference' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
@@ -2592,14 +3441,18 @@ WARNING (PreCheck/SchemaMissingType): The schema 'MachineListMapRequest' with an
 WARNING (PreCheck/SchemaMissingType): The schema 'MachineGroupMapRequest' with an undefined type and declared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
 WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'MachineGroup' has a property 'etag' that is already declared the parent schema 'CoreResource' but isn't significantly different. The property has been removed from MachineGroup
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'generatemap' in:'Maps_Generate'. Consider updating the operationId
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1231:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/generateMap"].post.operationId)
+WARNING (PostOperationIdContainsUrlVerb/R2066/SDKViolation): OperationId should contain the verb: 'machinegroups' in:'MachineGroups_Create'. Consider updating the operationId
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1405:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machineGroups"].post.operationId)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:63:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines"].get.parameters[4].name)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:332:12 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/processes"].get.parameters[5].name)
-WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
-    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (OperationIdNounVerb/R1001/SDKViolation): Per the Noun_Verb convention for Operation Ids, the noun 'Machines' should not appear after the underscore. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:971:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machines/{machineName}/machineGroups"].get.operationId)
+WARNING (PreviewVersionOverOneYear/R4024/SDKViolation): The API version:2015-11-01-preview having been in a preview state over one year , please move it to GA or retire.
+    - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:6:4 ($.info.version)
 WARNING (PutInOperationName/R1006/SDKViolation): 'PUT' operation 'MachineGroups_Update' should use method name 'Create'. Note: If you have already shipped an SDK on top of this spec, fixing this warning may introduce a breaking change.
     - file:///home/runner/work/autorest.java/autorest.java/azure-rest-api-specs/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json:1515:8 ($.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/features/serviceMap/machineGroups/{machineGroupName}"].put.operationId)
 WARNING (EnumInsteadOfBoolean/R3018/ARMViolation): Booleans are not descriptive and make them hard to use. Consider using string enums with allowed set of values defined. Property: live
@@ -2638,7 +3491,7 @@ INFORMATION (FluentJavaSettings): Option, string, package-version : null
 INFORMATION (FluentJavaSettings): Option, boolean, generate-samples : true
 INFORMATION (FluentJavaSettings): Option, boolean, sdk-integration : null
 INFORMATION (FluentGen): Map code model to client model
-INFORMATION (FluentMapper): Add Inner to response types: [Process, MapResponse, ClientGroup, Liveness, MachineGroup, Connection, ClientGroupMember, Machine, MachinesSummary, ClientGroupMembersCount, Port]
+INFORMATION (FluentMapper): Add Inner to response types: [Liveness, Port, MapResponse, ClientGroup, MachinesSummary, ClientGroupMember, ClientGroupMembersCount, Connection, Machine, Process, MachineGroup]
 INFORMATION (FluentGen): Java template for client model
 INFORMATION (FluentGen): Process for Fluent Lite, SDK integration disabled
 INFORMATION (ExampleParser): Parse collection method example 'SMMachinesListByWorkspaceGet'
@@ -2743,8 +3596,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  13.138 s
-[INFO] Finished at: 2023-09-19T19:56:27Z
+[INFO] Total time:  13.407 s
+[INFO] Finished at: 2023-09-20T19:49:53Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-sql: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-sql/src/main/java/com/azure/resourcemanager/sql/implementation/SqlVulnerabilityAssessmentImpl.java:[131,65] incompatible types: com.azure.resourcemanager.sql.models.VulnerabilityAssessmentName cannot be converted to com.azure.resourcemanager.sql.models.SqlVulnerabilityAssessmentName
@@ -2797,8 +3650,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.100 s
-[INFO] Finished at: 2023-09-19T19:58:24Z
+[INFO] Total time:  3.685 s
+[INFO] Finished at: 2023-09-20T19:51:49Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-storagecache: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-storagecache/src/main/java/com/azure/resourcemanager/storagecache/implementation/ResourceProvidersClientImpl.java:[30,53] cannot find symbol
@@ -2861,8 +3714,8 @@ ERROR (XmsEnumValidation/R2018/SDKViolation): The enum types should have x-ms-en
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.708 s
-[INFO] Finished at: 2023-09-19T20:04:52Z
+[INFO] Total time:  1.685 s
+[INFO] Finished at: 2023-09-20T19:58:20Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project azure-resourcemanager-visualstudio: Compilation failure: Compilation failure: 
 [ERROR] /home/runner/work/autorest.java/autorest.java/fluent_generated/azure-resourcemanager-visualstudio/src/main/java/com/azure/resourcemanager/visualstudio/models/AccountResourceRequestOperationType.java:[13,50] <identifier> expected
